@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home – Quiz Kreativitas</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <div class="page">
   <header class="site-header">
     <div class="header-left">
       <div class="logo-bubble">Q</div>
-      <div><b>Quiz Kreativitas</b></div>
+      <div>
+        <div><b>Quiz Kreativitas</b></div>
+        <div style="font-size:11px;color:#6b7280;">Platform kuis interaktif untuk siswa</div>
+      </div>
     </div>
     <nav class="header-nav">
       <a href="index.html" class="active">Home</a>
@@ -22,15 +25,93 @@
   </header>
 
   <main class="site-main">
+    <!-- Hero utama -->
     <section class="hero">
-      <h1>Selamat Datang 👋</h1>
-      <p>Website quiz untuk melatih kreativitas dan pemahaman siswa.</p>
+      <h1>Selamat datang di <b>Quiz Kreativitas Siswa</b> 🎓</h1>
+      <p style="margin-top:8px;font-size:13px;">
+        Ini adalah website kuis yang dirancang khusus untuk membantu siswa belajar
+        dengan cara yang <b>aktif</b>, <b>menyenangkan</b>, dan <b>kreatif</b>.
+        Siswa tidak hanya menjawab soal, tetapi juga mendapatkan penjelasan dan
+        bisa mengulang level yang sama dengan soal yang diacak ulang.
+      </p>
       <br>
       <a href="quiz.html" class="btn primary">Mulai Belajar Sekarang</a>
     </section>
+
+    <!-- Penjelasan tentang website -->
+    <section class="card">
+      <h2>Apa itu Quiz Kreativitas?</h2>
+      <p class="small" style="margin-top:6px;">
+        Quiz Kreativitas adalah platform kuis berbasis web yang berisi kumpulan soal
+        untuk beberapa mata pelajaran:
+      </p>
+      <ul class="small" style="margin-top:6px;margin-left:18px;">
+        <li>📐 <b>Matematika</b> – logika, operasi hitung, dan pemecahan masalah.</li>
+        <li>🔬 <b>IPA</b> – konsep dasar sains, fisika, biologi, dan lingkungan.</li>
+        <li>💻 <b>Pemrograman</b> – konsep dasar algoritma, logika, dan coding.</li>
+        <li>🧠 <b>Filsafat</b> – melatih berpikir kritis dan reflektif.</li>
+      </ul>
+      <p class="small" style="margin-top:6px;">
+        Setiap mata pelajaran memiliki <b>3 level kesulitan</b>:
+        <b>Mudah</b>, <b>Lumayan Susah</b>, dan <b>Susah Banget</b>,
+        sehingga guru bisa menyesuaikan dengan kemampuan siswa.
+      </p>
+    </section>
+
+    <!-- Bagian Siswa / Guru -->
+    <section class="card">
+      <h2>Untuk siapa website ini?</h2>
+      <div class="grid-2" style="margin-top:10px;">
+        <div>
+          <h3 style="font-size:15px;margin-bottom:4px;">👩‍🎓 Untuk Siswa</h3>
+          <ul class="small" style="margin-left:16px;">
+            <li>Memilih mata pelajaran dan level kesulitan.</li>
+            <li>Mengerjakan soal satu per satu dengan tampilan sederhana.</li>
+            <li>Melihat penjelasan setelah menjawab soal.</li>
+            <li>Mengulang level yang sama, tetapi soal dan urutan diacak ulang.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:15px;margin-bottom:4px;">👩‍🏫 Untuk Guru</h3>
+          <ul class="small" style="margin-left:16px;">
+            <li>Masuk ke <b>Mode Guru</b> dengan username & password.</li>
+            <li>Mengelola bank soal melalui file <code>questions.json</code>.</li>
+            <li>Impor soal baru dari file JSON (bisa disiapkan dari Excel/CSV).</li>
+            <li>Mengunduh bank soal dan mengupload ke GitHub / Vercel.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara kerja sistem -->
+    <section class="card">
+      <h2>Cara kerja sistem kuis</h2>
+      <ol class="small" style="margin-top:6px;margin-left:18px;">
+        <li>Siswa membuka halaman <b>Quiz</b> dan memilih mata pelajaran & level.</li>
+        <li>Sistem mengambil soal dari file <code>questions.json</code>.</li>
+        <li>Soal diacak dan ditampilkan satu per satu.</li>
+        <li>Setelah menjawab, siswa dapat melihat apakah jawabannya benar atau salah,
+            beserta penjelasannya (jika sudah disiapkan).</li>
+        <li>Jika siswa ingin mengulang level yang sama, sistem akan:
+          <ul style="margin-left:18px;margin-top:3px;">
+            <li>mengacak urutan soal lagi, dan</li>
+            <li>memulai dari soal yang berbeda, bukan selalu nomor 1.</li>
+          </ul>
+        </li>
+      </ol>
+      <p class="small" style="margin-top:8px;">
+        Dengan pola seperti ini, siswa tidak hanya menghafal urutan soal,
+        tetapi benar-benar belajar dari variasi pertanyaan yang sama tingkat kesulitannya.
+      </p>
+      <div class="btn-row center" style="margin-top:10px;">
+        <a href="quiz.html" class="btn ghost">Lanjut ke Halaman Quiz</a>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">© 2025 Quiz Siswa</footer>
+  <footer class="site-footer">
+    © 2025 — Quiz Kreativitas Siswa • Bank soal disimpan di <span class="code">questions.json</span>
+  </footer>
 </div>
 </body>
 </html>
