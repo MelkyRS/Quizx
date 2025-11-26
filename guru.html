@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guru Panel — Quiz Kreativitas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title">Panel Guru — Quiz Kreativitas</div>
+      <div class="subtitle">Masuk sebagai Guru untuk membuat/impor soal</div>
+    </div>
+
+    <section class="card">
+      <div id="loginBox">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="guru" />
+        <label for="password" style="margin-top:8px;">Password</label>
+        <input id="password" type="password" placeholder="admin" />
+        <div style="margin-top:12px; display:flex; gap:8px;">
+          <button id="btnDoLogin" class="btn btn-main">Login</button>
+          <a href="index.html" class="btn btn-outline" style="text-decoration:none; display:inline-flex; align-items:center;">Kembali ke Siswa</a>
+        </div>
+        <div class="small" style="margin-top:8px;">Contoh kredensial: <span class="code">Username: guru</span> &nbsp; <span class="code">Password: admin</span></div>
+      </div>
+
+      <div id="adminArea" style="display:none; margin-top:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="font-weight:800;">Admin: Buat Soal / Impor CSV</div>
+          <div style="display:flex; gap:8px;">
+            <button id="btnLogout" class="btn btn-danger">Logout</button>
+            <a href="index.html" class="btn btn-outline">Lihat Halaman Siswa</a>
+          </div>
+        </div>
+
+        <div class="admin-row" style="margin-top:12px;">
+          <div>
+            <label for="admin-cat">Mata Pelajaran</label>
+            <input id="admin-cat" type="text" placeholder="Misal: Bahasa Indonesia" />
+          </div>
+          <div>
+            <label for="admin-level">Level</label>
+            <select id="admin-level">
+              <option>Mudah</option>
+              <option>Lumayan Susah</option>
+              <option>Susah Banget</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-top:10px;">
+          <label for="q-text">Pertanyaan</label>
+          <textarea id="q-text" placeholder="Tulis pertanyaan..."></textarea>
+        </div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div>
+            <label>Opsi A</label><input id="q-a" type="text" />
+          </div>
+          <div>
+            <label>Opsi B</label><input id="q-b" type="text" />
+          </div>
+          <div>
+            <label>Opsi C</label><input id="q-c" type="text" />
+          </div>
+          <div>
+            <label>Opsi D</label><input id="q-d" type="text" />
+          </div>
+        </div>
+
+        <div style="display:flex; gap:8px; align-items:center; margin-top:10px;">
+          <label style="min-width:120px;">Jawaban benar (a/b/c/d)</label>
+          <input id="q-ans" style="width:80px;" />
+          <label style="min-width:120px; margin-left:12px;">Penjelasan (opsional)</label>
+          <input id="q-exp" placeholder="Penjelasan singkat" />
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:8px;">
+          <button id="btnAddQuestion" class="btn btn-main">Tambah Soal</button>
+          <input id="csv-file" type="file" accept=".csv" />
+          <button id="btnImportCsv" class="btn btn-outline">Impor CSV (ganti level)</button>
+          <button id="btnExportJson" class="btn btn-outline">Unduh backup JSON</button>
+          <button id="btnClearStorage" class="btn btn-danger">Reset Bank Soal</button>
+        </div>
+
+        <div class="small" style="margin-top:10px;">
+          Format CSV: <span class="code">pertanyaan, opsiA, opsiB, opsiC, opsiD, hurufBenar(a/b/c/d), penjelasan</span>. Baris pertama dianggap header.
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="footer">Setelah mengubah soal, buka <a href="index.html">index.html</a> untuk melihat perubahan (data disimpan di browser lokal melalui localStorage).</footer>
+  </div>
+
+  <script src="guru.js"></script>
+</body>
+</html>
