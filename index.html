@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz Kreativitas Siswa</title>
+  <title>Home – Quiz Kreativitas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
-
-    <!-- HEADER -->
     <header class="site-header">
       <div class="header-left">
         <div class="logo-bubble">Q</div>
@@ -18,182 +16,47 @@
           <div class="site-subtitle">Latih logika & imajinasi siswa</div>
         </div>
       </div>
-
-      <!-- NAV DESKTOP -->
       <nav class="header-nav">
-        <a href="#home">Home</a>
-        <a href="#home">Quiz</a>
-        <a href="guru.html">Mode Guru</a>
-        <a href="#help">Bantuan</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="guru.html">Guru</a>
+        <a href="bantuan.html">Hubungi Bantuan</a>
       </nav>
-
-      <!-- HAMBURGER (SELALU ADA) -->
-      <button class="hamburger" id="hamburger" aria-label="Buka menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </header>
 
-    <!-- MENU DROPDOWN HAMBURGER -->
-    <nav class="hamburger-menu" id="hamburgerMenu">
-      <a href="#home">🏠 Home</a>
-      <a href="#home">🧩 Quiz</a>
-      <a href="guru.html">👩‍🏫 Mode Guru</a>
-      <div class="hamburger-help-title">📞 Hubungi Bantuan</div>
-      <!-- GANTI nomor & email di sini sesuai punyamu -->
-      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">
-        WhatsApp: 0812-3456-7890
-      </a>
-      <a href="mailto:guru@example.com">
-        Email: guru@example.com
-      </a>
-    </nav>
-
-    <!-- BODY / MAIN -->
     <main class="site-main">
-      <!-- HERO -->
       <section class="hero">
-        <h1>Belajar dengan cara yang <span class="hero-highlight">seru</span> dan <span class="hero-highlight">interaktif</span> ✨</h1>
+        <h1>Selamat datang di <span class="hero-highlight">Quiz Kreativitas</span> ✨</h1>
         <p>
-          Pilih mata pelajaran, tentukan level, lalu mulai petualangan menjawab soal.
-          Setiap kali mengulang level, urutan soal akan diacak sehingga pengalaman belajar tetap segar.
+          Website ini dirancang untuk membantu siswa berlatih Matematika, IPA, Pemrograman,
+          dan Filsafat dengan cara yang interaktif dan menyenangkan.
+          Soal dibagi berdasarkan level kesulitan dan akan diacak setiap kali siswa mengulang,
+          sehingga mereka benar-benar memahami konsep, bukan hanya menghafal.
         </p>
         <div class="hero-tags">
           <span class="tag">📚 4 Mata Pelajaran</span>
           <span class="tag">🎯 3 Level Kesulitan</span>
-          <span class="tag">🎲 Soal diacak saat mengulang</span>
+          <span class="tag">🎲 Soal Selalu Diacak</span>
         </div>
       </section>
 
-      <!-- KONTEN: HOME + SIDEPANEL -->
-      <div class="content-grid">
-        <!-- HOME / MENU UTAMA -->
-        <section id="home" class="card">
-          <h2>Mulai Quiz</h2>
-          <p class="small">
-            Pilih mata pelajaran dan level, lalu klik <strong>Mulai Quiz</strong>.<br />
-            Atau gunakan <strong>Acak Soal</strong> untuk memilih kategori secara acak.
-          </p>
+      <section class="card">
+        <h2>Apa yang bisa dilakukan siswa di sini?</h2>
+        <p class="small" style="margin-top:6px;">
+          Siswa bisa memilih mata pelajaran, memilih tingkat kesulitan, lalu mengerjakan kuis
+          dengan umpan balik langsung. Jika mereka salah dan mengulang level yang sama, 
+          urutan soal akan diacak dan titik awal soal berbeda.
+        </p>
 
-          <div class="grid-2" style="margin-top:12px;">
-            <div>
-              <label for="category">Mata Pelajaran</label>
-              <select id="category"></select>
-            </div>
-            <div>
-              <label for="level">Level</label>
-              <select id="level">
-                <option>Mudah</option>
-                <option>Lumayan Susah</option>
-                <option>Susah Banget</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="btn-row">
-            <button id="btn-start" class="btn primary">Mulai Quiz</button>
-            <button id="btn-random" class="btn ghost">Acak Soal</button>
-            <a href="guru.html" class="btn ghost">Mode Guru</a>
-          </div>
-
-          <p class="hint">
-            💡 Saat mengulang level yang sama, urutan soal diacak dan titik mulai berbeda, agar siswa tidak hanya menghafal urutan.
-          </p>
-        </section>
-
-        <!-- PANEL SAMPING -->
-        <aside class="card side-card" id="help">
-          <h3>Ringkasan Fitur</h3>
-          <ul class="feature-list">
-            <li>📚 Matematika, IPA, Pemrograman, Filsafat.</li>
-            <li>⚖️ Tiga level: Mudah, Lumayan Susah, Susah Banget.</li>
-            <li>🎲 Soal diacak saat mengulang level.</li>
-            <li>👩‍🏫 Mode Guru untuk mengedit & ekspor bank soal.</li>
-            <li>☁️ Soal disimpan di <code>questions.json</code> (GitHub/Vercel friendly).</li>
-          </ul>
-
-          <div class="help-box">
-            <div class="help-title">Butuh bantuan?</div>
-            <!-- SAMA dengan di atas (boleh beda kalau mau) -->
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">
-              WhatsApp: 0812-3456-7890
-            </a>
-            <a href="mailto:guru@example.com">
-              Email: guru@example.com
-            </a>
-          </div>
-        </aside>
-      </div>
-
-      <!-- SECTION QUIZ -->
-      <section id="quiz" class="card hidden">
-        <div class="quiz-header">
-          <div class="quiz-meta" id="meta"></div>
-          <div class="quiz-score">
-            Skor: <span id="score">0</span>
-          </div>
-        </div>
-
-        <div class="quiz-meta" id="progressText"></div>
-
-        <div class="progress">
-          <div id="pfill" class="progress-fill"></div>
-        </div>
-
-        <div id="questionText" class="question"></div>
-        <div id="options" class="options"></div>
-
-        <div id="explain" class="explain hidden">
-          <strong id="explainTitle"></strong>
-          <div id="explainText"></div>
-          <div class="btn-row">
-            <button id="btn-next" class="btn primary">Soal Berikutnya</button>
-            <button id="btn-retry" class="btn danger hidden">Ulangi Level</button>
-            <button id="btn-home" class="btn ghost">Kembali ke Menu</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION HASIL -->
-      <section id="result" class="card hidden">
-        <h2>Hasil Quiz</h2>
-        <p id="resultText" class="result-text"></p>
-        <div class="btn-row center">
-          <button id="btn-res-retry" class="btn primary">Ulangi Level</button>
-          <button id="btn-res-home" class="btn ghost">Kembali ke Menu</button>
+        <div class="btn-row center" style="margin-top:14px;">
+          <a href="quiz.html" class="btn primary">Mulai Belajar Sekarang</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      © 2025 — Quiz Interaktif untuk Siswa • Soal diambil dari <span class="code">questions.json</span>
+      © 2025 — Quiz Kreativitas Siswa • Bank soal tersimpan di <span class="code">questions.json</span>
     </footer>
   </div>
-
-  <!-- SCRIPT HAMBURGER MENU -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.getElementById("hamburger");
-      const menu = document.getElementById("hamburgerMenu");
-      if (!btn || !menu) return;
-
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("open");
-        menu.classList.toggle("open");
-      });
-
-      // Tutup menu saat klik salah satu link
-      menu.querySelectorAll("a").forEach(a => {
-        a.addEventListener("click", () => {
-          btn.classList.remove("open");
-          menu.classList.remove("open");
-        });
-      });
-    });
-  </script>
-
-  <!-- SCRIPT LOGIKA QUIZ -->
-  <script src="app.js" defer></script>
 </body>
 </html>
