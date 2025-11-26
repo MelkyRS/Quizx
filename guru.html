@@ -25,8 +25,70 @@
     </header>
 
     <main class="site-main">
-      <!-- DI SINI LANJUTKAN KONTEN guru.html KAMU YANG SUDAH ADA -->
-      <!-- login guru, form impor CSV, dll -->
+      <!-- KARTU LOGIN GURU -->
+      <section id="loginCard" class="card">
+        <h2>Login Mode Guru</h2>
+        <p class="small" style="margin-top:6px;">
+          Masukkan username dan password untuk mengakses pengelolaan bank soal.
+          (Contoh kredensial: <strong>Username: guru</strong>, <strong>Password: admin</strong>)
+        </p>
+
+        <form id="loginForm" style="margin-top:12px;">
+          <div class="grid-2">
+            <div>
+              <label for="username">Username</label>
+              <input type="text" id="username" autocomplete="off" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button type="submit" class="btn primary">Masuk Mode Guru</button>
+          </div>
+
+          <p id="loginError" class="small" style="margin-top:8px; color:#b91c1c;"></p>
+        </form>
+      </section>
+
+      <!-- PANEL ADMIN GURU -->
+      <section id="adminPanel" class="card hidden">
+        <h2>Pengelolaan Bank Soal</h2>
+        <p class="small" style="margin-top:6px;">
+          Di sini guru bisa melihat ringkasan bank soal dan mengunduh file
+          <code>questions.json</code> terbaru untuk diupload ke GitHub atau Vercel.
+        </p>
+
+        <div style="margin-top:12px;">
+          <h3>Ringkasan Soal</h3>
+          <p id="questionSummary" class="small" style="margin-top:4px;">
+            Memuat data dari <code>questions.json</code>...
+          </p>
+        </div>
+
+        <div style="margin-top:14px;">
+          <h3>Impor Bank Soal (JSON)</h3>
+          <p class="small" style="margin-top:4px;">
+            Pilih file <code>questions.json</code> baru dari komputer Anda untuk memuat dan
+            mengedit secara lokal, lalu unduh kembali untuk diupload ke GitHub/Vercel.
+          </p>
+          <input type="file" id="jsonInput" accept=".json" style="margin-top:8px;" />
+        </div>
+
+        <div style="margin-top:14px;">
+          <h3>Unduh Bank Soal</h3>
+          <p class="small" style="margin-top:4px;">
+            Setelah mengubah (misalnya di editor eksternal), klik tombol di bawah untuk
+            mengunduh versi terbaru <code>questions.json</code> yang sedang dimuat di browser.
+          </p>
+          <div class="btn-row">
+            <button id="btnDownloadJson" class="btn primary">Download questions.json</button>
+            <button id="btnBackToLogin" class="btn ghost">Keluar dari Mode Guru</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
