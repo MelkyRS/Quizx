@@ -10,10 +10,11 @@
   <div class="app">
     <div class="header">
       <div class="title">Panel Guru — Quiz Kreativitas</div>
-      <div class="subtitle">Masuk sebagai Guru untuk membuat/impor soal</div>
+      <div class="subtitle">Edit & ekspor bank soal (questions.json)</div>
     </div>
 
     <section class="card">
+      <!-- LOGIN -->
       <div id="loginBox">
         <label for="username">Username</label>
         <input id="username" type="text" placeholder="guru" />
@@ -23,16 +24,28 @@
           <button id="btnDoLogin" class="btn btn-main">Login</button>
           <a href="index.html" class="btn btn-outline" style="text-decoration:none; display:inline-flex; align-items:center;">Kembali ke Siswa</a>
         </div>
-        <div class="small" style="margin-top:8px;">Contoh kredensial: <span class="code">Username: guru</span> &nbsp; <span class="code">Password: admin</span></div>
+        <div class="small" style="margin-top:8px;">
+          Contoh kredensial:
+          <span class="code">Username: guru</span> &nbsp;
+          <span class="code">Password: admin</span>
+        </div>
       </div>
 
+      <!-- ADMIN AREA -->
       <div id="adminArea" style="display:none; margin-top:12px;">
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <div style="font-weight:800;">Admin: Buat Soal / Impor CSV</div>
-          <div style="display:flex; gap:8px;">
-            <button id="btnLogout" class="btn btn-danger">Logout</button>
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+          <div style="font-weight:800;">Bank Soal (questions.json)</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button id="btnExportJson" class="btn btn-outline">
+              Unduh questions.json
+            </button>
             <a href="index.html" class="btn btn-outline">Lihat Halaman Siswa</a>
+            <button id="btnLogout" class="btn btn-danger">Logout</button>
           </div>
+        </div>
+
+        <div class="small" style="margin-top:8px;">
+          Setelah selesai mengedit, klik <b>Unduh questions.json</b>, lalu upload/commit file itu ke GitHub atau project Vercel Anda.
         </div>
 
         <div class="admin-row" style="margin-top:12px;">
@@ -70,29 +83,38 @@
           </div>
         </div>
 
-        <div style="display:flex; gap:8px; align-items:center; margin-top:10px;">
-          <label style="min-width:120px;">Jawaban benar (a/b/c/d)</label>
-          <input id="q-ans" style="width:80px;" />
-          <label style="min-width:120px; margin-left:12px;">Penjelasan (opsional)</label>
-          <input id="q-exp" placeholder="Penjelasan singkat" />
+        <div style="display:flex; gap:8px; align-items:center; margin-top:10px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <label style="min-width:120px;">Jawaban benar</label>
+            <input id="q-ans" style="width:80px;" placeholder="a/b/c/d" />
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <label>Penjelasan (opsional)</label>
+            <input id="q-exp" placeholder="Penjelasan singkat" />
+          </div>
         </div>
 
-        <div style="margin-top:12px; display:flex; gap:8px;">
+        <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
           <button id="btnAddQuestion" class="btn btn-main">Tambah Soal</button>
           <input id="csv-file" type="file" accept=".csv" />
           <button id="btnImportCsv" class="btn btn-outline">Impor CSV (ganti level)</button>
-          <button id="btnExportJson" class="btn btn-outline">Unduh backup JSON</button>
-          <button id="btnClearStorage" class="btn btn-danger">Reset Bank Soal</button>
         </div>
 
         <div class="small" style="margin-top:10px;">
-          Format CSV: <span class="code">pertanyaan, opsiA, opsiB, opsiC, opsiD, hurufBenar(a/b/c/d), penjelasan</span>. Baris pertama dianggap header.
+          Format CSV:
+          <span class="code">
+            pertanyaan, opsiA, opsiB, opsiC, opsiD, hurufBenar(a/b/c/d), penjelasan
+          </span>
+          . Baris pertama dianggap header. Setelah impor/tambah soal, klik
+          <b>Unduh questions.json</b> lalu upload ke GitHub/Vercel.
         </div>
       </div>
-
     </section>
 
-    <footer class="footer">Setelah mengubah soal, buka <a href="index.html">index.html</a> untuk melihat perubahan (data disimpan di browser lokal melalui localStorage).</footer>
+    <footer class="footer">
+      Data soal <b>tidak disimpan di browser</b>. Semua perubahan hanya tersimpan di file
+      <span class="code">questions.json</span> yang Anda unduh & upload ke repo.
+    </footer>
   </div>
 
   <script src="guru.js"></script>
