@@ -177,7 +177,9 @@ function renderQuestion() {
   }`;
 
   el.scoreEl.textContent = score;
+if (el.totalQuestions) {
   el.totalQuestions.textContent = `${currentQuestions.length} soal`;
+}
 
   const ratio = (currentIndex + 1) / currentQuestions.length;
   el.pfill.style.width = `${(ratio * 100).toFixed(1)}%`;
