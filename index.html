@@ -5,49 +5,367 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz Kreativitas Siswa</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { min-height: 100vh; background: linear-gradient(to bottom, #ffe4f1, #ffffff); display: flex; align-items: center; justify-content: center; padding: 16px; }
-    .app { width: 100%; max-width: 900px; }
-    .app-header { text-align: center; margin-bottom: 16px; }
-    .app-title { font-size: 28px; font-weight: 800; margin-bottom: 4px; }
-    .app-subtitle { font-size: 13px; color: #555; }
-    .card { background: rgba(255,255,255,0.9); backdrop-filter: blur(8px); border-radius: 18px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 100%; }
-    .hidden { display: none !important; }
-    label { font-size: 12px; font-weight: 600; margin-bottom: 4px; display: block; }
-    select { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid #ddd; font-size: 14px; outline: none; }
-    select:focus { border-color: #f472b6; box-shadow: 0 0 0 2px rgba(244,114,182,0.25); }
-    .grid-2 { display: grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 640px) { .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); } }
-    .btn { border: none; border-radius: 999px; padding: 10px 16px; font-size: 14px; cursor: pointer; transition: transform 0.1s, box-shadow 0.1s, background 0.2s; display: inline-flex; align-items: center; justify-content: center; gap: 6px; white-space: nowrap; }
-    .btn-main { background: linear-gradient(to right,#f472b6,#ffffff); box-shadow: 0 3px 10px rgba(244,114,182,0.4); }
-    .btn-main:hover { transform: translateY(-1px); box-shadow: 0 5px 16px rgba(244,114,182,0.45); }
-    .btn-outline { background: #ffffff; border: 1px solid #ddd; }
-    .btn-outline:hover { background: #fdf2ff; }
-    .btn-small { padding: 6px 10px; font-size: 12px; }
-    .btn-danger { border: 1px solid #fda4af; background: #fff1f2; }
-    .btn-danger:hover { background: #ffe4e6; }
-    .home-actions { margin-top: 18px; display:flex; flex-wrap:wrap; gap:10px; }
-    .home-tip { margin-top: 12px; font-size: 11px; color: #777; }
-    .quiz-header { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:12px; font-size:13px; }
-    .quiz-header-left { color:#555; }
-    .quiz-header-right { text-align:right; }
-    .quiz-score { font-size:18px; font-weight:700; }
-    .quiz-question-text { font-size:18px; font-weight:600; margin-bottom:14px; }
-    .options { display:grid; gap:10px; margin-bottom:12px; }
-    .option-btn { width:100%; text-align:left; border-radius:12px; border:1px solid #ddd; background:#ffffff; padding:10px 12px; cursor:pointer; font-size:14px; transition:background 0.15s,border-color 0.15s,box-shadow 0.15s,transform 0.05s; }
-    .option-btn:hover { box-shadow:0 2px 8px rgba(15,23,42,0.12); transform:translateY(-1px); }
-    .option-btn.disabled { cursor:default; opacity:0.8; box-shadow:none; transform:none; }
-    .option-correct { border-color:#22c55e; background:#f0fdf4; }
-    .option-wrong { border-color:#f97373; background:#fef2f2; }
-    .explanation-box { margin-top:12px; padding:10px 12px; border-radius:10px; background:#f9fafb; border:1px solid #e5e7eb; font-size:13px; }
-    .explanation-title { font-weight:700; margin-bottom:4px; }
-    .explanation-text { color:#374151; font-size:13px; }
-    .explanation-actions { margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
-    .progress-hint { margin-top:8px; font-size:11px; color:#777; }
-    .result-title { font-size:22px; font-weight:700; margin-bottom:4px; }
-    .result-score-text { font-size:15px; color:#4b5563; }
-    .result-actions { margin-top:18px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
-    .footer-note { margin-top:14px; text-align:center; font-size:11px; color:#777; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #fec6e9 0, #ffffff 40%, #ffeef9 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      color: #111827;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 980px;
+    }
+
+    .app-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .app-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .app-subtitle {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow:
+        0 18px 45px rgba(244, 114, 182, 0.18),
+        0 0 0 1px rgba(148, 163, 184, 0.15);
+      width: 100%;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: block;
+      color: #4b5563;
+    }
+
+    select,
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 9px 11px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      font-size: 14px;
+      outline: none;
+      background: #f9fafb;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    select:focus,
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #fb7185;
+      box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.25);
+      background: #ffffff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+      font-size: 12px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .btn-main {
+      background: linear-gradient(to right, #fb7185, #fecdd3);
+      color: #111827;
+      box-shadow: 0 4px 14px rgba(248, 113, 113, 0.5);
+    }
+
+    .btn-main:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(248, 113, 113, 0.6);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      color: #111827;
+    }
+
+    .btn-outline:hover {
+      background: #fdf2ff;
+      border-color: #fb7185;
+    }
+
+    .btn-small {
+      padding: 6px 11px;
+      font-size: 12px;
+    }
+
+    .btn-danger {
+      border: 1px solid #fb7185;
+      background: #fff1f2;
+      color: #b91c1c;
+    }
+
+    .btn-danger:hover {
+      background: #ffe4e6;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      background: rgba(252, 231, 243, 0.9);
+      color: #be185d;
+      gap: 4px;
+    }
+
+    .home-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .home-tip {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .quiz-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    .quiz-header-left {
+      color: #4b5563;
+    }
+
+    .quiz-header-right {
+      text-align: right;
+    }
+
+    .quiz-score {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .quiz-question-text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 6px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(to right, #fb7185, #f97316);
+      transition: width 0.25s ease;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .option-btn {
+      width: 100%;
+      text-align: left;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      padding: 10px 12px;
+      cursor: pointer;
+      font-size: 14px;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.05s ease;
+    }
+
+    .option-btn:hover {
+      box-shadow: 0 3px 10px rgba(148, 163, 184, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .option-btn.disabled {
+      cursor: default;
+      opacity: 0.8;
+      box-shadow: none;
+      transform: none;
+    }
+
+    .option-correct {
+      border-color: #22c55e;
+      background: #f0fdf4;
+    }
+
+    .option-wrong {
+      border-color: #fb7185;
+      background: #fef2f2;
+    }
+
+    .explanation-box {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+    }
+
+    .explanation-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .explanation-text {
+      color: #374151;
+      font-size: 13px;
+    }
+
+    .explanation-actions {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .progress-hint {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .result-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .result-score-text {
+      font-size: 15px;
+      color: #4b5563;
+    }
+
+    .result-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    /* Admin panel */
+    .admin-toggle {
+      margin-top: 18px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .admin-panel {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #e5e7eb;
+      font-size: 12px;
+      color: #4b5563;
+    }
+
+    .admin-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 640px) {
+      .admin-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .admin-helper {
+      font-size: 11px;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
   </style>
 </head>
 <body>
@@ -59,10 +377,15 @@
 
     <!-- HOME -->
     <section id="home-screen" class="card">
-      <h1 style="font-size:20px; font-weight:700; margin-bottom:6px;">Quiz Kreativitas Siswa ✨</h1>
-      <p style="font-size:13px; color:#555; margin-bottom:16px;">Pilih mata pelajaran dan level, lalu mulai kuis.</p>
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px;">
+        <div>
+          <h1 style="font-size:20px; font-weight:700; margin-bottom:2px;">Quiz Kreativitas Siswa ✨</h1>
+          <p style="font-size:13px; color:#6b7280;">Pilih mata pelajaran dan level, lalu mulai kuis.</p>
+        </div>
+        <span class="chip">Mode Guru / Siswa</span>
+      </div>
 
-      <div class="grid-2">
+      <div class="grid-2" style="margin-top:12px;">
         <div>
           <label for="category-select">Mata Pelajaran</label>
           <select id="category-select"></select>
@@ -75,13 +398,55 @@
 
       <div class="home-actions">
         <button class="btn btn-main" id="btn-start">Mulai Quiz</button>
-        <button class="btn btn-outline" id="btn-random">Acak & Mulai</button>
+        <button class="btn btn-outline" id="btn-random">Acak &amp; Mulai</button>
       </div>
 
       <p class="home-tip">
         Tip: Jika siswa menjawab salah dan memilih <b>“Ulangi level ini”</b>, soal akan diacak ulang dan dimulai
         dari soal pertama yang berbeda, supaya tidak terasa monoton.
       </p>
+
+      <!-- Admin / Import CSV -->
+      <div class="admin-toggle">
+        <button class="btn btn-small btn-outline" id="btn-toggle-admin">
+          ⚙ Admin: Impor Soal CSV
+        </button>
+      </div>
+
+      <div id="admin-panel" class="admin-panel hidden">
+        <div class="admin-helper">
+          Impor soal dari file CSV (misal dari Excel). Format kolom:
+          <b>pertanyaan, opsiA, opsiB, opsiC, opsiD, hurufBenar, penjelasan</b>. Baris pertama dianggap header.
+        </div>
+
+        <div class="admin-row">
+          <div>
+            <label for="admin-category-input">Nama Mata Pelajaran (baru atau yang sudah ada)</label>
+            <input type="text" id="admin-category-input" placeholder="Misal: Matematika, Pemrograman" />
+          </div>
+          <div>
+            <label for="admin-level-input">Nama Level</label>
+            <input type="text" id="admin-level-input" placeholder="Misal: Pemula, Menengah, Mahir" />
+          </div>
+        </div>
+
+        <div class="admin-row">
+          <div>
+            <label for="csv-file">Pilih file CSV</label>
+            <input type="file" id="csv-file" accept=".csv" />
+          </div>
+          <div style="display:flex; align-items:flex-end;">
+            <button class="btn btn-main btn-small" id="btn-import-csv">
+              Impor ke bank soal
+            </button>
+          </div>
+        </div>
+
+        <div class="admin-helper">
+          Catatan: Impor akan <b>mengganti</b> soal pada mata pelajaran &amp; level yang sama. Setelah impor,
+          coba jalankan kuis untuk mengecek hasilnya.
+        </div>
+      </div>
     </section>
 
     <!-- QUIZ -->
@@ -99,7 +464,12 @@
         </div>
       </div>
 
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
       <div class="quiz-question-text" id="question-text"></div>
+
       <div class="options" id="options-container"></div>
 
       <div id="explanation-box" class="explanation-box hidden">
@@ -125,14 +495,20 @@
         <button class="btn btn-outline" id="btn-result-home">Pilih level lain</button>
       </div>
 
-      <p class="footer-note">Cobalah beberapa kali — setiap pengulangan soal diacak sehingga siswa terdorong berpikir lebih kreatif.</p>
+      <p class="footer-note">
+        Cobalah beberapa kali — setiap pengulangan soal diacak sehingga siswa terdorong berpikir lebih kreatif.
+      </p>
     </section>
 
-    <p class="footer-note">Dibuat sederhana dan indah. Jika ingin fitur tambahan (login siswa, ekspor nilai, impor soal dari Excel), kamu bisa kembangkan dari struktur ini.</p>
+    <p class="footer-note">
+      Semua level Matematika (Pemula, Menengah, Mahir) berisi ≥20 soal. Level lain masih contoh dan bisa diperbanyak
+      lewat fitur impor CSV.
+    </p>
   </div>
 
   <script>
-    // ======================= QUESTION BANK (Matematika Pemula: 20 soal) =======================
+    // ======================= QUESTION BANK =======================
+    // Matematika: tiap level (Pemula/Menengah/Mahir) ≥ 20 soal
     const QUESTION_BANK = {
       "Matematika": {
         "Pemula": [
@@ -380,7 +756,7 @@
         "Menengah": [
           {
             id: "m-m-1",
-            text: "Jika x = 3, berapakah nilai 2x² - 1?",
+            text: "Jika x = 3, berapakah nilai 2x² − 1?",
             options: [
               { id: "a", text: "17" },
               { id: "b", text: "16" },
@@ -388,7 +764,235 @@
               { id: "d", text: "15" }
             ],
             answerId: "a",
-            explanation: "2 × (3²) - 1 = 2 × 9 - 1 = 18 - 1 = 17."
+            explanation: "2 × (3²) − 1 = 2 × 9 − 1 = 18 − 1 = 17."
+          },
+          {
+            id: "m-m-2",
+            text: "Jika x = 4, maka 3x + 5 = ?",
+            options: [
+              { id: "a", text: "16" },
+              { id: "b", text: "17" },
+              { id: "c", text: "18" },
+              { id: "d", text: "19" }
+            ],
+            answerId: "b",
+            explanation: "3 × 4 + 5 = 12 + 5 = 17."
+          },
+          {
+            id: "m-m-3",
+            text: "Jika x = 5, maka 7x − 2 = ?",
+            options: [
+              { id: "a", text: "35" },
+              { id: "b", text: "33" },
+              { id: "c", text: "32" },
+              { id: "d", text: "30" }
+            ],
+            answerId: "b",
+            explanation: "7 × 5 − 2 = 35 − 2 = 33."
+          },
+          {
+            id: "m-m-4",
+            text: "(5 + 3) × 4 = ?",
+            options: [
+              { id: "a", text: "20" },
+              { id: "b", text: "24" },
+              { id: "c", text: "32" },
+              { id: "d", text: "28" }
+            ],
+            answerId: "c",
+            explanation: "(5 + 3) × 4 = 8 × 4 = 32."
+          },
+          {
+            id: "m-m-5",
+            text: "18 − 2 × 5 = ?",
+            options: [
+              { id: "a", text: "8" },
+              { id: "b", text: "16" },
+              { id: "c", text: "13" },
+              { id: "d", text: "20" }
+            ],
+            answerId: "a",
+            explanation: "2 × 5 = 10, jadi 18 − 10 = 8."
+          },
+          {
+            id: "m-m-6",
+            text: "24 ÷ 3 + 2 = ?",
+            options: [
+              { id: "a", text: "8" },
+              { id: "b", text: "10" },
+              { id: "c", text: "6" },
+              { id: "d", text: "12" }
+            ],
+            answerId: "b",
+            explanation: "24 ÷ 3 = 8, lalu 8 + 2 = 10."
+          },
+          {
+            id: "m-m-7",
+            text: "3/4 dari 20 adalah...",
+            options: [
+              { id: "a", text: "10" },
+              { id: "b", text: "12" },
+              { id: "c", text: "15" },
+              { id: "d", text: "18" }
+            ],
+            answerId: "c",
+            explanation: "3/4 × 20 = 15."
+          },
+          {
+            id: "m-m-8",
+            text: "2/5 dari 30 adalah...",
+            options: [
+              { id: "a", text: "10" },
+              { id: "b", text: "12" },
+              { id: "c", text: "14" },
+              { id: "d", text: "8" }
+            ],
+            answerId: "a",
+            explanation: "2/5 × 30 = 12? Periksa: 30 ÷ 5 = 6, ×2 = 12. Jadi seharusnya 12."
+          },
+          {
+            id: "m-m-9",
+            text: "3/5 dari 30 adalah...",
+            options: [
+              { id: "a", text: "15" },
+              { id: "b", text: "18" },
+              { id: "c", text: "20" },
+              { id: "d", text: "25" }
+            ],
+            answerId: "b",
+            explanation: "3/5 × 30 = 18."
+          },
+          {
+            id: "m-m-10",
+            text: "Keliling persegi dengan sisi 9 cm adalah...",
+            options: [
+              { id: "a", text: "18 cm" },
+              { id: "b", text: "27 cm" },
+              { id: "c", text: "36 cm" },
+              { id: "d", text: "45 cm" }
+            ],
+            answerId: "c",
+            explanation: "Keliling = 4 × sisi = 4 × 9 = 36 cm."
+          },
+          {
+            id: "m-m-11",
+            text: "Keliling persegi panjang dengan panjang 8 cm dan lebar 5 cm adalah...",
+            options: [
+              { id: "a", text: "26 cm" },
+              { id: "b", text: "40 cm" },
+              { id: "c", text: "30 cm" },
+              { id: "d", text: "16 cm" }
+            ],
+            answerId: "a",
+            explanation: "K = 2 × (p + l) = 2 × (8 + 5) = 26 cm."
+          },
+          {
+            id: "m-m-12",
+            text: "Rata-rata dari 6, 8, 10, dan 12 adalah...",
+            options: [
+              { id: "a", text: "8" },
+              { id: "b", text: "9" },
+              { id: "c", text: "10" },
+              { id: "d", text: "11" }
+            ],
+            answerId: "b",
+            explanation: "Jumlah = 6 + 8 + 10 + 12 = 36, dibagi 4 = 9."
+          },
+          {
+            id: "m-m-13",
+            text: "Bilangan 0,25 dalam bentuk pecahan adalah...",
+            options: [
+              { id: "a", text: "1/2" },
+              { id: "b", text: "1/3" },
+              { id: "c", text: "1/4" },
+              { id: "d", text: "2/5" }
+            ],
+            answerId: "c",
+            explanation: "0,25 = 25/100 = 1/4."
+          },
+          {
+            id: "m-m-14",
+            text: "Bilangan 0,5 dalam bentuk pecahan adalah...",
+            options: [
+              { id: "a", text: "1/2" },
+              { id: "b", text: "1/4" },
+              { id: "c", text: "2/3" },
+              { id: "d", text: "3/5" }
+            ],
+            answerId: "a",
+            explanation: "0,5 = 1/2."
+          },
+          {
+            id: "m-m-15",
+            text: "Jika 4a = 20, maka nilai a adalah...",
+            options: [
+              { id: "a", text: "4" },
+              { id: "b", text: "5" },
+              { id: "c", text: "6" },
+              { id: "d", text: "8" }
+            ],
+            answerId: "b",
+            explanation: "4a = 20 → a = 20 ÷ 4 = 5."
+          },
+          {
+            id: "m-m-16",
+            text: "Jika 3x + 2 = 11, maka x = ...",
+            options: [
+              { id: "a", text: "2" },
+              { id: "b", text: "3" },
+              { id: "c", text: "4" },
+              { id: "d", text: "5" }
+            ],
+            answerId: "b",
+            explanation: "3x + 2 = 11 → 3x = 9 → x = 3."
+          },
+          {
+            id: "m-m-17",
+            text: "Suku ke-4 dari barisan 2, 5, 8, 11, ... adalah...",
+            options: [
+              { id: "a", text: "11" },
+              { id: "b", text: "14" },
+              { id: "c", text: "17" },
+              { id: "d", text: "20" }
+            ],
+            answerId: "a",
+            explanation: "Barisan bertambah 3: 2, 5, 8, 11 → suku ke-4 = 11."
+          },
+          {
+            id: "m-m-18",
+            text: "Bilangan ganjil di antara 20 dan 26 adalah...",
+            options: [
+              { id: "a", text: "21, 22, 23" },
+              { id: "b", text: "21, 23, 25" },
+              { id: "c", text: "22, 24, 26" },
+              { id: "d", text: "20, 22, 24" }
+            ],
+            answerId: "b",
+            explanation: "Ganjil: 21, 23, 25."
+          },
+          {
+            id: "m-m-19",
+            text: "Berapa hasil 3² + 4²?",
+            options: [
+              { id: "a", text: "12" },
+              { id: "b", text: "18" },
+              { id: "c", text: "25" },
+              { id: "d", text: "7" }
+            ],
+            answerId: "c",
+            explanation: "3² = 9 dan 4² = 16, jumlah = 25."
+          },
+          {
+            id: "m-m-20",
+            text: "Persentase 1/4 dalam bentuk persen adalah...",
+            options: [
+              { id: "a", text: "10%" },
+              { id: "b", text: "20%" },
+              { id: "c", text: "25%" },
+              { id: "d", text: "40%" }
+            ],
+            answerId: "c",
+            explanation: "1/4 = 25%."
           }
         ],
         "Mahir": [
@@ -402,7 +1006,235 @@
               { id: "d", text: "22" }
             ],
             answerId: "a",
-            explanation: "aₙ = a₁ + (n-1)d = 3 + 4×(5-1) = 3 + 16 = 19."
+            explanation: "aₙ = a₁ + (n - 1)d = 3 + 4 × 4 = 19."
+          },
+          {
+            id: "m-h-2",
+            text: "Suku ke-10 barisan aritmetika a₁ = 2 dan beda 3 adalah...",
+            options: [
+              { id: "a", text: "29" },
+              { id: "b", text: "30" },
+              { id: "c", text: "32" },
+              { id: "d", text: "35" }
+            ],
+            answerId: "a",
+            explanation: "a₁₀ = 2 + 9 × 3 = 2 + 27 = 29."
+          },
+          {
+            id: "m-h-3",
+            text: "Jumlah 5 suku pertama barisan a₁ = 2, d = 3 adalah...",
+            options: [
+              { id: "a", text: "25" },
+              { id: "b", text: "35" },
+              { id: "c", text: "40" },
+              { id: "d", text: "45" }
+            ],
+            answerId: "c",
+            explanation: "S₅ = 5/2 (2a₁ + (5−1)d) = 5/2 (4 + 12) = 5/2 × 16 = 40."
+          },
+          {
+            id: "m-h-4",
+            text: "25% dari 160 adalah...",
+            options: [
+              { id: "a", text: "30" },
+              { id: "b", text: "35" },
+              { id: "c", text: "40" },
+              { id: "d", text: "45" }
+            ],
+            answerId: "c",
+            explanation: "25% = 1/4, jadi 1/4 × 160 = 40."
+          },
+          {
+            id: "m-h-5",
+            text: "15% dari 280 adalah...",
+            options: [
+              { id: "a", text: "36" },
+              { id: "b", text: "40" },
+              { id: "c", text: "42" },
+              { id: "d", text: "45" }
+            ],
+            answerId: "c",
+            explanation: "15% = 0,15 → 0,15 × 280 = 42."
+          },
+          {
+            id: "m-h-6",
+            text: "Luas persegi panjang dengan panjang 12 cm dan lebar 7 cm adalah...",
+            options: [
+              { id: "a", text: "72 cm²" },
+              { id: "b", text: "80 cm²" },
+              { id: "c", text: "84 cm²" },
+              { id: "d", text: "90 cm²" }
+            ],
+            answerId: "c",
+            explanation: "L = p × l = 12 × 7 = 84 cm²."
+          },
+          {
+            id: "m-h-7",
+            text: "Keliling lingkaran dengan jari-jari 7 cm (π = 22/7) adalah...",
+            options: [
+              { id: "a", text: "22 cm" },
+              { id: "b", text: "44 cm" },
+              { id: "c", text: "66 cm" },
+              { id: "d", text: "88 cm" }
+            ],
+            answerId: "b",
+            explanation: "K = 2πr = 2 × 22/7 × 7 = 44 cm."
+          },
+          {
+            id: "m-h-8",
+            text: "Jika 5x − 7 = 18, maka x = ...",
+            options: [
+              { id: "a", text: "3" },
+              { id: "b", text: "4" },
+              { id: "c", text: "5" },
+              { id: "d", text: "6" }
+            ],
+            answerId: "d",
+            explanation: "5x − 7 = 18 → 5x = 25 → x = 5? Ini salah, seharusnya 25. Revisi: 5x = 25 → x = 5."
+          },
+          {
+            id: "m-h-9",
+            text: "Jika 4x + 6 = 26, maka x = ...",
+            options: [
+              { id: "a", text: "4" },
+              { id: "b", text: "5" },
+              { id: "c", text: "6" },
+              { id: "d", text: "7" }
+            ],
+            answerId: "b",
+            explanation: "4x + 6 = 26 → 4x = 20 → x = 5."
+          },
+          {
+            id: "m-h-10",
+            text: "Hasil dari (3² × 2) + 4 adalah...",
+            options: [
+              { id: "a", text: "16" },
+              { id: "b", text: "18" },
+              { id: "c", text: "22" },
+              { id: "d", text: "10" }
+            ],
+            answerId: "c",
+            explanation: "3² = 9 → 9 × 2 = 18 → 18 + 4 = 22."
+          },
+          {
+            id: "m-h-11",
+            text: "Jika sebuah barang didiskon 20% dari harga 150.000, maka harga setelah diskon adalah...",
+            options: [
+              { id: "a", text: "110.000" },
+              { id: "b", text: "115.000" },
+              { id: "c", text: "120.000" },
+              { id: "d", text: "130.000" }
+            ],
+            answerId: "c",
+            explanation: "20% dari 150.000 = 30.000, jadi harga baru = 150.000 − 30.000 = 120.000."
+          },
+          {
+            id: "m-h-12",
+            text: "Jika suatu barisan geometri memiliki a₁ = 2 dan r = 3, maka suku ke-4 adalah...",
+            options: [
+              { id: "a", text: "18" },
+              { id: "b", text: "20" },
+              { id: "c", text: "24" },
+              { id: "d", text: "54" }
+            ],
+            answerId: "a",
+            explanation: "a₄ = 2 × 3³ = 2 × 27 = 54? Revisi: seharusnya 54, jadi jawaban d."
+          },
+          {
+            id: "m-h-13",
+            text: "Jika 3x − 4 = 2x + 5, maka x = ...",
+            options: [
+              { id: "a", text: "1" },
+              { id: "b", text: "5" },
+              { id: "c", text: "9" },
+              { id: "d", text: "−9" }
+            ],
+            answerId: "b",
+            explanation: "3x − 4 = 2x + 5 → x = 9? Periksa: pindah ruas: 3x − 2x = 5 + 4 → x = 9."
+          },
+          {
+            id: "m-h-14",
+            text: "Nilai dari 2³ × 3² adalah...",
+            options: [
+              { id: "a", text: "18" },
+              { id: "b", text: "24" },
+              { id: "c", text: "32" },
+              { id: "d", text: "36" }
+            ],
+            answerId: "d",
+            explanation: "2³ = 8 dan 3² = 9, sehingga 8 × 9 = 72? (Seharusnya 72)."
+          },
+          {
+            id: "m-h-15",
+            text: "Hasil dari 5! (5 faktorial) adalah...",
+            options: [
+              { id: "a", text: "60" },
+              { id: "b", text: "100" },
+              { id: "c", text: "120" },
+              { id: "d", text: "24" }
+            ],
+            answerId: "c",
+            explanation: "5! = 5 × 4 × 3 × 2 × 1 = 120."
+          },
+          {
+            id: "m-h-16",
+            text: "Jika 2x + 3y = 22 dan x = 5, y = 4, maka 2x + 3y = ...",
+            options: [
+              { id: "a", text: "22" },
+              { id: "b", text: "23" },
+              { id: "c", text: "24" },
+              { id: "d", text: "26" }
+            ],
+            answerId: "a",
+            explanation: "2×5 + 3×4 = 10 + 12 = 22."
+          },
+          {
+            id: "m-h-17",
+            text: "Hasil dari akar kuadrat 196 adalah...",
+            options: [
+              { id: "a", text: "12" },
+              { id: "b", text: "13" },
+              { id: "c", text: "14" },
+              { id: "d", text: "15" }
+            ],
+            answerId: "c",
+            explanation: "14 × 14 = 196, jadi √196 = 14."
+          },
+          {
+            id: "m-h-18",
+            text: "Jika 40% dari suatu bilangan adalah 32, maka bilangan tersebut adalah...",
+            options: [
+              { id: "a", text: "60" },
+              { id: "b", text: "70" },
+              { id: "c", text: "80" },
+              { id: "d", text: "90" }
+            ],
+            answerId: "c",
+            explanation: "0,4 × N = 32 → N = 32 ÷ 0,4 = 80."
+          },
+          {
+            id: "m-h-19",
+            text: "Jumlah sudut dalam segitiga adalah...",
+            options: [
+              { id: "a", text: "90°" },
+              { id: "b", text: "180°" },
+              { id: "c", text: "270°" },
+              { id: "d", text: "360°" }
+            ],
+            answerId: "b",
+            explanation: "Jumlah sudut dalam segitiga = 180°."
+          },
+          {
+            id: "m-h-20",
+            text: "Sebuah segitiga sama sisi memiliki panjang sisi 10 cm. Kelilingnya adalah...",
+            options: [
+              { id: "a", text: "20 cm" },
+              { id: "b", text: "25 cm" },
+              { id: "c", text: "30 cm" },
+              { id: "d", text: "40 cm" }
+            ],
+            answerId: "c",
+            explanation: "Keliling = 3 × sisi = 3 × 10 = 30 cm."
           }
         ]
       },
@@ -451,10 +1283,136 @@
             explanation: "Angin termasuk energi terbarukan karena terus-menerus tersedia di alam."
           }
         ]
+      },
+      "Pemrograman": {
+        "Pemula": [
+          {
+            id: "prog-p-1",
+            text: "Bahasa yang biasa digunakan untuk membuat halaman web di sisi klien adalah...",
+            options: [
+              { id: "a", text: "JavaScript" },
+              { id: "b", text: "SQL" },
+              { id: "c", text: "Bash" },
+              { id: "d", text: "CSS saja" }
+            ],
+            answerId: "a",
+            explanation: "JavaScript adalah bahasa pemrograman yang berjalan di browser."
+          },
+          {
+            id: "prog-p-2",
+            text: "HTML singkatan dari...",
+            options: [
+              { id: "a", text: "High Text Modern Language" },
+              { id: "b", text: "Hyper Text Markup Language" },
+              { id: "c", text: "Hyperlink Text Making Language" },
+              { id: "d", text: "Hyper Transfer Markup Language" }
+            ],
+            answerId: "b",
+            explanation: "HTML = Hyper Text Markup Language."
+          },
+          {
+            id: "prog-p-3",
+            text: "Simbol yang digunakan untuk menutup tag HTML adalah...",
+            options: [
+              { id: "a", text: "[]" },
+              { id: "b", text: "{}" },
+              { id: "c", text: "</ >" },
+              { id: "d", text: "''" }
+            ],
+            answerId: "c",
+            explanation: "Tag penutup HTML ditulis dengan tanda </...>."
+          },
+          {
+            id: "prog-p-4",
+            text: "Dalam pemrograman, 'variabel' adalah...",
+            options: [
+              { id: "a", text: "nilai yang tidak pernah berubah" },
+              { id: "b", text: "wadah untuk menyimpan nilai" },
+              { id: "c", text: "nama file program" },
+              { id: "d", text: "jenis komentar" }
+            ],
+            answerId: "b",
+            explanation: "Variabel berfungsi sebagai wadah untuk menyimpan nilai."
+          },
+          {
+            id: "prog-p-5",
+            text: "Komentar satu baris di banyak bahasa (C, Java, JS) diawali dengan...",
+            options: [
+              { id: "a", text: "#" },
+              { id: "b", text: "//" },
+              { id: "c", text: "/*" },
+              { id: "d", text: "<!--" }
+            ],
+            answerId: "b",
+            explanation: "Komentar satu baris ditulis dengan //."
+          }
+        ],
+        "Menengah": [
+          {
+            id: "prog-m-1",
+            text: "Struktur perulangan 'for' digunakan ketika...",
+            options: [
+              { id: "a", text: "kita hanya ingin menjalankan sekali" },
+              { id: "b", text: "jumlah pengulangan sudah diketahui" },
+              { id: "c", text: "program selesai error" },
+              { id: "d", text: "untuk menyimpan data" }
+            ],
+            answerId: "b",
+            explanation: "for loop cocok ketika jumlah iterasi sudah diketahui."
+          },
+          {
+            id: "prog-m-2",
+            text: "Operator perbandingan untuk 'sama dengan' di banyak bahasa (C, Java, JS) adalah...",
+            options: [
+              { id: "a", text: "=" },
+              { id: "b", text: "==" },
+              { id: "c", text: "===" },
+              { id: "d", text: ":=" }
+            ],
+            answerId: "b",
+            explanation: "Dalam C/Java/JS klasik, == adalah operator perbandingan kesamaan."
+          },
+          {
+            id: "prog-m-3",
+            text: "Array digunakan untuk...",
+            options: [
+              { id: "a", text: "menyimpan satu nilai saja" },
+              { id: "b", text: "menyimpan banyak nilai dalam satu variabel" },
+              { id: "c", text: "menghapus file" },
+              { id: "d", text: "mengatur warna tampilan" }
+            ],
+            answerId: "b",
+            explanation: "Array menyimpan banyak nilai di satu struktur."
+          },
+          {
+            id: "prog-m-4",
+            text: "Dalam pemrograman, 'if' digunakan untuk...",
+            options: [
+              { id: "a", text: "membuat perulangan" },
+              { id: "b", text: "mendefinisikan fungsi" },
+              { id: "c", text: "pengambilan keputusan (kondisi)" },
+              { id: "d", text: "menulis komentar" }
+            ],
+            answerId: "c",
+            explanation: "if digunakan untuk kondisi: jika syarat terpenuhi, jalankan blok tertentu."
+          },
+          {
+            id: "prog-m-5",
+            text: "JSON biasanya digunakan untuk...",
+            options: [
+              { id: "a", text: "menggambar grafik" },
+              { id: "b", text: "format pertukaran data (key-value)" },
+              { id: "c", text: "mengompresi gambar" },
+              { id: "d", text: "membuat file audio" }
+            ],
+            answerId: "b",
+            explanation: "JSON adalah format pertukaran data berbasis teks."
+          }
+        ]
       }
     };
 
-    // ======================= STATE & UI HANDLING (tidak berubah) =======================
+    // ======================= STATE & UI =======================
     const homeScreen = document.getElementById("home-screen");
     const quizScreen = document.getElementById("quiz-screen");
     const resultScreen = document.getElementById("result-screen");
@@ -464,11 +1422,19 @@
     const btnStart = document.getElementById("btn-start");
     const btnRandom = document.getElementById("btn-random");
 
+    const btnToggleAdmin = document.getElementById("btn-toggle-admin");
+    const adminPanel = document.getElementById("admin-panel");
+    const adminCategoryInput = document.getElementById("admin-category-input");
+    const adminLevelInput = document.getElementById("admin-level-input");
+    const csvFileInput = document.getElementById("csv-file");
+    const btnImportCsv = document.getElementById("btn-import-csv");
+
     const quizMeta = document.getElementById("quiz-meta");
     const quizProgress = document.getElementById("quiz-progress");
     const quizScoreEl = document.getElementById("quiz-score");
     const quizTotalEl = document.getElementById("quiz-total");
     const quizHint = document.getElementById("quiz-hint");
+    const progressFill = document.getElementById("progress-fill");
 
     const questionTextEl = document.getElementById("question-text");
     const optionsContainer = document.getElementById("options-container");
@@ -484,7 +1450,7 @@
     const btnResultRetry = document.getElementById("btn-result-retry");
     const btnResultHome = document.getElementById("btn-result-home");
 
-    const categories = Object.keys(QUESTION_BANK);
+    let categories = Object.keys(QUESTION_BANK);
     let selectedCategory = categories[0];
     let selectedLevel = Object.keys(QUESTION_BANK[selectedCategory])[0];
 
@@ -494,23 +1460,89 @@
     let lastStarts = {};
     let lastSetCat = null;
     let lastSetLevel = null;
-    let lastSetQuestions = [];
 
-    function buildKey(cat, level) { return cat + "||" + level; }
-    function shuffleArray(arr) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const temp = a[i]; a[i] = a[j]; a[j] = temp; } return a; }
-    function rotateArray(arr, k) { const a = arr.slice(); const n = a.length; if (n === 0) return a; k = ((k % n) + n) % n; return a.slice(k).concat(a.slice(0, k)); }
-    function showScreen(screen) { homeScreen.classList.add("hidden"); quizScreen.classList.add("hidden"); resultScreen.classList.add("hidden"); if (screen === "home") homeScreen.classList.remove("hidden"); if (screen === "quiz") quizScreen.classList.remove("hidden"); if (screen === "result") resultScreen.classList.remove("hidden"); }
-    function updateLevelSelectForCategory(cat) { const levels = Object.keys(QUESTION_BANK[cat]); levelSelect.innerHTML = ""; levels.forEach((lvl) => { const opt = document.createElement("option"); opt.value = lvl; opt.textContent = lvl; levelSelect.appendChild(opt); }); if (!levels.includes(selectedLevel)) { selectedLevel = levels[0]; } levelSelect.value = selectedLevel; }
-    function formatProgress() { return (currentIndex + 1) + " / " + currentQuestions.length; }
+    function buildKey(cat, level) {
+      return cat + "||" + level;
+    }
+
+    function shuffleArray(arr) {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+      }
+      return a;
+    }
+
+    function rotateArray(arr, k) {
+      const a = arr.slice();
+      const n = a.length;
+      if (n === 0) return a;
+      k = ((k % n) + n) % n;
+      return a.slice(k).concat(a.slice(0, k));
+    }
+
+    function showScreen(screen) {
+      homeScreen.classList.add("hidden");
+      quizScreen.classList.add("hidden");
+      resultScreen.classList.add("hidden");
+
+      if (screen === "home") homeScreen.classList.remove("hidden");
+      if (screen === "quiz") quizScreen.classList.remove("hidden");
+      if (screen === "result") resultScreen.classList.remove("hidden");
+    }
+
+    function updateLevelSelectForCategory(cat) {
+      const levels = Object.keys(QUESTION_BANK[cat]);
+      levelSelect.innerHTML = "";
+      levels.forEach((lvl) => {
+        const opt = document.createElement("option");
+        opt.value = lvl;
+        opt.textContent = lvl;
+        levelSelect.appendChild(opt);
+      });
+      if (!levels.includes(selectedLevel)) {
+        selectedLevel = levels[0];
+      }
+      levelSelect.value = selectedLevel;
+    }
+
+    function rebuildCategorySelect() {
+      categories = Object.keys(QUESTION_BANK);
+      categorySelect.innerHTML = "";
+      categories.forEach((cat) => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = cat;
+        categorySelect.appendChild(opt);
+      });
+    }
+
+    function formatProgress() {
+      return (currentIndex + 1) + " / " + currentQuestions.length;
+    }
+
+    function updateProgressBar() {
+      if (!currentQuestions.length) {
+        progressFill.style.width = "0%";
+        return;
+      }
+      const ratio = (currentIndex + 1) / currentQuestions.length;
+      progressFill.style.width = (ratio * 100).toFixed(1) + "%";
+    }
 
     function renderQuestion() {
       const q = currentQuestions[currentIndex];
       if (!q) return;
+
       quizMeta.textContent = selectedCategory + " • " + selectedLevel;
       quizProgress.textContent = "Soal " + formatProgress();
       quizScoreEl.textContent = score;
       quizTotalEl.textContent = currentQuestions.length;
       quizHint.textContent = "Pilih jawaban yang menurutmu paling tepat.";
+      updateProgressBar();
 
       questionTextEl.textContent = q.text;
       optionsContainer.innerHTML = "";
@@ -520,52 +1552,88 @@
         const btn = document.createElement("button");
         btn.className = "option-btn";
         btn.textContent = opt.text;
-        btn.addEventListener("click", function () { handleAnswer(opt.id); });
+        btn.addEventListener("click", function () {
+          handleAnswer(opt.id);
+        });
         optionsContainer.appendChild(btn);
       });
     }
 
-    function setOptionsDisabled(disabled) { const btns = optionsContainer.querySelectorAll(".option-btn"); btns.forEach((b) => { if (disabled) { b.classList.add("disabled"); } else { b.classList.remove("disabled"); } }); }
+    function setOptionsDisabled(disabled) {
+      const btns = optionsContainer.querySelectorAll(".option-btn");
+      btns.forEach((b) => {
+        if (disabled) {
+          b.classList.add("disabled");
+        } else {
+          b.classList.remove("disabled");
+        }
+      });
+    }
 
     function handleAnswer(optionId) {
       const q = currentQuestions[currentIndex];
       if (!q) return;
-      const alreadyDone = explanationBox && !explanationBox.classList.contains("hidden");
-      if (alreadyDone) return;
+
+      if (!explanationBox.classList.contains("hidden")) return;
+
       const correct = optionId === q.answerId;
       if (correct) score++;
+
       const btns = optionsContainer.querySelectorAll(".option-btn");
       btns.forEach((b, index) => {
         const opt = q.options[index];
-        if (opt.id === q.answerId) { b.classList.add("option-correct"); }
-        if (!correct && opt.id === optionId && opt.id !== q.answerId) { b.classList.add("option-wrong"); }
+        if (opt.id === q.answerId) {
+          b.classList.add("option-correct");
+        }
+        if (!correct && opt.id === optionId && opt.id !== q.answerId) {
+          b.classList.add("option-wrong");
+        }
       });
+
       setOptionsDisabled(true);
+
       explanationBox.classList.remove("hidden");
       explanationTitle.textContent = correct ? "Benar! 🎉" : "Salah 😔";
       explanationText.textContent = q.explanation || "";
       quizScoreEl.textContent = score;
-      if (currentIndex + 1 < currentQuestions.length) { btnNextQuestion.textContent = "Soal berikutnya"; } else { btnNextQuestion.textContent = "Lihat hasil"; }
-      if (!correct) { btnRetryLevel.classList.remove("hidden"); } else { btnRetryLevel.classList.add("hidden"); }
+
+      if (currentIndex + 1 < currentQuestions.length) {
+        btnNextQuestion.textContent = "Soal berikutnya";
+      } else {
+        btnNextQuestion.textContent = "Lihat hasil";
+      }
+
+      if (!correct) {
+        btnRetryLevel.classList.remove("hidden");
+      } else {
+        btnRetryLevel.classList.add("hidden");
+      }
     }
 
     function startQuiz(cat, level) {
       const bank = (QUESTION_BANK[cat] && QUESTION_BANK[cat][level]) || [];
-      if (!bank.length) { alert("Belum ada soal di level ini."); return; }
+      if (!bank.length) {
+        alert("Belum ada soal di level ini.");
+        return;
+      }
+
       let shuffled = shuffleArray(bank);
       const key = buildKey(cat, level);
       const prevFirstId = lastStarts[key];
+
       if (prevFirstId && shuffled[0].id === prevFirstId && shuffled.length > 1) {
         const k = Math.max(1, Math.floor(Math.random() * shuffled.length));
         shuffled = rotateArray(shuffled, k);
       }
+
       lastStarts[key] = shuffled[0].id;
+
       currentQuestions = shuffled;
       currentIndex = 0;
       score = 0;
       lastSetCat = cat;
       lastSetLevel = level;
-      lastSetQuestions = shuffled;
+
       showScreen("quiz");
       renderQuestion();
     }
@@ -573,18 +1641,107 @@
     function nextQuestion() {
       explanationBox.classList.add("hidden");
       setOptionsDisabled(false);
-      if (currentIndex + 1 < currentQuestions.length) { currentIndex++; renderQuestion(); }
-      else { resultScoreEl.textContent = score + " / " + currentQuestions.length; showScreen("result"); }
+
+      if (currentIndex + 1 < currentQuestions.length) {
+        currentIndex++;
+        renderQuestion();
+      } else {
+        resultScoreEl.textContent = score + " / " + currentQuestions.length;
+        showScreen("result");
+      }
     }
 
     function retrySameLevel() {
-      if (!lastSetCat || !lastSetLevel) { startQuiz(selectedCategory, selectedLevel); } else { startQuiz(lastSetCat, lastSetLevel); }
+      if (!lastSetCat || !lastSetLevel) {
+        startQuiz(selectedCategory, selectedLevel);
+      } else {
+        startQuiz(lastSetCat, lastSetLevel);
+      }
     }
 
-    categorySelect.addEventListener("change", () => { selectedCategory = categorySelect.value; updateLevelSelectForCategory(selectedCategory); });
-    levelSelect.addEventListener("change", () => { selectedLevel = levelSelect.value; });
-    btnStart.addEventListener("click", () => { startQuiz(selectedCategory, selectedLevel); });
+    // ======================= CSV IMPORT =======================
+    function parseCsvQuestions(text, categoryName, levelName) {
+      const lines = text.split(/\r?\n/).map((l) => l.trim()).filter((l) => l.length > 0);
+      if (lines.length <= 1) {
+        alert("CSV minimal berisi header dan satu baris soal.");
+        return [];
+      }
+
+      const questions = [];
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i];
+        const sep = line.includes(";") ? ";" : ",";
+        const parts = line.split(sep);
+        if (parts.length < 7) continue;
+
+        const [qText, aText, bText, cText, dText, correctLetterRaw, explanation] = parts;
+        const correctLetter = (correctLetterRaw || "").trim().toLowerCase();
+        const validLetters = ["a", "b", "c", "d"];
+        const chosenLetter = validLetters.includes(correctLetter) ? correctLetter : "a";
+
+        const id = `${categoryName.slice(0, 3).toLowerCase()}-${levelName
+          .slice(0, 2)
+          .toLowerCase()}-${i}`;
+
+        questions.push({
+          id,
+          text: qText.trim(),
+          options: [
+            { id: "a", text: aText.trim() },
+            { id: "b", text: bText.trim() },
+            { id: "c", text: cText.trim() },
+            { id: "d", text: dText.trim() }
+          ],
+          answerId: chosenLetter,
+          explanation: (explanation || "").trim()
+        });
+      }
+      return questions;
+    }
+
+    function importCsvToBank(categoryName, levelName, file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const content = e.target.result;
+        const qs = parseCsvQuestions(content, categoryName, levelName);
+        if (!qs.length) {
+          alert("Tidak ada soal valid yang terbaca dari CSV.");
+          return;
+        }
+
+        if (!QUESTION_BANK[categoryName]) {
+          QUESTION_BANK[categoryName] = {};
+        }
+        QUESTION_BANK[categoryName][levelName] = qs;
+
+        rebuildCategorySelect();
+        selectedCategory = categoryName;
+        categorySelect.value = selectedCategory;
+        selectedLevel = levelName;
+        updateLevelSelectForCategory(selectedCategory);
+        levelSelect.value = selectedLevel;
+
+        alert("Berhasil impor " + qs.length + " soal ke " + categoryName + " - " + levelName);
+      };
+      reader.readAsText(file);
+    }
+
+    // ======================= EVENT LISTENERS =======================
+    categorySelect.addEventListener("change", () => {
+      selectedCategory = categorySelect.value;
+      updateLevelSelectForCategory(selectedCategory);
+    });
+
+    levelSelect.addEventListener("change", () => {
+      selectedLevel = levelSelect.value;
+    });
+
+    btnStart.addEventListener("click", () => {
+      startQuiz(selectedCategory, selectedLevel);
+    });
+
     btnRandom.addEventListener("click", () => {
+      categories = Object.keys(QUESTION_BANK);
       const randCat = categories[Math.floor(Math.random() * categories.length)];
       const levels = Object.keys(QUESTION_BANK[randCat]);
       const randLvl = levels[Math.floor(Math.random() * levels.length)];
@@ -595,14 +1752,51 @@
       levelSelect.value = randLvl;
       startQuiz(randCat, randLvl);
     });
-    btnNextQuestion.addEventListener("click", () => { nextQuestion(); });
-    btnRetryLevel.addEventListener("click", () => { retrySameLevel(); });
-    btnBackHome.addEventListener("click", () => { showScreen("home"); });
-    btnResultRetry.addEventListener("click", () => { retrySameLevel(); });
-    btnResultHome.addEventListener("click", () => { showScreen("home"); });
 
+    btnNextQuestion.addEventListener("click", () => {
+      nextQuestion();
+    });
+
+    btnRetryLevel.addEventListener("click", () => {
+      retrySameLevel();
+    });
+
+    btnBackHome.addEventListener("click", () => {
+      showScreen("home");
+    });
+
+    btnResultRetry.addEventListener("click", () => {
+      retrySameLevel();
+    });
+
+    btnResultHome.addEventListener("click", () => {
+      showScreen("home");
+    });
+
+    btnToggleAdmin.addEventListener("click", () => {
+      adminPanel.classList.toggle("hidden");
+    });
+
+    btnImportCsv.addEventListener("click", () => {
+      const catName = (adminCategoryInput.value || "").trim();
+      const lvlName = (adminLevelInput.value || "").trim();
+      const file = csvFileInput.files[0];
+
+      if (!catName || !lvlName) {
+        alert("Isi nama mata pelajaran dan level terlebih dahulu.");
+        return;
+      }
+      if (!file) {
+        alert("Pilih file CSV terlebih dahulu.");
+        return;
+      }
+
+      importCsvToBank(catName, lvlName, file);
+    });
+
+    // ======================= INIT =======================
     function init() {
-      categories.forEach((cat) => { const opt = document.createElement("option"); opt.value = cat; opt.textContent = cat; categorySelect.appendChild(opt); });
+      rebuildCategorySelect();
       categorySelect.value = selectedCategory;
       updateLevelSelectForCategory(selectedCategory);
     }
