@@ -9,84 +9,195 @@
 <body>
   <div class="app">
 
-    <div class="header">
-      <div class="title">Quiz Kreativitas Siswa ✨</div>
-      <div class="subtitle">Mode Siswa — Jawab soal interaktif dan kreatif</div>
-    </div>
+    <!-- TOP HEADER / NAV -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo-circle">Q</div>
+        <div class="topbar-text">
+          <div class="topbar-title">Quiz Kreativitas</div>
+          <div class="topbar-subtitle">Latih logika & imajinasi siswa</div>
+        </div>
+      </div>
 
-    <!-- HALAMAN MENU / HOME -->
-    <section id="home" class="card">
-      <h2>Mulai Quiz</h2>
-      <p class="small">Pilih mata pelajaran dan level, lalu mulai petualangan soal 🎯</p>
+      <!-- NAV DESKTOP -->
+      <nav class="topbar-right desktop-nav">
+        <a href="#home" class="topbar-link active-link">Home</a>
+        <a href="#home" class="topbar-link">Quiz</a>
+        <a href="guru.html" class="topbar-link">Mode Guru</a>
+        <a href="#help" class="topbar-link">Bantuan</a>
+      </nav>
 
-      <div class="grid grid-2" style="margin-top:10px;">
+      <!-- HAMBURGER (MOBILE) -->
+      <button class="hamburger" id="hamburger" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#home" data-nav="home">🏠 Home</a>
+      <a href="#home" data-nav="quiz">🧩 Quiz</a>
+      <a href="guru.html" data-nav="guru">👩‍🏫 Mode Guru</a>
+      <div class="mobile-help-group">
+        <div class="mobile-help-title">📞 Hubungi Bantuan</div>
+        <!-- GANTI NOMOR & EMAIL SESUAI KAMU -->
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+          WhatsApp: 0812-3456-7890
+        </a>
+        <a href="mailto:guru@example.com">
+          Email: guru@example.com
+        </a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- HERO / INTRO -->
+      <section class="hero">
         <div>
-          <label>Mata Pelajaran</label>
-          <select id="category"></select>
+          <h1>Belajar dengan cara yang <span class="highlight">seru</span> dan <span class="highlight">interaktif</span> ✨</h1>
+          <p>
+            Pilih mata pelajaran, tentukan level, lalu mulai petualangan menjawab soal.
+            Setiap kali mengulang level, urutan soal akan diacak sehingga pengalaman belajar tetap segar.
+          </p>
         </div>
-        <div>
-          <label>Level</label>
-          <select id="level">
-            <option>Mudah</option>
-            <option>Lumayan Susah</option>
-            <option>Susah Banget</option>
-          </select>
+        <div class="hero-badges">
+          <div class="chip">🔥 4 Mata Pelajaran</div>
+          <div class="chip">🎯 3 Level: Mudah, Lumayan Susah, Susah Banget</div>
+          <div class="chip">🎲 Soal diacak saat mengulang</div>
         </div>
+      </section>
+
+      <!-- LAYOUT UTAMA -->
+      <div class="content-layout">
+        <!-- HOME / MENU UTAMA -->
+        <section id="home" class="card">
+          <h2>Pilih Mode Quiz</h2>
+          <p class="small">
+            Atur mata pelajaran dan level, lalu tekan <strong>Mulai Quiz</strong>.<br />
+            Kamu juga bisa mengacak kategori secara acak dengan tombol <strong>Acak Soal</strong>.
+          </p>
+
+          <div class="grid grid-2" style="margin-top:12px;">
+            <div>
+              <label>Mata Pelajaran</label>
+              <select id="category"></select>
+            </div>
+            <div>
+              <label>Level</label>
+              <select id="level">
+                <option>Mudah</option>
+                <option>Lumayan Susah</option>
+                <option>Susah Banget</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="home-row">
+            <button id="btn-start" class="btn btn-main">Mulai Quiz</button>
+            <button id="btn-random" class="btn btn-outline">Acak Soal</button>
+            <a href="guru.html" class="btn btn-outline">Mode Guru</a>
+          </div>
+
+          <div class="home-tips">
+            💡 Tips: kalau siswa salah dan mengulang level yang sama, urutan soal akan diacak dan dimulai dari nomor yang berbeda.
+          </div>
+        </section>
+
+        <!-- PANEL SAMPING / INFO -->
+        <aside class="card side-panel" id="help">
+          <h3>Ringkasan Fitur</h3>
+          <ul class="feature-list">
+            <li>📚 Multi mata pelajaran: Matematika, IPA, Pemrograman, Filsafat.</li>
+            <li>⚖️ 3 level kesulitan: Mudah, Lumayan Susah, Susah Banget.</li>
+            <li>🎲 Soal diacak saat mengulang level yang sama.</li>
+            <li>👩‍🏫 Mode Guru terpisah untuk mengelola dan ekspor bank soal.</li>
+            <li>☁️ Soal disimpan di <code>questions.json</code> (bisa di-host di GitHub/Vercel).</li>
+          </ul>
+          <div class="side-note">
+            Bantuan teknis / update soal?<br />
+            <strong>Hubungi Guru:</strong><br />
+            <!-- Sama seperti di mobile, ganti sesuai kebutuhan -->
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="small-link">
+              WhatsApp: 0812-3456-7890
+            </a><br />
+            <a href="mailto:guru@example.com" class="small-link">
+              Email: guru@example.com
+            </a>
+          </div>
+        </aside>
       </div>
 
-      <div class="home-row">
-        <button id="btn-start" class="btn btn-main">Mulai Quiz</button>
-        <button id="btn-random" class="btn btn-outline">Acak Soal</button>
-        <a href="guru.html" class="btn btn-outline">Mode Guru</a>
-      </div>
-    </section>
-
-    <!-- HALAMAN QUIZ -->
-    <section id="quiz" class="card hidden">
-      <div class="flex-between">
-        <div class="quiz-meta" id="meta"></div>
-        <div class="quiz-score">
-          Skor: <span id="score">0</span>
+      <!-- HALAMAN QUIZ -->
+      <section id="quiz" class="card hidden">
+        <div class="flex-between">
+          <div class="quiz-meta" id="meta"></div>
+          <div class="quiz-score">
+            Skor: <span id="score">0</span>
+          </div>
         </div>
-      </div>
 
-      <div class="quiz-meta" id="progressText"></div>
+        <div class="quiz-meta" id="progressText"></div>
 
-      <div class="progress-track">
-        <div id="pfill" class="progress-fill"></div>
-      </div>
-
-      <div id="questionText" class="question"></div>
-      <div id="options" class="options"></div>
-
-      <div id="explain" class="explain hidden">
-        <strong id="explainTitle"></strong>
-        <div id="explainText"></div>
-        <div class="home-row">
-          <button id="btn-next" class="btn btn-main">Soal Berikutnya</button>
-          <button id="btn-retry" class="btn btn-danger hidden">Ulangi Level</button>
-          <button id="btn-home" class="btn btn-outline">Kembali ke Menu</button>
+        <div class="progress-track">
+          <div id="pfill" class="progress-fill"></div>
         </div>
-      </div>
-    </section>
 
-    <!-- HALAMAN HASIL -->
-    <section id="result" class="card hidden" style="text-align:center;">
-      <h2>Hasil Quiz</h2>
-      <p id="resultText" style="margin-top:8px;"></p>
+        <div id="questionText" class="question"></div>
+        <div id="options" class="options"></div>
 
-      <div class="home-row" style="justify-content:center; margin-top:14px;">
-        <button id="btn-res-retry" class="btn btn-main">Ulangi Level</button>
-        <button id="btn-res-home" class="btn btn-outline">Kembali ke Menu</button>
-      </div>
-    </section>
+        <div id="explain" class="explain hidden">
+          <strong id="explainTitle"></strong>
+          <div id="explainText"></div>
+          <div class="home-row">
+            <button id="btn-next" class="btn btn-main">Soal Berikutnya</button>
+            <button id="btn-retry" class="btn btn-danger hidden">Ulangi Level</button>
+            <button id="btn-home" class="btn btn-outline">Kembali ke Menu</button>
+          </div>
+        </div>
+      </section>
 
-    <div class="footer">
+      <!-- HALAMAN HASIL -->
+      <section id="result" class="card hidden result-card">
+        <h2>Hasil Quiz</h2>
+        <p id="resultText" class="result-text"></p>
+
+        <div class="home-row" style="justify-content:center; margin-top:14px;">
+          <button id="btn-res-retry" class="btn btn-main">Ulangi Level</button>
+          <button id="btn-res-home" class="btn btn-outline">Kembali ke Menu</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       © 2025 — Quiz Interaktif untuk Siswa • Soal diambil dari <span class="code">questions.json</span>
-    </div>
-
+    </footer>
   </div>
 
+  <!-- Script kecil untuk hamburger -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.getElementById("hamburger");
+      const menu = document.getElementById("mobileMenu");
+      if (!burger || !menu) return;
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("is-open");
+        menu.classList.toggle("open");
+      });
+
+      // Tutup menu setelah pilih item
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          burger.classList.remove("is-open");
+          menu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+
+  <!-- Logic quiz -->
   <script src="app.js" defer></script>
 </body>
 </html>
