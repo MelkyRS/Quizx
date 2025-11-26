@@ -11,10 +11,7 @@
   <header class="site-header">
     <div class="header-left">
       <div class="logo-bubble">Q</div>
-      <div>
-        <div><b>Quiz Kreativitas</b></div>
-        <div style="font-size:11px;color:#6b7280;">Mode Siswa – Mengerjakan soal</div>
-      </div>
+      <div><b>Quiz Mode</b></div>
     </div>
     <nav class="header-nav">
       <a href="index.html">Home</a>
@@ -25,7 +22,7 @@
   </header>
 
   <main class="site-main">
-    <!-- Pilih mapel & level -->
+    <!-- PILIH MAPEL & LEVEL -->
     <section class="card" id="home">
       <h2>Pilih Kuis</h2>
       <p class="small" style="margin-top:4px;">
@@ -47,7 +44,7 @@
         </div>
       </div>
 
-      <div class="btn-row">
+      <div class="btn-row" style="margin-top:10px;">
         <button id="btn-start" class="btn primary">Mulai Quiz</button>
         <button id="btn-random" class="btn ghost">Acak Mapel</button>
       </div>
@@ -57,17 +54,22 @@
       </p>
     </section>
 
-    <!-- Area kuis aktif -->
+    <!-- QUIZ BERJALAN -->
     <section id="quiz" class="card hidden">
-      <div id="meta" class="small" style="margin-bottom:4px;"></div>
-      <div id="questionText" class="question"></div>
+      <div class="quiz-header">
+        <div class="quiz-meta" id="meta"></div>
+        <div class="quiz-score">
+          Skor: <span id="score">0</span>
+        </div>
+      </div>
+
+      <div class="quiz-meta" id="progressText"></div>
 
       <div class="progress">
         <div id="pfill" class="progress-fill"></div>
       </div>
 
-      <div id="progressText" class="small" style="margin-bottom:6px;"></div>
-
+      <div id="questionText" class="question"></div>
       <div id="options" class="options"></div>
 
       <div id="explain" class="explain hidden">
@@ -82,7 +84,7 @@
       </div>
     </section>
 
-    <!-- Hasil -->
+    <!-- HASIL -->
     <section id="result" class="card hidden">
       <h2>Hasil Quiz</h2>
       <p id="resultText" class="small" style="margin-top:6px;"></p>
