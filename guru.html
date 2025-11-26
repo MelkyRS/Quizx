@@ -1,119 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Guru Panel — Quiz Kreativitas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mode Guru – Quiz Kreativitas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app">
-    <div class="header">
-      <div class="title">Panel Guru — Quiz Kreativitas</div>
-      <div class="subtitle">Edit & ekspor bank soal (questions.json)</div>
-    </div>
-
-    <section class="card">
-      <!-- LOGIN -->
-      <div id="loginBox">
-        <label for="username">Username</label>
-        <input id="username" type="text" placeholder="guru" />
-        <label for="password" style="margin-top:8px;">Password</label>
-        <input id="password" type="password" placeholder="admin" />
-        <div style="margin-top:12px; display:flex; gap:8px;">
-          <button id="btnDoLogin" class="btn btn-main">Login</button>
-          <a href="index.html" class="btn btn-outline" style="text-decoration:none; display:inline-flex; align-items:center;">Kembali ke Siswa</a>
-        </div>
-        <div class="small" style="margin-top:8px;">
-          Contoh kredensial:
-          <span class="code">Username: guru</span> &nbsp;
-          <span class="code">Password: admin</span>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <div class="logo-bubble">Q</div>
+        <div>
+          <div class="site-title">Quiz Kreativitas</div>
+          <div class="site-subtitle">Mode Guru</div>
         </div>
       </div>
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="guru.html" class="active">Guru</a>
+        <a href="bantuan.html">Hubungi Bantuan</a>
+      </nav>
+    </header>
 
-      <!-- ADMIN AREA -->
-      <div id="adminArea" style="display:none; margin-top:12px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
-          <div style="font-weight:800;">Bank Soal (questions.json)</div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <button id="btnExportJson" class="btn btn-outline">
-              Unduh questions.json
-            </button>
-            <a href="index.html" class="btn btn-outline">Lihat Halaman Siswa</a>
-            <button id="btnLogout" class="btn btn-danger">Logout</button>
-          </div>
-        </div>
+    <main class="site-main">
+      <!-- DI SINI LANJUTKAN KONTEN guru.html KAMU YANG SUDAH ADA -->
+      <!-- login guru, form impor CSV, dll -->
+    </main>
 
-        <div class="small" style="margin-top:8px;">
-          Setelah selesai mengedit, klik <b>Unduh questions.json</b>, lalu upload/commit file itu ke GitHub atau project Vercel Anda.
-        </div>
-
-        <div class="admin-row" style="margin-top:12px;">
-          <div>
-            <label for="admin-cat">Mata Pelajaran</label>
-            <input id="admin-cat" type="text" placeholder="Misal: Bahasa Indonesia" />
-          </div>
-          <div>
-            <label for="admin-level">Level</label>
-            <select id="admin-level">
-              <option>Mudah</option>
-              <option>Lumayan Susah</option>
-              <option>Susah Banget</option>
-            </select>
-          </div>
-        </div>
-
-        <div style="margin-top:10px;">
-          <label for="q-text">Pertanyaan</label>
-          <textarea id="q-text" placeholder="Tulis pertanyaan..."></textarea>
-        </div>
-
-        <div class="grid-2" style="margin-top:10px;">
-          <div>
-            <label>Opsi A</label><input id="q-a" type="text" />
-          </div>
-          <div>
-            <label>Opsi B</label><input id="q-b" type="text" />
-          </div>
-          <div>
-            <label>Opsi C</label><input id="q-c" type="text" />
-          </div>
-          <div>
-            <label>Opsi D</label><input id="q-d" type="text" />
-          </div>
-        </div>
-
-        <div style="display:flex; gap:8px; align-items:center; margin-top:10px; flex-wrap:wrap;">
-          <div style="display:flex; align-items:center; gap:6px;">
-            <label style="min-width:120px;">Jawaban benar</label>
-            <input id="q-ans" style="width:80px;" placeholder="a/b/c/d" />
-          </div>
-          <div style="flex:1; min-width:200px;">
-            <label>Penjelasan (opsional)</label>
-            <input id="q-exp" placeholder="Penjelasan singkat" />
-          </div>
-        </div>
-
-        <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
-          <button id="btnAddQuestion" class="btn btn-main">Tambah Soal</button>
-          <input id="csv-file" type="file" accept=".csv" />
-          <button id="btnImportCsv" class="btn btn-outline">Impor CSV (ganti level)</button>
-        </div>
-
-        <div class="small" style="margin-top:10px;">
-          Format CSV:
-          <span class="code">
-            pertanyaan, opsiA, opsiB, opsiC, opsiD, hurufBenar(a/b/c/d), penjelasan
-          </span>
-          . Baris pertama dianggap header. Setelah impor/tambah soal, klik
-          <b>Unduh questions.json</b> lalu upload ke GitHub/Vercel.
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      Data soal <b>tidak disimpan di browser</b>. Semua perubahan hanya tersimpan di file
-      <span class="code">questions.json</span> yang Anda unduh & upload ke repo.
+    <footer class="site-footer">
+      © 2025 — Quiz Kreativitas • Mode Guru
     </footer>
   </div>
 
