@@ -1,87 +1,5794 @@
 {
-  "Bahasa Indonesia": {
+  "Matematika": {
     "Mudah": [
       {
-        "id": "bi-md-1",
-        "text": "Sinonim dari kata 'besar' adalah...",
+        "id": "mt-md-1",
+        "text": "Berapa hasil 1 + 1?",
         "options": [
-          {"id":"a","text":"kecil"},
-          {"id":"b","text":"agung"},
-          {"id":"c","text":"sempit"},
-          {"id":"d","text":"tipis"}
-        ],
-        "answerId": "b",
-        "explanation": "Besar dapat bersinonim dengan agung."
-      },
-      {
-        "id": "bi-md-2",
-        "text": "Antonim dari kata 'panas' adalah...",
-        "options": [
-          {"id":"a","text":"hangat"},
-          {"id":"b","text":"dingin"},
-          {"id":"c","text":"air"},
-          {"id":"d","text":"asap"}
-        ],
-        "answerId": "b",
-        "explanation": "Lawan kata panas adalah dingin."
-      },
-      {
-        "id": "bi-md-3",
-        "text": "Kalimat tanya diakhiri tanda...",
-        "options": [
-          {"id":"a","text":"."},
-          {"id":"b","text":","},
-          {"id":"c","text":"!"},
-          {"id":"d","text":"?"}
-        ],
-        "answerId": "d",
-        "explanation": "Kalimat tanya diakhiri tanda tanya."
-      },
-      {
-        "id": "bi-md-4",
-        "text": "Cerita rekaan disebut teks...",
-        "options": [
-          {"id":"a","text":"narasi"},
-          {"id":"b","text":"laporan"},
-          {"id":"c","text":"eksposisi"},
-          {"id":"d","text":"prosedur"}
+          {
+            "id": "a",
+            "text": "2"
+          },
+          {
+            "id": "b",
+            "text": "3"
+          },
+          {
+            "id": "c",
+            "text": "1"
+          },
+          {
+            "id": "d",
+            "text": "4"
+          }
         ],
         "answerId": "a",
-        "explanation": "Teks cerita disebut narasi."
+        "explanation": "1 + 1 = 2."
       },
-
-      { "id":"bi-md-5","text":"Sinonim 'indah'...","options":[{"id":"a","text":"buruk"},{"id":"b","text":"elok"},{"id":"c","text":"jelek"},{"id":"d","text":"kusam"}],"answerId":"b","explanation":"Indah = elok." },
-      { "id":"bi-md-6","text":"Lawan kata 'tinggi'...","options":[{"id":"a","text":"panjang"},{"id":"b","text":"rendah"},{"id":"c","text":"besar"},{"id":"d","text":"atas"}],"answerId":"b","explanation":"Tinggi lawannya rendah." },
-      { "id":"bi-md-7","text":"'Dia' termasuk kata...","options":[{"id":"a","text":"kata kerja"},{"id":"b","text":"kata sifat"},{"id":"c","text":"kata ganti"},{"id":"d","text":"kata depan"}],"answerId":"c","explanation":"'Dia' adalah kata ganti." },
-      { "id":"bi-md-8","text":"Teks petunjuk disebut...","options":[{"id":"a","text":"deskripsi"},{"id":"b","text":"prosedur"},{"id":"c","text":"narasi"},{"id":"d","text":"dongeng"}],"answerId":"b","explanation":"Petunjuk = teks prosedur." },
-      { "id":"bi-md-9","text":"'Meja' termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"benda"},{"id":"c","text":"sifat"},{"id":"d","text":"keterangan"}],"answerId":"b","explanation":"Meja adalah kata benda." },
-      { "id":"bi-md-10","text":"Kalimat perintah biasanya diakhiri...","options":[{"id":"a","text":"."},{"id":"b","text":"?"},{"id":"c","text":"!"},{"id":"d","text":","}],"answerId":"c","explanation":"Kalimat perintah biasanya '!'" },
-
-      { "id":"bi-md-11","text":"Cerita pendek disebut...","options":[{"id":"a","text":"novel"},{"id":"b","text":"cerpen"},{"id":"c","text":"puisi"},{"id":"d","text":"drama"}],"answerId":"b","explanation":"Cerita pendek = cerpen." },
-      { "id":"bi-md-12","text":"Lawan kata 'rajin'...","options":[{"id":"a","text":"malas"},{"id":"b","text":"cepat"},{"id":"c","text":"aktif"},{"id":"d","text":"sibuk"}],"answerId":"a","explanation":"Rajin lawannya malas." },
-      { "id":"bi-md-13","text":"Teks berita berisi...","options":[{"id":"a","text":"khayalan"},{"id":"b","text":"peristiwa"},{"id":"c","text":"pujian"},{"id":"d","text":"nasihat"}],"answerId":"b","explanation":"Berita berisi peristiwa." },
-      { "id":"bi-md-14","text":"'Cantik' termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"sifat"},{"id":"c","text":"benda"},{"id":"d","text":"ganti"}],"answerId":"b","explanation":"Cantik = kata sifat." },
-      { "id":"bi-md-15","text":"Pantun terdiri dari... baris","options":[{"id":"a","text":"2"},{"id":"b","text":"4"},{"id":"c","text":"6"},{"id":"d","text":"8"}],"answerId":"b","explanation":"Pantun terdiri dari 4 baris." },
-
-      { "id":"bi-md-16","text":"Lawan kata 'ramah'...","options":[{"id":"a","text":"baik"},{"id":"b","text":"galak"},{"id":"c","text":"senang"},{"id":"d","text":"halus"}],"answerId":"b","explanation":"Ramah lawannya galak." },
-      { "id":"bi-md-17","text":"Buku termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"benda"},{"id":"c","text":"sifat"},{"id":"d","text":"bilangan"}],"answerId":"b","explanation":"Buku adalah kata benda." },
-      { "id":"bi-md-18","text":"Puisi lama disebut...","options":[{"id":"a","text":"novel"},{"id":"b","text":"cerpen"},{"id":"c","text":"pantun"},{"id":"d","text":"drama"}],"answerId":"c","explanation":"Pantun adalah puisi lama." },
-      { "id":"bi-md-19","text":"Huruf kapital dipakai di awal...","options":[{"id":"a","text":"kata sambung"},{"id":"b","text":"kalimat"},{"id":"c","text":"kata depan"},{"id":"d","text":"imbuhan"}],"answerId":"b","explanation":"Huruf kapital untuk awal kalimat." },
-      { "id":"bi-md-20","text":"Lawannya 'datang'...","options":[{"id":"a","text":"pergi"},{"id":"b","text":"masuk"},{"id":"c","text":"pulang"},{"id":"d","text":"jalan"}],"answerId":"a","explanation":"Datang lawannya pergi." }
+      {
+        "id": "mt-md-2",
+        "text": "Berapa hasil 2 + 3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5"
+          },
+          {
+            "id": "b",
+            "text": "6"
+          },
+          {
+            "id": "c",
+            "text": "4"
+          },
+          {
+            "id": "d",
+            "text": "7"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "2 + 3 = 5."
+      },
+      {
+        "id": "mt-md-3",
+        "text": "Berapa hasil 4 + 5?",
+        "options": [
+          {
+            "id": "a",
+            "text": "9"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "8"
+          },
+          {
+            "id": "d",
+            "text": "11"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "4 + 5 = 9."
+      },
+      {
+        "id": "mt-md-4",
+        "text": "Berapa hasil 6 + 2?",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "9"
+          },
+          {
+            "id": "c",
+            "text": "7"
+          },
+          {
+            "id": "d",
+            "text": "10"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "6 + 2 = 8."
+      },
+      {
+        "id": "mt-md-5",
+        "text": "Berapa hasil 7 + 3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "11"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "7 + 3 = 10."
+      },
+      {
+        "id": "mt-md-6",
+        "text": "Berapa hasil 8 + 2?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "11"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "8 + 2 = 10."
+      },
+      {
+        "id": "mt-md-7",
+        "text": "Berapa hasil 9 + 1?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "11"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "9 + 1 = 10."
+      },
+      {
+        "id": "mt-md-8",
+        "text": "Berapa hasil 5 + 5?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "11"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "5 + 5 = 10."
+      },
+      {
+        "id": "mt-md-9",
+        "text": "Berapa hasil 10 + 3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "13"
+          },
+          {
+            "id": "b",
+            "text": "14"
+          },
+          {
+            "id": "c",
+            "text": "12"
+          },
+          {
+            "id": "d",
+            "text": "15"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "10 + 3 = 13."
+      },
+      {
+        "id": "mt-md-10",
+        "text": "Berapa hasil 4 + 6?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "11"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "4 + 6 = 10."
+      },
+      {
+        "id": "mt-md-11",
+        "text": "Berapa hasil 7 + 7?",
+        "options": [
+          {
+            "id": "a",
+            "text": "14"
+          },
+          {
+            "id": "b",
+            "text": "15"
+          },
+          {
+            "id": "c",
+            "text": "13"
+          },
+          {
+            "id": "d",
+            "text": "16"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "7 + 7 = 14."
+      },
+      {
+        "id": "mt-md-12",
+        "text": "Berapa hasil 8 + 4?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12"
+          },
+          {
+            "id": "b",
+            "text": "13"
+          },
+          {
+            "id": "c",
+            "text": "11"
+          },
+          {
+            "id": "d",
+            "text": "14"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "8 + 4 = 12."
+      },
+      {
+        "id": "mt-md-13",
+        "text": "Berapa hasil 9 + 5?",
+        "options": [
+          {
+            "id": "a",
+            "text": "14"
+          },
+          {
+            "id": "b",
+            "text": "15"
+          },
+          {
+            "id": "c",
+            "text": "13"
+          },
+          {
+            "id": "d",
+            "text": "16"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "9 + 5 = 14."
+      },
+      {
+        "id": "mt-md-14",
+        "text": "Berapa hasil 3 + 9?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12"
+          },
+          {
+            "id": "b",
+            "text": "13"
+          },
+          {
+            "id": "c",
+            "text": "11"
+          },
+          {
+            "id": "d",
+            "text": "14"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "3 + 9 = 12."
+      },
+      {
+        "id": "mt-md-15",
+        "text": "Berapa hasil 6 + 6?",
+        "options": [
+          {
+            "id": "a",
+            "text": "12"
+          },
+          {
+            "id": "b",
+            "text": "13"
+          },
+          {
+            "id": "c",
+            "text": "11"
+          },
+          {
+            "id": "d",
+            "text": "14"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "6 + 6 = 12."
+      },
+      {
+        "id": "mt-md-16",
+        "text": "Berapa hasil 12 + 3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "15"
+          },
+          {
+            "id": "b",
+            "text": "16"
+          },
+          {
+            "id": "c",
+            "text": "14"
+          },
+          {
+            "id": "d",
+            "text": "17"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "12 + 3 = 15."
+      },
+      {
+        "id": "mt-md-17",
+        "text": "Berapa hasil 15 + 5?",
+        "options": [
+          {
+            "id": "a",
+            "text": "20"
+          },
+          {
+            "id": "b",
+            "text": "21"
+          },
+          {
+            "id": "c",
+            "text": "19"
+          },
+          {
+            "id": "d",
+            "text": "22"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "15 + 5 = 20."
+      },
+      {
+        "id": "mt-md-18",
+        "text": "Berapa hasil 14 + 2?",
+        "options": [
+          {
+            "id": "a",
+            "text": "16"
+          },
+          {
+            "id": "b",
+            "text": "17"
+          },
+          {
+            "id": "c",
+            "text": "15"
+          },
+          {
+            "id": "d",
+            "text": "18"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "14 + 2 = 16."
+      },
+      {
+        "id": "mt-md-19",
+        "text": "Berapa hasil 11 + 4?",
+        "options": [
+          {
+            "id": "a",
+            "text": "15"
+          },
+          {
+            "id": "b",
+            "text": "16"
+          },
+          {
+            "id": "c",
+            "text": "14"
+          },
+          {
+            "id": "d",
+            "text": "17"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "11 + 4 = 15."
+      },
+      {
+        "id": "mt-md-20",
+        "text": "Berapa hasil 13 + 3?",
+        "options": [
+          {
+            "id": "a",
+            "text": "16"
+          },
+          {
+            "id": "b",
+            "text": "17"
+          },
+          {
+            "id": "c",
+            "text": "15"
+          },
+          {
+            "id": "d",
+            "text": "18"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "13 + 3 = 16."
+      }
     ],
-
     "Lumayan Susah": [
-      { "id":"bi-ls-1","text":"Ide pokok adalah...","options":[{"id":"a","text":"kalimat utama"},{"id":"b","text":"penjelasan"},{"id":"c","text":"contoh"},{"id":"d","text":"ilustrasi"}],"answerId":"a","explanation":"Ide pokok ada di kalimat utama." },
-
-      { "id":"bi-ls-2","text":"Majas perbandingan langsung disebut...","options":[{"id":"a","text":"simile"},{"id":"b","text":"metafora"},{"id":"c","text":"personifikasi"},{"id":"d","text":"hiperbola"}],"answerId":"b","explanation":"Perbandingan langsung adalah metafora." }
-
-      // ➜ LANJUTKAN hingga bi-ls-20
+      {
+        "id": "mt-ls-1",
+        "text": "Hitung nilai 2 × 3 + 4 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "12"
+          },
+          {
+            "id": "c",
+            "text": "8"
+          },
+          {
+            "id": "d",
+            "text": "14"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 2 × 3 + 4 = 10."
+      },
+      {
+        "id": "mt-ls-2",
+        "text": "Hitung nilai 5 × 4 − 3 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "17"
+          },
+          {
+            "id": "b",
+            "text": "19"
+          },
+          {
+            "id": "c",
+            "text": "15"
+          },
+          {
+            "id": "d",
+            "text": "21"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 5 × 4 − 3 = 17."
+      },
+      {
+        "id": "mt-ls-3",
+        "text": "Hitung nilai 18 ÷ 3 + 2 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "6"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 18 ÷ 3 + 2 = 8."
+      },
+      {
+        "id": "mt-ls-4",
+        "text": "Hitung nilai (3 + 5) × 2 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "16"
+          },
+          {
+            "id": "b",
+            "text": "18"
+          },
+          {
+            "id": "c",
+            "text": "14"
+          },
+          {
+            "id": "d",
+            "text": "20"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai (3 + 5) × 2 = 16."
+      },
+      {
+        "id": "mt-ls-5",
+        "text": "Hitung nilai 20 − 4 × 3 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "6"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 20 − 4 × 3 = 8."
+      },
+      {
+        "id": "mt-ls-6",
+        "text": "Hitung nilai 6 × 6 ÷ 3 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "12"
+          },
+          {
+            "id": "b",
+            "text": "14"
+          },
+          {
+            "id": "c",
+            "text": "10"
+          },
+          {
+            "id": "d",
+            "text": "16"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 6 × 6 ÷ 3 = 12."
+      },
+      {
+        "id": "mt-ls-7",
+        "text": "Hitung nilai (10 − 4) × 2 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "12"
+          },
+          {
+            "id": "b",
+            "text": "14"
+          },
+          {
+            "id": "c",
+            "text": "10"
+          },
+          {
+            "id": "d",
+            "text": "16"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai (10 − 4) × 2 = 12."
+      },
+      {
+        "id": "mt-ls-8",
+        "text": "Hitung nilai 30 ÷ 5 + 1 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "7"
+          },
+          {
+            "id": "b",
+            "text": "9"
+          },
+          {
+            "id": "c",
+            "text": "5"
+          },
+          {
+            "id": "d",
+            "text": "11"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 30 ÷ 5 + 1 = 7."
+      },
+      {
+        "id": "mt-ls-9",
+        "text": "Hitung nilai 4² + 2 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "18"
+          },
+          {
+            "id": "b",
+            "text": "20"
+          },
+          {
+            "id": "c",
+            "text": "16"
+          },
+          {
+            "id": "d",
+            "text": "22"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 4² + 2 = 18."
+      },
+      {
+        "id": "mt-ls-10",
+        "text": "Hitung nilai 3² + 5 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "14"
+          },
+          {
+            "id": "b",
+            "text": "16"
+          },
+          {
+            "id": "c",
+            "text": "12"
+          },
+          {
+            "id": "d",
+            "text": "18"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 3² + 5 = 14."
+      },
+      {
+        "id": "mt-ls-11",
+        "text": "Hitung nilai 7 × 3 − 5 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "16"
+          },
+          {
+            "id": "b",
+            "text": "18"
+          },
+          {
+            "id": "c",
+            "text": "14"
+          },
+          {
+            "id": "d",
+            "text": "20"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 7 × 3 − 5 = 16."
+      },
+      {
+        "id": "mt-ls-12",
+        "text": "Hitung nilai 2 × (6 + 1) (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "14"
+          },
+          {
+            "id": "b",
+            "text": "16"
+          },
+          {
+            "id": "c",
+            "text": "12"
+          },
+          {
+            "id": "d",
+            "text": "18"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 2 × (6 + 1) = 14."
+      },
+      {
+        "id": "mt-ls-13",
+        "text": "Hitung nilai 40 ÷ 4 − 2 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "6"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 40 ÷ 4 − 2 = 8."
+      },
+      {
+        "id": "mt-ls-14",
+        "text": "Hitung nilai 5² − 3 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "22"
+          },
+          {
+            "id": "b",
+            "text": "24"
+          },
+          {
+            "id": "c",
+            "text": "20"
+          },
+          {
+            "id": "d",
+            "text": "26"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 5² − 3 = 22."
+      },
+      {
+        "id": "mt-ls-15",
+        "text": "Hitung nilai 16 ÷ 4 + 7 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "11"
+          },
+          {
+            "id": "b",
+            "text": "13"
+          },
+          {
+            "id": "c",
+            "text": "9"
+          },
+          {
+            "id": "d",
+            "text": "15"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 16 ÷ 4 + 7 = 11."
+      },
+      {
+        "id": "mt-ls-16",
+        "text": "Hitung nilai (8 + 2) × 3 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "30"
+          },
+          {
+            "id": "b",
+            "text": "32"
+          },
+          {
+            "id": "c",
+            "text": "28"
+          },
+          {
+            "id": "d",
+            "text": "34"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai (8 + 2) × 3 = 30."
+      },
+      {
+        "id": "mt-ls-17",
+        "text": "Hitung nilai 9 × 2 + 1 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "19"
+          },
+          {
+            "id": "b",
+            "text": "21"
+          },
+          {
+            "id": "c",
+            "text": "17"
+          },
+          {
+            "id": "d",
+            "text": "23"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 9 × 2 + 1 = 19."
+      },
+      {
+        "id": "mt-ls-18",
+        "text": "Hitung nilai 50 − 6 × 5 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "20"
+          },
+          {
+            "id": "b",
+            "text": "22"
+          },
+          {
+            "id": "c",
+            "text": "18"
+          },
+          {
+            "id": "d",
+            "text": "24"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 50 − 6 × 5 = 20."
+      },
+      {
+        "id": "mt-ls-19",
+        "text": "Hitung nilai 3 × 7 + 4 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "25"
+          },
+          {
+            "id": "b",
+            "text": "27"
+          },
+          {
+            "id": "c",
+            "text": "23"
+          },
+          {
+            "id": "d",
+            "text": "29"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 3 × 7 + 4 = 25."
+      },
+      {
+        "id": "mt-ls-20",
+        "text": "Hitung nilai 6² − 10 (dengan urutan operasi yang benar).",
+        "options": [
+          {
+            "id": "a",
+            "text": "26"
+          },
+          {
+            "id": "b",
+            "text": "28"
+          },
+          {
+            "id": "c",
+            "text": "24"
+          },
+          {
+            "id": "d",
+            "text": "30"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nilai 6² − 10 = 26."
+      }
     ],
-
     "Susah Banget": [
-      { "id":"bi-sb-1","text":"Kalimat pasif ditandai dengan awalan...","options":[{"id":"a","text":"me-"},{"id":"b","text":"di-"},{"id":"c","text":"ber-"},{"id":"d","text":"ter-"}],"answerId":"b","explanation":"Kalimat pasif biasanya pakai 'di-'." }
-
-      // ➜ LANJUTKAN hingga bi-sb-20
+      {
+        "id": "mt-sb-1",
+        "text": "Suku ke-5 barisan aritmetika dengan a1 = 3 dan beda 4 adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "19"
+          },
+          {
+            "id": "b",
+            "text": "21"
+          },
+          {
+            "id": "c",
+            "text": "17"
+          },
+          {
+            "id": "d",
+            "text": "24"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "rumus: Un = a1 + (n-1)d"
+      },
+      {
+        "id": "mt-sb-2",
+        "text": "Jika sebuah barang harga awalnya 200.000 dan mendapat diskon 25%, harga setelah diskon adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "150000"
+          },
+          {
+            "id": "b",
+            "text": "150002"
+          },
+          {
+            "id": "c",
+            "text": "149998"
+          },
+          {
+            "id": "d",
+            "text": "150005"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "25% dari 200.000 adalah 50.000, jadi harganya 150.000."
+      },
+      {
+        "id": "mt-sb-3",
+        "text": "Luas persegi dengan panjang sisi 12 cm adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "144"
+          },
+          {
+            "id": "b",
+            "text": "146"
+          },
+          {
+            "id": "c",
+            "text": "142"
+          },
+          {
+            "id": "d",
+            "text": "149"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Luas persegi = s × s."
+      },
+      {
+        "id": "mt-sb-4",
+        "text": "Keliling lingkaran dengan jari-jari 7 cm (π ≈ 22/7) adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "44"
+          },
+          {
+            "id": "b",
+            "text": "44.1"
+          },
+          {
+            "id": "c",
+            "text": "43.9"
+          },
+          {
+            "id": "d",
+            "text": "44.25"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Keliling = 2πr."
+      },
+      {
+        "id": "mt-sb-5",
+        "text": "Jika 3x − 5 = 16, maka nilai x adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "7"
+          },
+          {
+            "id": "b",
+            "text": "9"
+          },
+          {
+            "id": "c",
+            "text": "5"
+          },
+          {
+            "id": "d",
+            "text": "12"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "3x = 21 → x = 7."
+      },
+      {
+        "id": "mt-sb-6",
+        "text": "Jika 40% dari suatu bilangan adalah 32, bilangan tersebut adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "80"
+          },
+          {
+            "id": "b",
+            "text": "82"
+          },
+          {
+            "id": "c",
+            "text": "78"
+          },
+          {
+            "id": "d",
+            "text": "85"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "0,4 × N = 32 → N = 80."
+      },
+      {
+        "id": "mt-sb-7",
+        "text": "Sebuah segitiga sama sisi memiliki panjang sisi 15 cm. Kelilingnya adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "45"
+          },
+          {
+            "id": "b",
+            "text": "47"
+          },
+          {
+            "id": "c",
+            "text": "43"
+          },
+          {
+            "id": "d",
+            "text": "50"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Keliling segitiga sama sisi = 3 × sisi."
+      },
+      {
+        "id": "mt-sb-8",
+        "text": "Nilai 3² × 2³ adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "72"
+          },
+          {
+            "id": "b",
+            "text": "74"
+          },
+          {
+            "id": "c",
+            "text": "70"
+          },
+          {
+            "id": "d",
+            "text": "77"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "3²=9, 2³=8 → 9×8=72."
+      },
+      {
+        "id": "mt-sb-9",
+        "text": "Jika rata-rata dari 5, 7, x, dan 10 adalah 8, maka nilai x adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "10"
+          },
+          {
+            "id": "b",
+            "text": "12"
+          },
+          {
+            "id": "c",
+            "text": "8"
+          },
+          {
+            "id": "d",
+            "text": "15"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "(5+7+x+10)/4=8 → x=10."
+      },
+      {
+        "id": "mt-sb-10",
+        "text": "Bentuk desimal dari 3/4 adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.75"
+          },
+          {
+            "id": "b",
+            "text": "0.85"
+          },
+          {
+            "id": "c",
+            "text": "0.65"
+          },
+          {
+            "id": "d",
+            "text": "1.0"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "3 ÷ 4 = 0,75."
+      },
+      {
+        "id": "mt-sb-11",
+        "text": "Jika 5! = 120, maka 4! adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "24"
+          },
+          {
+            "id": "b",
+            "text": "26"
+          },
+          {
+            "id": "c",
+            "text": "22"
+          },
+          {
+            "id": "d",
+            "text": "29"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "4! = 4×3×2×1 = 24."
+      },
+      {
+        "id": "mt-sb-12",
+        "text": "Suku ke-4 barisan geometri a1 = 2 dan r = 3 adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "54"
+          },
+          {
+            "id": "b",
+            "text": "56"
+          },
+          {
+            "id": "c",
+            "text": "52"
+          },
+          {
+            "id": "d",
+            "text": "59"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Un = a1 × r^(n-1)."
+      },
+      {
+        "id": "mt-sb-13",
+        "text": "Akar kuadrat dari 196 adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "14"
+          },
+          {
+            "id": "b",
+            "text": "16"
+          },
+          {
+            "id": "c",
+            "text": "12"
+          },
+          {
+            "id": "d",
+            "text": "19"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "14×14 = 196."
+      },
+      {
+        "id": "mt-sb-14",
+        "text": "Jika 2x + 3 = 19, maka nilai x adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "6"
+          },
+          {
+            "id": "d",
+            "text": "13"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "2x = 16 → x = 8."
+      },
+      {
+        "id": "mt-sb-15",
+        "text": "Sebuah persegi panjang memiliki panjang 15 cm dan lebar 8 cm. Luasnya adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "120"
+          },
+          {
+            "id": "b",
+            "text": "122"
+          },
+          {
+            "id": "c",
+            "text": "118"
+          },
+          {
+            "id": "d",
+            "text": "125"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Luas = p × l."
+      },
+      {
+        "id": "mt-sb-16",
+        "text": "15% dari 400 adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "60"
+          },
+          {
+            "id": "b",
+            "text": "62"
+          },
+          {
+            "id": "c",
+            "text": "58"
+          },
+          {
+            "id": "d",
+            "text": "65"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "0,15 × 400 = 60."
+      },
+      {
+        "id": "mt-sb-17",
+        "text": "Sebuah kelas berisi 20 siswa. 40% di antaranya perempuan. Jumlah siswa perempuan adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "8"
+          },
+          {
+            "id": "b",
+            "text": "10"
+          },
+          {
+            "id": "c",
+            "text": "6"
+          },
+          {
+            "id": "d",
+            "text": "13"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "40% dari 20 = 8."
+      },
+      {
+        "id": "mt-sb-18",
+        "text": "Nilai 2³ + 4² adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "24"
+          },
+          {
+            "id": "b",
+            "text": "26"
+          },
+          {
+            "id": "c",
+            "text": "22"
+          },
+          {
+            "id": "d",
+            "text": "29"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "2³=8, 4²=16 → 8+16=24."
+      },
+      {
+        "id": "mt-sb-19",
+        "text": "Jika sebuah garis dibagi menjadi 4 bagian sama panjang dari 20 cm, panjang tiap bagian adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "5"
+          },
+          {
+            "id": "b",
+            "text": "7"
+          },
+          {
+            "id": "c",
+            "text": "3"
+          },
+          {
+            "id": "d",
+            "text": "10"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "20 ÷ 4 = 5."
+      },
+      {
+        "id": "mt-sb-20",
+        "text": "Satu sudut segitiga siku-siku 30°, sudut lainnya selain sudut siku-siku adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "60"
+          },
+          {
+            "id": "b",
+            "text": "62"
+          },
+          {
+            "id": "c",
+            "text": "58"
+          },
+          {
+            "id": "d",
+            "text": "65"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Jumlah sudut segitiga 180°, 90°+30°+x=180° → x=60°."
+      }
+    ]
+  },
+  "IPA": {
+    "Mudah": [
+      {
+        "id": "ipa-md-1",
+        "text": "Air membeku pada suhu ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "0°C"
+          },
+          {
+            "id": "b",
+            "text": "10°C"
+          },
+          {
+            "id": "c",
+            "text": "50°C"
+          },
+          {
+            "id": "d",
+            "text": "100°C"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Air murni membeku pada 0°C."
+      },
+      {
+        "id": "ipa-md-2",
+        "text": "Alat untuk mengukur suhu adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "termometer"
+          },
+          {
+            "id": "b",
+            "text": "penggaris"
+          },
+          {
+            "id": "c",
+            "text": "timbangan"
+          },
+          {
+            "id": "d",
+            "text": "kompas"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Termometer digunakan untuk mengukur suhu."
+      },
+      {
+        "id": "ipa-md-3",
+        "text": "Makhluk hidup yang dapat membuat makanan sendiri disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "produsen"
+          },
+          {
+            "id": "b",
+            "text": "konsumen"
+          },
+          {
+            "id": "c",
+            "text": "pengurai"
+          },
+          {
+            "id": "d",
+            "text": "parasit"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Tumbuhan hijau adalah produsen."
+      },
+      {
+        "id": "ipa-md-4",
+        "text": "Bagian tumbuhan yang berfungsi menyerap air adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "daun"
+          },
+          {
+            "id": "b",
+            "text": "batang"
+          },
+          {
+            "id": "c",
+            "text": "akar"
+          },
+          {
+            "id": "d",
+            "text": "bunga"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Akar menyerap air dan mineral dari tanah."
+      },
+      {
+        "id": "ipa-md-5",
+        "text": "Hewan yang berkembang biak dengan bertelur disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "ovipar"
+          },
+          {
+            "id": "b",
+            "text": "vivipar"
+          },
+          {
+            "id": "c",
+            "text": "ovovivipar"
+          },
+          {
+            "id": "d",
+            "text": "herbivor"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Ovipar = bertelur."
+      },
+      {
+        "id": "ipa-md-6",
+        "text": "Sumber energi utama bagi bumi adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "bulan"
+          },
+          {
+            "id": "b",
+            "text": "matahari"
+          },
+          {
+            "id": "c",
+            "text": "bintang"
+          },
+          {
+            "id": "d",
+            "text": "api"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Matahari adalah sumber energi utama bagi bumi."
+      },
+      {
+        "id": "ipa-md-7",
+        "text": "Alat pernapasan utama manusia adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "paru-paru"
+          },
+          {
+            "id": "b",
+            "text": "hidung"
+          },
+          {
+            "id": "c",
+            "text": "mulut"
+          },
+          {
+            "id": "d",
+            "text": "kulit"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Paru-paru adalah alat pernapasan utama."
+      },
+      {
+        "id": "ipa-md-8",
+        "text": "Benda cair memiliki bentuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tetap"
+          },
+          {
+            "id": "b",
+            "text": "berubah mengikuti wadah"
+          },
+          {
+            "id": "c",
+            "text": "selalu bulat"
+          },
+          {
+            "id": "d",
+            "text": "selalu datar"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Benda cair mengikuti bentuk wadahnya."
+      },
+      {
+        "id": "ipa-md-9",
+        "text": "Contoh perubahan wujud dari cair ke gas adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "es mencair"
+          },
+          {
+            "id": "b",
+            "text": "air mendidih"
+          },
+          {
+            "id": "c",
+            "text": "air membeku"
+          },
+          {
+            "id": "d",
+            "text": "uap menjadi air"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Air mendidih → menguap jadi gas."
+      },
+      {
+        "id": "ipa-md-10",
+        "text": "Tulisan rumus kimia air adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "CO2"
+          },
+          {
+            "id": "b",
+            "text": "O2"
+          },
+          {
+            "id": "c",
+            "text": "H2O"
+          },
+          {
+            "id": "d",
+            "text": "NaCl"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Rumus air adalah H2O."
+      },
+      {
+        "id": "ipa-md-11",
+        "text": "Indera untuk merasakan rasa adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "hidung"
+          },
+          {
+            "id": "b",
+            "text": "telinga"
+          },
+          {
+            "id": "c",
+            "text": "lidah"
+          },
+          {
+            "id": "d",
+            "text": "kulit"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Lidah untuk mengecap rasa."
+      },
+      {
+        "id": "ipa-md-12",
+        "text": "Benda yang tertarik magnet adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kertas"
+          },
+          {
+            "id": "b",
+            "text": "plastik"
+          },
+          {
+            "id": "c",
+            "text": "besi"
+          },
+          {
+            "id": "d",
+            "text": "kayu"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Besi mudah tertarik magnet."
+      },
+      {
+        "id": "ipa-md-13",
+        "text": "Planet tempat kita hidup adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mars"
+          },
+          {
+            "id": "b",
+            "text": "Bumi"
+          },
+          {
+            "id": "c",
+            "text": "Jupiter"
+          },
+          {
+            "id": "d",
+            "text": "Venus"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Kita hidup di planet Bumi."
+      },
+      {
+        "id": "ipa-md-14",
+        "text": "Hewan pemakan tumbuhan disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "karnivora"
+          },
+          {
+            "id": "b",
+            "text": "omnivora"
+          },
+          {
+            "id": "c",
+            "text": "herbivora"
+          },
+          {
+            "id": "d",
+            "text": "insektivora"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Herbivora = pemakan tumbuhan."
+      },
+      {
+        "id": "ipa-md-15",
+        "text": "Proses perubahan ulat menjadi kupu-kupu disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "fotosintesis"
+          },
+          {
+            "id": "b",
+            "text": "metamorfosis"
+          },
+          {
+            "id": "c",
+            "text": "respirasi"
+          },
+          {
+            "id": "d",
+            "text": "transpirasi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Perubahan bentuk hewan = metamorfosis."
+      },
+      {
+        "id": "ipa-md-16",
+        "text": "Alat untuk mengukur panjang adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "termometer"
+          },
+          {
+            "id": "b",
+            "text": "penggaris"
+          },
+          {
+            "id": "c",
+            "text": "jam"
+          },
+          {
+            "id": "d",
+            "text": "timbangan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Penggaris dipakai mengukur panjang."
+      },
+      {
+        "id": "ipa-md-17",
+        "text": "Gaya yang membuat benda jatuh ke bawah adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "magnet"
+          },
+          {
+            "id": "b",
+            "text": "gesek"
+          },
+          {
+            "id": "c",
+            "text": "gravitasi"
+          },
+          {
+            "id": "d",
+            "text": "dorong"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Gravitasi menarik benda ke bumi."
+      },
+      {
+        "id": "ipa-md-18",
+        "text": "Hewan yang bernafas dengan insang adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "burung"
+          },
+          {
+            "id": "b",
+            "text": "ikan"
+          },
+          {
+            "id": "c",
+            "text": "kucing"
+          },
+          {
+            "id": "d",
+            "text": "ayam"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Ikan bernapas dengan insang."
+      },
+      {
+        "id": "ipa-md-19",
+        "text": "Perubahan dari padat menjadi cair disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menguap"
+          },
+          {
+            "id": "b",
+            "text": "membeku"
+          },
+          {
+            "id": "c",
+            "text": "mencair"
+          },
+          {
+            "id": "d",
+            "text": "menyublim"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Padat → cair = mencair."
+      },
+      {
+        "id": "ipa-md-20",
+        "text": "Bagian tumbuhan tempat proses fotosintesis utama adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "akar"
+          },
+          {
+            "id": "b",
+            "text": "batang"
+          },
+          {
+            "id": "c",
+            "text": "daun"
+          },
+          {
+            "id": "d",
+            "text": "bunga"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Daun banyak mengandung klorofil."
+      }
+    ],
+    "Lumayan Susah": [
+      {
+        "id": "ipa-ls-1",
+        "text": "Perubahan wujud dari gas menjadi cair disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menguap"
+          },
+          {
+            "id": "b",
+            "text": "mengkristal"
+          },
+          {
+            "id": "c",
+            "text": "mengembun"
+          },
+          {
+            "id": "d",
+            "text": "menyublim"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Gas → cair = mengembun."
+      },
+      {
+        "id": "ipa-ls-2",
+        "text": "Urutan perpindahan panas secara langsung melalui zat padat disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "konduksi"
+          },
+          {
+            "id": "b",
+            "text": "konveksi"
+          },
+          {
+            "id": "c",
+            "text": "radiasi"
+          },
+          {
+            "id": "d",
+            "text": "evaporasi"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Konduksi terjadi pada padat."
+      },
+      {
+        "id": "ipa-ls-3",
+        "text": "Fungsi tulang belakang adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "melindungi otak"
+          },
+          {
+            "id": "b",
+            "text": "menopang tubuh"
+          },
+          {
+            "id": "c",
+            "text": "melindungi jantung"
+          },
+          {
+            "id": "d",
+            "text": "membantu pencernaan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Tulang belakang menopang tubuh dan menjaga posisi tegak."
+      },
+      {
+        "id": "ipa-ls-4",
+        "text": "Bagian mata yang berfungsi mengatur banyaknya cahaya yang masuk adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "retina"
+          },
+          {
+            "id": "b",
+            "text": "kornea"
+          },
+          {
+            "id": "c",
+            "text": "iris"
+          },
+          {
+            "id": "d",
+            "text": "lensa"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Iris mengatur besar kecil pupil."
+      },
+      {
+        "id": "ipa-ls-5",
+        "text": "Urutan tingkat organisasi makhluk hidup yang benar adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "jaringan-sel-organ-sistem organ"
+          },
+          {
+            "id": "b",
+            "text": "sel-jaringan-organ-sistem organ"
+          },
+          {
+            "id": "c",
+            "text": "sel-organ-jaringan-sistem organ"
+          },
+          {
+            "id": "d",
+            "text": "organ-sel-jaringan-sistem organ"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Urutannya: sel → jaringan → organ → sistem organ."
+      },
+      {
+        "id": "ipa-ls-6",
+        "text": "Sumber energi terbarukan di bawah ini adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "minyak bumi"
+          },
+          {
+            "id": "b",
+            "text": "batu bara"
+          },
+          {
+            "id": "c",
+            "text": "matahari"
+          },
+          {
+            "id": "d",
+            "text": "gas alam"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Matahari adalah energi terbarukan."
+      },
+      {
+        "id": "ipa-ls-7",
+        "text": "Gerhana matahari terjadi ketika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "bumi di antara matahari dan bulan"
+          },
+          {
+            "id": "b",
+            "text": "bulan di antara matahari dan bumi"
+          },
+          {
+            "id": "c",
+            "text": "matahari di antara bumi dan bulan"
+          },
+          {
+            "id": "d",
+            "text": "bulan jauh dari bumi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Bulan menghalangi cahaya matahari ke bumi."
+      },
+      {
+        "id": "ipa-ls-8",
+        "text": "Fungsi stomata pada daun adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyerap air"
+          },
+          {
+            "id": "b",
+            "text": "pertukaran gas"
+          },
+          {
+            "id": "c",
+            "text": "menyimpan cadangan makanan"
+          },
+          {
+            "id": "d",
+            "text": "menyerap cahaya"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Stomata untuk pertukaran gas & uap air."
+      },
+      {
+        "id": "ipa-ls-9",
+        "text": "Jenis gaya yang menyebabkan benda licin melambat adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "gaya tarik"
+          },
+          {
+            "id": "b",
+            "text": "gaya dorong"
+          },
+          {
+            "id": "c",
+            "text": "gaya gesek"
+          },
+          {
+            "id": "d",
+            "text": "gaya gravitasi"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Gaya gesek menghambat gerak."
+      },
+      {
+        "id": "ipa-ls-10",
+        "text": "Lapisan bumi paling luar disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "inti luar"
+          },
+          {
+            "id": "b",
+            "text": "inti dalam"
+          },
+          {
+            "id": "c",
+            "text": "mantel"
+          },
+          {
+            "id": "d",
+            "text": "kerak bumi"
+          }
+        ],
+        "answerId": "d",
+        "explanation": "Kerak bumi adalah lapisan terluar."
+      },
+      {
+        "id": "ipa-ls-11",
+        "text": "Fungsi paru-paru adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "memompa darah"
+          },
+          {
+            "id": "b",
+            "text": "menyaring darah"
+          },
+          {
+            "id": "c",
+            "text": "pertukaran oksigen dan karbon dioksida"
+          },
+          {
+            "id": "d",
+            "text": "menghasilkan hormon"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Paru-paru bertukar O2 dan CO2."
+      },
+      {
+        "id": "ipa-ls-12",
+        "text": "Penyakit yang disebabkan kekurangan vitamin C adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "rabun senja"
+          },
+          {
+            "id": "b",
+            "text": "beri-beri"
+          },
+          {
+            "id": "c",
+            "text": "skorbut"
+          },
+          {
+            "id": "d",
+            "text": "riketsia"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Skorbut karena kurang vitamin C."
+      },
+      {
+        "id": "ipa-ls-13",
+        "text": "Benda yang dapat menghantarkan listrik dengan baik disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "isolator"
+          },
+          {
+            "id": "b",
+            "text": "konduktor"
+          },
+          {
+            "id": "c",
+            "text": "resistor"
+          },
+          {
+            "id": "d",
+            "text": "transistor"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Konduktor menghantarkan listrik."
+      },
+      {
+        "id": "ipa-ls-14",
+        "text": "Peristiwa hujan merupakan bagian dari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "siklus batuan"
+          },
+          {
+            "id": "b",
+            "text": "siklus air"
+          },
+          {
+            "id": "c",
+            "text": "siklus karbon"
+          },
+          {
+            "id": "d",
+            "text": "siklus nitrogen"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Hujan bagian dari siklus air."
+      },
+      {
+        "id": "ipa-ls-15",
+        "text": "Organ utama sistem peredaran darah adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "paru-paru"
+          },
+          {
+            "id": "b",
+            "text": "ginjal"
+          },
+          {
+            "id": "c",
+            "text": "jantung"
+          },
+          {
+            "id": "d",
+            "text": "hati"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Jantung memompa darah."
+      },
+      {
+        "id": "ipa-ls-16",
+        "text": "Energi yang tersimpan pada makanan disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "energi kinetik"
+          },
+          {
+            "id": "b",
+            "text": "energi potensial"
+          },
+          {
+            "id": "c",
+            "text": "energi panas"
+          },
+          {
+            "id": "d",
+            "text": "energi cahaya"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Energi kimia dalam makanan termasuk potensial."
+      },
+      {
+        "id": "ipa-ls-17",
+        "text": "Planet yang memiliki cincin yang jelas terlihat adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Merkurius"
+          },
+          {
+            "id": "b",
+            "text": "Mars"
+          },
+          {
+            "id": "c",
+            "text": "Saturnus"
+          },
+          {
+            "id": "d",
+            "text": "Venus"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Saturnus memiliki cincin yang besar."
+      },
+      {
+        "id": "ipa-ls-18",
+        "text": "Hewan yang hanya memakan daging disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "herbivora"
+          },
+          {
+            "id": "b",
+            "text": "omnivora"
+          },
+          {
+            "id": "c",
+            "text": "karnivora"
+          },
+          {
+            "id": "d",
+            "text": "detritivora"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Karnivora = pemakan daging."
+      },
+      {
+        "id": "ipa-ls-19",
+        "text": "Zat yang dapat larut dalam air disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "larutan"
+          },
+          {
+            "id": "b",
+            "text": "pelarut"
+          },
+          {
+            "id": "c",
+            "text": "zat terlarut"
+          },
+          {
+            "id": "d",
+            "text": "zat mudah larut"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Zat terlarut melarut dalam pelarut."
+      },
+      {
+        "id": "ipa-ls-20",
+        "text": "Perubahan zat yang tidak dapat kembali ke bentuk semula disebut perubahan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "fisika"
+          },
+          {
+            "id": "b",
+            "text": "kimia"
+          },
+          {
+            "id": "c",
+            "text": "suhu"
+          },
+          {
+            "id": "d",
+            "text": "volume"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Perubahan kimia sulit kembali ke bentuk semula."
+      }
+    ],
+    "Susah Banget": [
+      {
+        "id": "ipa-sb-1",
+        "text": "Gas yang paling banyak terdapat di atmosfer bumi adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "oksigen"
+          },
+          {
+            "id": "b",
+            "text": "nitrogen"
+          },
+          {
+            "id": "c",
+            "text": "karbon dioksida"
+          },
+          {
+            "id": "d",
+            "text": "argon"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Sekitar 78% atmosfer adalah nitrogen."
+      },
+      {
+        "id": "ipa-sb-2",
+        "text": "Proses tumbuhan hijau membuat makanan sendiri disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "respirasi"
+          },
+          {
+            "id": "b",
+            "text": "fotosintesis"
+          },
+          {
+            "id": "c",
+            "text": "transpirasi"
+          },
+          {
+            "id": "d",
+            "text": "difusi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Fotosintesis menggunakan cahaya, air, dan CO2."
+      },
+      {
+        "id": "ipa-sb-3",
+        "text": "Organel sel tempat berlangsungnya fotosintesis adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mitokondria"
+          },
+          {
+            "id": "b",
+            "text": "kloroplas"
+          },
+          {
+            "id": "c",
+            "text": "nukleus"
+          },
+          {
+            "id": "d",
+            "text": "ribosom"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Kloroplas mengandung klorofil."
+      },
+      {
+        "id": "ipa-sb-4",
+        "text": "Gaya yang bekerja tegak lurus arah gerak pada gerak melingkar disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "gaya gravitasi"
+          },
+          {
+            "id": "b",
+            "text": "gaya gesek"
+          },
+          {
+            "id": "c",
+            "text": "gaya sentripetal"
+          },
+          {
+            "id": "d",
+            "text": "gaya magnet"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Gaya sentripetal mengarah ke pusat lingkaran."
+      },
+      {
+        "id": "ipa-sb-5",
+        "text": "Unit terkecil penyusun makhluk hidup adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "sel"
+          },
+          {
+            "id": "b",
+            "text": "jaringan"
+          },
+          {
+            "id": "c",
+            "text": "organ"
+          },
+          {
+            "id": "d",
+            "text": "sistem organ"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Sel adalah unit struktural terkecil."
+      },
+      {
+        "id": "ipa-sb-6",
+        "text": "Darah yang kaya oksigen dari paru-paru menuju jantung melalui ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "vena pulmonalis"
+          },
+          {
+            "id": "b",
+            "text": "arteri pulmonalis"
+          },
+          {
+            "id": "c",
+            "text": "vena cava"
+          },
+          {
+            "id": "d",
+            "text": "aorta"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Vena pulmonalis membawa darah kaya O2 ke jantung."
+      },
+      {
+        "id": "ipa-sb-7",
+        "text": "Proses pembentukan gas oksigen pada tumbuhan terjadi pada tahap ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "respirasi malam"
+          },
+          {
+            "id": "b",
+            "text": "penyerapan air"
+          },
+          {
+            "id": "c",
+            "text": "reaksi terang fotosintesis"
+          },
+          {
+            "id": "d",
+            "text": "reaksi gelap fotosintesis"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Oksigen dihasilkan pada reaksi terang."
+      },
+      {
+        "id": "ipa-sb-8",
+        "text": "Lapisan ozon terdapat pada lapisan atmosfer yang disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "troposfer"
+          },
+          {
+            "id": "b",
+            "text": "stratosfer"
+          },
+          {
+            "id": "c",
+            "text": "mesosfer"
+          },
+          {
+            "id": "d",
+            "text": "termosfer"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Ozon terkonsentrasi di stratosfer."
+      },
+      {
+        "id": "ipa-sb-9",
+        "text": "Hewan yang melakukan metamorfosis sempurna di antaranya ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kucing"
+          },
+          {
+            "id": "b",
+            "text": "ayam"
+          },
+          {
+            "id": "c",
+            "text": "kupu-kupu"
+          },
+          {
+            "id": "d",
+            "text": "cacing"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Kupu-kupu mengalami fase telur-larva-pupa-imago."
+      },
+      {
+        "id": "ipa-sb-10",
+        "text": "Satuan internasional (SI) untuk gaya adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "joule"
+          },
+          {
+            "id": "b",
+            "text": "watt"
+          },
+          {
+            "id": "c",
+            "text": "newton"
+          },
+          {
+            "id": "d",
+            "text": "pascal"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Gaya diukur dalam newton (N)."
+      },
+      {
+        "id": "ipa-sb-11",
+        "text": "Kecepatan dihitung dari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "jarak × waktu"
+          },
+          {
+            "id": "b",
+            "text": "jarak ÷ waktu"
+          },
+          {
+            "id": "c",
+            "text": "waktu ÷ jarak"
+          },
+          {
+            "id": "d",
+            "text": "gaya × waktu"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "v = s / t."
+      },
+      {
+        "id": "ipa-sb-12",
+        "text": "Energi tidak dapat diciptakan atau dimusnahkan, hanya dapat ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "disimpan"
+          },
+          {
+            "id": "b",
+            "text": "diubah bentuk"
+          },
+          {
+            "id": "c",
+            "text": "dihapus"
+          },
+          {
+            "id": "d",
+            "text": "diperlambat"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Hukum kekekalan energi."
+      },
+      {
+        "id": "ipa-sb-13",
+        "text": "Hewan yang membantu penyerbukan bunga disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "parasitoid"
+          },
+          {
+            "id": "b",
+            "text": "penyerbuk"
+          },
+          {
+            "id": "c",
+            "text": "predator"
+          },
+          {
+            "id": "d",
+            "text": "parasit"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Serangga penyerbuk contohnya lebah."
+      },
+      {
+        "id": "ipa-sb-14",
+        "text": "Pada rangkaian listrik seri, jika satu lampu dilepas maka ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "lampu lain tetap menyala"
+          },
+          {
+            "id": "b",
+            "text": "semua lampu padam"
+          },
+          {
+            "id": "c",
+            "text": "tegangan naik"
+          },
+          {
+            "id": "d",
+            "text": "arus berbalik"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Pada seri, arus terputus jika satu lampu dilepas."
+      },
+      {
+        "id": "ipa-sb-15",
+        "text": "Penyakit yang menyerang alat pernapasan dan disebabkan oleh bakteri Mycobacterium tuberculosis adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "influenza"
+          },
+          {
+            "id": "b",
+            "text": "asma"
+          },
+          {
+            "id": "c",
+            "text": "tuberkulosis"
+          },
+          {
+            "id": "d",
+            "text": "bronkitis"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "TB disebabkan Mycobacterium tuberculosis."
+      },
+      {
+        "id": "ipa-sb-16",
+        "text": "Bagian sel yang mengatur seluruh kegiatan sel adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "nukleus"
+          },
+          {
+            "id": "b",
+            "text": "ribosom"
+          },
+          {
+            "id": "c",
+            "text": "sitoplasma"
+          },
+          {
+            "id": "d",
+            "text": "membran sel"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nukleus adalah pusat kontrol sel."
+      },
+      {
+        "id": "ipa-sb-17",
+        "text": "Benda dikatakan mengapung di air jika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "massa jenisnya sama"
+          },
+          {
+            "id": "b",
+            "text": "massa jenisnya lebih besar"
+          },
+          {
+            "id": "c",
+            "text": "massa jenisnya lebih kecil"
+          },
+          {
+            "id": "d",
+            "text": "tidak punya massa"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Benda mengapung jika massa jenis < air."
+      },
+      {
+        "id": "ipa-sb-18",
+        "text": "Perpindahan panas melalui aliran zat disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "konduksi"
+          },
+          {
+            "id": "b",
+            "text": "konveksi"
+          },
+          {
+            "id": "c",
+            "text": "radiasi"
+          },
+          {
+            "id": "d",
+            "text": "evaporasi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Konveksi melalui aliran zat (cair/gas)."
+      },
+      {
+        "id": "ipa-sb-19",
+        "text": "Warna putih pada prisma cahaya merupakan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "satu warna"
+          },
+          {
+            "id": "b",
+            "text": "campuran warna-warna"
+          },
+          {
+            "id": "c",
+            "text": "warna gelap"
+          },
+          {
+            "id": "d",
+            "text": "warna transparan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Cahaya putih tersusun dari berbagai warna spektrum."
+      },
+      {
+        "id": "ipa-sb-20",
+        "text": "Zat yang dibutuhkan manusia untuk bernapas adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "karbon dioksida"
+          },
+          {
+            "id": "b",
+            "text": "nitrogen"
+          },
+          {
+            "id": "c",
+            "text": "oksigen"
+          },
+          {
+            "id": "d",
+            "text": "argon"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Oksigen penting untuk respirasi sel."
+      }
+    ]
+  },
+  "Pemrograman": {
+    "Mudah": [
+      {
+        "id": "pr-md-1",
+        "text": "Bahasa yang digunakan komputer untuk berkomunikasi dengan manusia disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "bahasa mesin"
+          },
+          {
+            "id": "b",
+            "text": "bahasa pemrograman"
+          },
+          {
+            "id": "c",
+            "text": "bahasa isyarat"
+          },
+          {
+            "id": "d",
+            "text": "bahasa alami"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Bahasa pemrograman menjembatani manusia dan komputer."
+      },
+      {
+        "id": "pr-md-2",
+        "text": "Perintah dalam pemrograman yang dijalankan berurutan disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "looping"
+          },
+          {
+            "id": "b",
+            "text": "seleksi"
+          },
+          {
+            "id": "c",
+            "text": "urutan (sequence)"
+          },
+          {
+            "id": "d",
+            "text": "fungsi"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Sequence = langkah berurutan."
+      },
+      {
+        "id": "pr-md-3",
+        "text": "Simbol '==' dalam banyak bahasa pemrograman digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "penjumlahan"
+          },
+          {
+            "id": "b",
+            "text": "pembagian"
+          },
+          {
+            "id": "c",
+            "text": "pembanding kesamaan"
+          },
+          {
+            "id": "d",
+            "text": "pengurangan"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "== membandingkan apakah dua nilai sama."
+      },
+      {
+        "id": "pr-md-4",
+        "text": "Variabel digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyimpan data"
+          },
+          {
+            "id": "b",
+            "text": "menghapus program"
+          },
+          {
+            "id": "c",
+            "text": "menggambar grafik"
+          },
+          {
+            "id": "d",
+            "text": "mengirim email"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Variabel menyimpan nilai sementara."
+      },
+      {
+        "id": "pr-md-5",
+        "text": "Dalam Python, komentar satu baris diawali dengan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "//"
+          },
+          {
+            "id": "b",
+            "text": "#"
+          },
+          {
+            "id": "c",
+            "text": "/*"
+          },
+          {
+            "id": "d",
+            "text": "--"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Di Python komentar diawali tanda pagar (#)."
+      },
+      {
+        "id": "pr-md-6",
+        "text": "Struktur berulang dalam program disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "branching"
+          },
+          {
+            "id": "b",
+            "text": "loop"
+          },
+          {
+            "id": "c",
+            "text": "function"
+          },
+          {
+            "id": "d",
+            "text": "array"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Loop digunakan untuk perulangan."
+      },
+      {
+        "id": "pr-md-7",
+        "text": "Operator '+' pada string biasanya digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menghapus string"
+          },
+          {
+            "id": "b",
+            "text": "menggabungkan string"
+          },
+          {
+            "id": "c",
+            "text": "membalik string"
+          },
+          {
+            "id": "d",
+            "text": "memotong string"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Operator + menggabungkan dua string."
+      },
+      {
+        "id": "pr-md-8",
+        "text": "Tipe data untuk bilangan bulat disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "integer"
+          },
+          {
+            "id": "b",
+            "text": "string"
+          },
+          {
+            "id": "c",
+            "text": "boolean"
+          },
+          {
+            "id": "d",
+            "text": "float"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Bilangan bulat = integer."
+      },
+      {
+        "id": "pr-md-9",
+        "text": "Nilai benar/salah dalam pemrograman disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "string"
+          },
+          {
+            "id": "b",
+            "text": "integer"
+          },
+          {
+            "id": "c",
+            "text": "boolean"
+          },
+          {
+            "id": "d",
+            "text": "float"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "True / False disimpan dalam tipe boolean."
+      },
+      {
+        "id": "pr-md-10",
+        "text": "Struktur if-else digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "perulangan"
+          },
+          {
+            "id": "b",
+            "text": "percabangan"
+          },
+          {
+            "id": "c",
+            "text": "penjumlahan"
+          },
+          {
+            "id": "d",
+            "text": "komentar"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "If-else = struktur percabangan."
+      },
+      {
+        "id": "pr-md-11",
+        "text": "Array/list digunakan untuk menyimpan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "satu nilai saja"
+          },
+          {
+            "id": "b",
+            "text": "banyak nilai sekaligus"
+          },
+          {
+            "id": "c",
+            "text": "hanya teks"
+          },
+          {
+            "id": "d",
+            "text": "hanya angka"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "List bisa memuat banyak nilai."
+      },
+      {
+        "id": "pr-md-12",
+        "text": "IDE dalam pemrograman adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "alat makan"
+          },
+          {
+            "id": "b",
+            "text": "tempat menyimpan file musik"
+          },
+          {
+            "id": "c",
+            "text": "lingkungan pengembangan terintegrasi"
+          },
+          {
+            "id": "d",
+            "text": "sistem operasi"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "IDE = Integrated Development Environment."
+      },
+      {
+        "id": "pr-md-13",
+        "text": "HTML digunakan terutama untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika program"
+          },
+          {
+            "id": "b",
+            "text": "mengatur tampilan halaman web"
+          },
+          {
+            "id": "c",
+            "text": "membuat sistem operasi"
+          },
+          {
+            "id": "d",
+            "text": "mengelola database"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "HTML menyusun struktur halaman web."
+      },
+      {
+        "id": "pr-md-14",
+        "text": "CSS digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mengatur gaya tampilan"
+          },
+          {
+            "id": "b",
+            "text": "menyimpan basis data"
+          },
+          {
+            "id": "c",
+            "text": "menjalankan server"
+          },
+          {
+            "id": "d",
+            "text": "mengelola memori"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "CSS mengatur warna, layout, dan tampilan."
+      },
+      {
+        "id": "pr-md-15",
+        "text": "JavaScript populer digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika di sisi klien browser"
+          },
+          {
+            "id": "b",
+            "text": "mengatur jaringan fisik"
+          },
+          {
+            "id": "c",
+            "text": "mengelola sistem operasi"
+          },
+          {
+            "id": "d",
+            "text": "menerjemahkan bahasa"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "JavaScript berjalan di browser (client-side)."
+      },
+      {
+        "id": "pr-md-16",
+        "text": "Perintah 'for' biasanya digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "satu kali jalan"
+          },
+          {
+            "id": "b",
+            "text": "mengulang sejumlah langkah"
+          },
+          {
+            "id": "c",
+            "text": "memberi komentar"
+          },
+          {
+            "id": "d",
+            "text": "menghentikan program"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "For loop mengulang perintah."
+      },
+      {
+        "id": "pr-md-17",
+        "text": "Nilai yang tidak berubah selama program disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "variabel"
+          },
+          {
+            "id": "b",
+            "text": "konstanta"
+          },
+          {
+            "id": "c",
+            "text": "fungsi"
+          },
+          {
+            "id": "d",
+            "text": "parameter"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Konstanta bernilai tetap."
+      },
+      {
+        "id": "pr-md-18",
+        "text": "Dalam pemrograman, bug adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "fitur baru"
+          },
+          {
+            "id": "b",
+            "text": "kekurangan listrik"
+          },
+          {
+            "id": "c",
+            "text": "kesalahan dalam program"
+          },
+          {
+            "id": "d",
+            "text": "jenis bahasa pemrograman"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Bug = kesalahan di program."
+      },
+      {
+        "id": "pr-md-19",
+        "text": "Proses memperbaiki bug disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "debugging"
+          },
+          {
+            "id": "b",
+            "text": "downloading"
+          },
+          {
+            "id": "c",
+            "text": "encoding"
+          },
+          {
+            "id": "d",
+            "text": "uploading"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Debugging = mencari dan memperbaiki bug."
+      },
+      {
+        "id": "pr-md-20",
+        "text": "Output dari program adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kode sumber"
+          },
+          {
+            "id": "b",
+            "text": "hasil yang ditampilkan"
+          },
+          {
+            "id": "c",
+            "text": "komentar"
+          },
+          {
+            "id": "d",
+            "text": "variabel"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Output = hasil yang keluar dari program."
+      }
+    ],
+    "Lumayan Susah": [
+      {
+        "id": "pr-ls-1",
+        "text": "Struktur 'while' pada pemrograman digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "percabangan"
+          },
+          {
+            "id": "b",
+            "text": "perulangan selama kondisi benar"
+          },
+          {
+            "id": "c",
+            "text": "menghapus variabel"
+          },
+          {
+            "id": "d",
+            "text": "mendefinisikan fungsi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "While akan terus mengulang selama kondisi bernilai benar."
+      },
+      {
+        "id": "pr-ls-2",
+        "text": "Dalam pemrograman, 'function' digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyimpan file"
+          },
+          {
+            "id": "b",
+            "text": "membagi program menjadi blok yang dapat dipanggil"
+          },
+          {
+            "id": "c",
+            "text": "menghapus data"
+          },
+          {
+            "id": "d",
+            "text": "mengatur tampilan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Fungsi memecah program menjadi bagian terpisah."
+      },
+      {
+        "id": "pr-ls-3",
+        "text": "Parameter fungsi adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "nama fungsi"
+          },
+          {
+            "id": "b",
+            "text": "nilai yang dikirim ke fungsi"
+          },
+          {
+            "id": "c",
+            "text": "hasil fungsi"
+          },
+          {
+            "id": "d",
+            "text": "tipe data"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Parameter adalah nilai yang diteruskan ke fungsi."
+      },
+      {
+        "id": "pr-ls-4",
+        "text": "Return dalam fungsi digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mengulang fungsi"
+          },
+          {
+            "id": "b",
+            "text": "mengembalikan nilai"
+          },
+          {
+            "id": "c",
+            "text": "menghapus fungsi"
+          },
+          {
+            "id": "d",
+            "text": "menghentikan program"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Return mengembalikan nilai dari fungsi ke pemanggil."
+      },
+      {
+        "id": "pr-ls-5",
+        "text": "List di Python ditandai dengan tanda ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "{}"
+          },
+          {
+            "id": "b",
+            "text": "[]"
+          },
+          {
+            "id": "c",
+            "text": "()"
+          },
+          {
+            "id": "d",
+            "text": "<>"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "List menggunakan tanda kurung siku []."
+      },
+      {
+        "id": "pr-ls-6",
+        "text": "Struktur data yang menyimpan pasangan key-value disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "list"
+          },
+          {
+            "id": "b",
+            "text": "tuple"
+          },
+          {
+            "id": "c",
+            "text": "dictionary"
+          },
+          {
+            "id": "d",
+            "text": "string"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Dictionary menyimpan pasangan key-value."
+      },
+      {
+        "id": "pr-ls-7",
+        "text": "Bahasa SQL digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "membuat sistem operasi"
+          },
+          {
+            "id": "b",
+            "text": "mengelola basis data"
+          },
+          {
+            "id": "c",
+            "text": "menggambar UI"
+          },
+          {
+            "id": "d",
+            "text": "membuat animasi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "SQL = Structured Query Language untuk database."
+      },
+      {
+        "id": "pr-ls-8",
+        "text": "Perintah SELECT dalam SQL fungsinya untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menambah data"
+          },
+          {
+            "id": "b",
+            "text": "menghapus data"
+          },
+          {
+            "id": "c",
+            "text": "mengambil data"
+          },
+          {
+            "id": "d",
+            "text": "mengubah struktur tabel"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "SELECT digunakan mengambil data."
+      },
+      {
+        "id": "pr-ls-9",
+        "text": "Operator 'AND' dalam logika bernilai benar jika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "salah satu benar"
+          },
+          {
+            "id": "b",
+            "text": "keduanya salah"
+          },
+          {
+            "id": "c",
+            "text": "keduanya benar"
+          },
+          {
+            "id": "d",
+            "text": "semua salah"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "AND hanya true jika kedua kondisi true."
+      },
+      {
+        "id": "pr-ls-10",
+        "text": "Operator 'OR' bernilai salah hanya jika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "dua-duanya salah"
+          },
+          {
+            "id": "b",
+            "text": "dua-duanya benar"
+          },
+          {
+            "id": "c",
+            "text": "satu benar satu salah"
+          },
+          {
+            "id": "d",
+            "text": "tidak ada kondisi"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "OR hanya false saat semua kondisi false."
+      },
+      {
+        "id": "pr-ls-11",
+        "text": "Dalam pemrograman, indentation (indentasi) penting pada bahasa ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "C"
+          },
+          {
+            "id": "b",
+            "text": "Java"
+          },
+          {
+            "id": "c",
+            "text": "Python"
+          },
+          {
+            "id": "d",
+            "text": "Assembly"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Python menggunakan indentasi sebagai struktur blok."
+      },
+      {
+        "id": "pr-ls-12",
+        "text": "Exception biasanya digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mengatur tampilan UI"
+          },
+          {
+            "id": "b",
+            "text": "menangani kesalahan saat runtime"
+          },
+          {
+            "id": "c",
+            "text": "membuat musik"
+          },
+          {
+            "id": "d",
+            "text": "menghitung angka"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Exception menangani error saat program berjalan."
+      },
+      {
+        "id": "pr-ls-13",
+        "text": "API (Application Programming Interface) adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "antarmuka antara program dan pengguna"
+          },
+          {
+            "id": "b",
+            "text": "antarmuka antara program dan program lain"
+          },
+          {
+            "id": "c",
+            "text": "antarmuka fisik komputer"
+          },
+          {
+            "id": "d",
+            "text": "antarmuka jaringan listrik"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "API menghubungkan satu program dengan lainnya."
+      },
+      {
+        "id": "pr-ls-14",
+        "text": "Framework adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tool untuk debugging"
+          },
+          {
+            "id": "b",
+            "text": "kerangka kerja siap pakai untuk mempercepat pengembangan"
+          },
+          {
+            "id": "c",
+            "text": "jenis bug"
+          },
+          {
+            "id": "d",
+            "text": "kompiler"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Framework menyediakan struktur dasar aplikasi."
+      },
+      {
+        "id": "pr-ls-15",
+        "text": "Git terutama digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "editing gambar"
+          },
+          {
+            "id": "b",
+            "text": "version control (mengelola versi kode)"
+          },
+          {
+            "id": "c",
+            "text": "mengelola database"
+          },
+          {
+            "id": "d",
+            "text": "membuat animasi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Git adalah sistem version control."
+      },
+      {
+        "id": "pr-ls-16",
+        "text": "Repository dalam Git adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tempat menyimpan file dan riwayat perubahan"
+          },
+          {
+            "id": "b",
+            "text": "alat debugging"
+          },
+          {
+            "id": "c",
+            "text": "file executable"
+          },
+          {
+            "id": "d",
+            "text": "bahasa pemrograman"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Repo menyimpan kode dan riwayatnya."
+      },
+      {
+        "id": "pr-ls-17",
+        "text": "Branch dalam Git digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menghapus kode"
+          },
+          {
+            "id": "b",
+            "text": "membuat cabang pengembangan terpisah"
+          },
+          {
+            "id": "c",
+            "text": "mengompilasi kode"
+          },
+          {
+            "id": "d",
+            "text": "mengatur permission"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Branch untuk pengembangan paralel."
+      },
+      {
+        "id": "pr-ls-18",
+        "text": "Menyatukan perubahan dari satu branch ke branch lain disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "commit"
+          },
+          {
+            "id": "b",
+            "text": "push"
+          },
+          {
+            "id": "c",
+            "text": "merge"
+          },
+          {
+            "id": "d",
+            "text": "clone"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Merge menggabungkan perubahan antar branch."
+      },
+      {
+        "id": "pr-ls-19",
+        "text": "Perintah 'for (i=0; i<10; i++)' pada C akan mengulang sebanyak ... ครั้ง",
+        "options": [
+          {
+            "id": "a",
+            "text": "5"
+          },
+          {
+            "id": "b",
+            "text": "9"
+          },
+          {
+            "id": "c",
+            "text": "10"
+          },
+          {
+            "id": "d",
+            "text": "11"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Dari 0 sampai 9 = 10 kali."
+      },
+      {
+        "id": "pr-ls-20",
+        "text": "Komentar tidak memengaruhi ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika program"
+          },
+          {
+            "id": "b",
+            "text": "kecepatan membaca manusia"
+          },
+          {
+            "id": "c",
+            "text": "penjelasan kode"
+          },
+          {
+            "id": "d",
+            "text": "dokumentasi"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Komentar diabaikan compiler/interpreter."
+      }
+    ],
+    "Susah Banget": [
+      {
+        "id": "pr-sb-1",
+        "text": "Big O notation digunakan untuk mengukur ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "keindahan kode"
+          },
+          {
+            "id": "b",
+            "text": "kompleksitas waktu/ruang algoritma"
+          },
+          {
+            "id": "c",
+            "text": "jumlah baris kode"
+          },
+          {
+            "id": "d",
+            "text": "ukuran file"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Big O menggambarkan kompleksitas algoritma."
+      },
+      {
+        "id": "pr-sb-2",
+        "text": "Struktur data yang mengikuti prinsip FIFO adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "stack"
+          },
+          {
+            "id": "b",
+            "text": "queue"
+          },
+          {
+            "id": "c",
+            "text": "tree"
+          },
+          {
+            "id": "d",
+            "text": "graph"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Queue: First In First Out."
+      },
+      {
+        "id": "pr-sb-3",
+        "text": "Struktur data yang mengikuti prinsip LIFO adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "stack"
+          },
+          {
+            "id": "b",
+            "text": "queue"
+          },
+          {
+            "id": "c",
+            "text": "linked list"
+          },
+          {
+            "id": "d",
+            "text": "array"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Stack: Last In First Out."
+      },
+      {
+        "id": "pr-sb-4",
+        "text": "Algoritma pengurutan yang membandingkan elemen berpasangan, seperti bubble sort, termasuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "divide and conquer"
+          },
+          {
+            "id": "b",
+            "text": "comparison sort"
+          },
+          {
+            "id": "c",
+            "text": "hashing"
+          },
+          {
+            "id": "d",
+            "text": "dynamic programming"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Bubble sort adalah comparison sort."
+      },
+      {
+        "id": "pr-sb-5",
+        "text": "Rekursi adalah teknik pemrograman di mana fungsi ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "memanggil dirinya sendiri"
+          },
+          {
+            "id": "b",
+            "text": "menghapus dirinya"
+          },
+          {
+            "id": "c",
+            "text": "berhenti sebelum mulai"
+          },
+          {
+            "id": "d",
+            "text": "tidak memiliki parameter"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Rekursi: fungsi memanggil diri sendiri."
+      },
+      {
+        "id": "pr-sb-6",
+        "text": "Deadlock pada pemrograman paralel terjadi ketika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "program terlalu cepat"
+          },
+          {
+            "id": "b",
+            "text": "proses saling menunggu sumber daya"
+          },
+          {
+            "id": "c",
+            "text": "internet putus"
+          },
+          {
+            "id": "d",
+            "text": "file hilang"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Deadlock: tiap proses menunggu proses lain."
+      },
+      {
+        "id": "pr-sb-7",
+        "text": "Garbage collector bertugas untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "membuat UI"
+          },
+          {
+            "id": "b",
+            "text": "menghapus kode"
+          },
+          {
+            "id": "c",
+            "text": "mengelola memori yang tidak terpakai"
+          },
+          {
+            "id": "d",
+            "text": "mengompilasi program"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "GC membebaskan memori yang tidak direferensikan."
+      },
+      {
+        "id": "pr-sb-8",
+        "text": "Hash function digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "membagi file"
+          },
+          {
+            "id": "b",
+            "text": "memetakan data ke nilai tetap"
+          },
+          {
+            "id": "c",
+            "text": "menghapus data"
+          },
+          {
+            "id": "d",
+            "text": "membuat array"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Hash function memetakan data ke hash value."
+      },
+      {
+        "id": "pr-sb-9",
+        "text": "REST dalam web service adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "bahasa pemrograman"
+          },
+          {
+            "id": "b",
+            "text": "arsitektur layanan web berbasis HTTP"
+          },
+          {
+            "id": "c",
+            "text": "sistem operasi"
+          },
+          {
+            "id": "d",
+            "text": "database"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "REST = Representational State Transfer."
+      },
+      {
+        "id": "pr-sb-10",
+        "text": "JSON umumnya digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "gambar"
+          },
+          {
+            "id": "b",
+            "text": "video"
+          },
+          {
+            "id": "c",
+            "text": "pertukaran data terstruktur"
+          },
+          {
+            "id": "d",
+            "text": "file musik"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "JSON populer untuk pertukaran data."
+      },
+      {
+        "id": "pr-sb-11",
+        "text": "SQL injection adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "teknik optimasi query"
+          },
+          {
+            "id": "b",
+            "text": "serangan keamanan yang menyisipkan perintah SQL berbahaya"
+          },
+          {
+            "id": "c",
+            "text": "fitur database"
+          },
+          {
+            "id": "d",
+            "text": "format backup"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "SQL injection adalah serangan keamanan."
+      },
+      {
+        "id": "pr-sb-12",
+        "text": "Enkripsi bertujuan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mempercepat program"
+          },
+          {
+            "id": "b",
+            "text": "membuat data tidak terbaca bagi pihak tidak berwenang"
+          },
+          {
+            "id": "c",
+            "text": "menghapus data"
+          },
+          {
+            "id": "d",
+            "text": "mengkompres file"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Enkripsi menjaga kerahasiaan data."
+      },
+      {
+        "id": "pr-sb-13",
+        "text": "Unit testing digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menguji seluruh sistem"
+          },
+          {
+            "id": "b",
+            "text": "menghapus bug secara otomatis"
+          },
+          {
+            "id": "c",
+            "text": "menguji bagian kecil/kesatuan kode"
+          },
+          {
+            "id": "d",
+            "text": "mengganti library"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Unit test fokus ke unit kecil kode."
+      },
+      {
+        "id": "pr-sb-14",
+        "text": "Continuous Integration (CI) membantu ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mengirim email otomatis"
+          },
+          {
+            "id": "b",
+            "text": "menguji dan menggabungkan perubahan kode secara rutin"
+          },
+          {
+            "id": "c",
+            "text": "membuat server"
+          },
+          {
+            "id": "d",
+            "text": "mengatur firewall"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "CI mengotomatiskan build & test."
+      },
+      {
+        "id": "pr-sb-15",
+        "text": "Framework frontend populer antara lain ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Django"
+          },
+          {
+            "id": "b",
+            "text": "Flask"
+          },
+          {
+            "id": "c",
+            "text": "React"
+          },
+          {
+            "id": "d",
+            "text": "Laravel"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "React adalah framework/library frontend."
+      },
+      {
+        "id": "pr-sb-16",
+        "text": "Dalam OOP, enkapsulasi berarti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyembunyikan detail implementasi dan hanya menampilkan antarmuka"
+          },
+          {
+            "id": "b",
+            "text": "menggandakan kode"
+          },
+          {
+            "id": "c",
+            "text": "menghapus method"
+          },
+          {
+            "id": "d",
+            "text": "menambah bug"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Enkapsulasi menyembunyikan detail dan menyediakan interface."
+      },
+      {
+        "id": "pr-sb-17",
+        "text": "Inheritance (pewarisan) digunakan untuk ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyulitkan kode"
+          },
+          {
+            "id": "b",
+            "text": "menghapus class"
+          },
+          {
+            "id": "c",
+            "text": "mewarisi properti dan method dari class lain"
+          },
+          {
+            "id": "d",
+            "text": "mengganti tipe data"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Class turunan mewarisi dari class induk."
+      },
+      {
+        "id": "pr-sb-18",
+        "text": "Polymorphism memungkinkan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "satu fungsi memiliki banyak bentuk perilaku"
+          },
+          {
+            "id": "b",
+            "text": "satu variabel banyak nama"
+          },
+          {
+            "id": "c",
+            "text": "menghapus semua fungsi"
+          },
+          {
+            "id": "d",
+            "text": "menggandakan memori"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Polymorphism: satu interface, banyak implementasi."
+      },
+      {
+        "id": "pr-sb-19",
+        "text": "Design pattern 'Singleton' memastikan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "banyak objek dapat dibuat"
+          },
+          {
+            "id": "b",
+            "text": "hanya satu instance objek yang dibuat"
+          },
+          {
+            "id": "c",
+            "text": "tidak ada objek yang dibuat"
+          },
+          {
+            "id": "d",
+            "text": "semua objek dihapus"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Singleton membatasi satu instance."
+      },
+      {
+        "id": "pr-sb-20",
+        "text": "Refactoring adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "mengganti bahasa pemrograman"
+          },
+          {
+            "id": "b",
+            "text": "mengubah struktur internal kode tanpa mengubah perilaku eksternal"
+          },
+          {
+            "id": "c",
+            "text": "menghapus komentar"
+          },
+          {
+            "id": "d",
+            "text": "mengganti hardware"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Refactoring memperbaiki struktur kode."
+      }
+    ]
+  },
+  "Filsafat": {
+    "Mudah": [
+      {
+        "id": "fi-md-1",
+        "text": "Filsafat secara umum adalah kegiatan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menerka tanpa dasar"
+          },
+          {
+            "id": "b",
+            "text": "berpikir kritis dan mendalam"
+          },
+          {
+            "id": "c",
+            "text": "mengingat sejarah"
+          },
+          {
+            "id": "d",
+            "text": "menghafal rumus"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Filsafat mengajak berpikir kritis dan reflektif."
+      },
+      {
+        "id": "fi-md-2",
+        "text": "Tokoh yang dikenal sebagai filsuf Yunani kuno adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Newton"
+          },
+          {
+            "id": "b",
+            "text": "Einstein"
+          },
+          {
+            "id": "c",
+            "text": "Socrates"
+          },
+          {
+            "id": "d",
+            "text": "Darwin"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Socrates adalah filsuf Yunani."
+      },
+      {
+        "id": "fi-md-3",
+        "text": "Cabang filsafat yang membahas pengetahuan disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika"
+          },
+          {
+            "id": "b",
+            "text": "etika"
+          },
+          {
+            "id": "c",
+            "text": "epistemologi"
+          },
+          {
+            "id": "d",
+            "text": "metafisika"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Epistemologi = teori pengetahuan."
+      },
+      {
+        "id": "fi-md-4",
+        "text": "Cabang filsafat yang membahas baik-buruk tindakan disebut ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika"
+          },
+          {
+            "id": "b",
+            "text": "etika"
+          },
+          {
+            "id": "c",
+            "text": "estetika"
+          },
+          {
+            "id": "d",
+            "text": "ontologi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Etika berkaitan dengan moral dan tindakan."
+      },
+      {
+        "id": "fi-md-5",
+        "text": "Logika mempelajari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "perasaan"
+          },
+          {
+            "id": "b",
+            "text": "kebetulan"
+          },
+          {
+            "id": "c",
+            "text": "cara berpikir yang benar"
+          },
+          {
+            "id": "d",
+            "text": "sejarah perang"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Logika mengatur penalaran yang benar."
+      },
+      {
+        "id": "fi-md-6",
+        "text": "Tokoh filsafat yang terkenal dengan metode keraguannya adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Descartes"
+          },
+          {
+            "id": "b",
+            "text": "Kant"
+          },
+          {
+            "id": "c",
+            "text": "Aristoteles"
+          },
+          {
+            "id": "d",
+            "text": "Plato"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "René Descartes terkenal dengan metode keraguannya."
+      },
+      {
+        "id": "fi-md-7",
+        "text": "Istilah 'ontologi' mengacu pada ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "ilmu tentang keindahan"
+          },
+          {
+            "id": "b",
+            "text": "ilmu tentang ada/keberadaan"
+          },
+          {
+            "id": "c",
+            "text": "ilmu tentang bahasa"
+          },
+          {
+            "id": "d",
+            "text": "ilmu tentang angka"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Ontologi membahas hakikat keberadaan."
+      },
+      {
+        "id": "fi-md-8",
+        "text": "Estetika dalam filsafat membahas ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kebenaran"
+          },
+          {
+            "id": "b",
+            "text": "kebaikan"
+          },
+          {
+            "id": "c",
+            "text": "keindahan"
+          },
+          {
+            "id": "d",
+            "text": "keberadaan"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Estetika = filsafat tentang keindahan."
+      },
+      {
+        "id": "fi-md-9",
+        "text": "Sikap kritis dalam filsafat berarti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menolak semua hal"
+          },
+          {
+            "id": "b",
+            "text": "tidak percaya pada siapa pun"
+          },
+          {
+            "id": "c",
+            "text": "menguji dan mempertanyakan secara rasional"
+          },
+          {
+            "id": "d",
+            "text": "selalu berdebat"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Kritis berarti memeriksa alasan, bukan asal menolak."
+      },
+      {
+        "id": "fi-md-10",
+        "text": "Argumen adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "serangan pribadi"
+          },
+          {
+            "id": "b",
+            "text": "ungkapkan perasaan"
+          },
+          {
+            "id": "c",
+            "text": "sekumpulan alasan untuk mendukung kesimpulan"
+          },
+          {
+            "id": "d",
+            "text": "cerita fiksi"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Argumen terdiri dari premis dan kesimpulan."
+      },
+      {
+        "id": "fi-md-11",
+        "text": "Plato adalah murid dari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Socrates"
+          },
+          {
+            "id": "b",
+            "text": "Aristoteles"
+          },
+          {
+            "id": "c",
+            "text": "Descartes"
+          },
+          {
+            "id": "d",
+            "text": "Kant"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Plato adalah murid Socrates."
+      },
+      {
+        "id": "fi-md-12",
+        "text": "Filsuf adalah orang yang ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "hanya suka berdebat"
+          },
+          {
+            "id": "b",
+            "text": "mencari kebijaksanaan"
+          },
+          {
+            "id": "c",
+            "text": "menghafal data"
+          },
+          {
+            "id": "d",
+            "text": "mengolah makanan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Filsuf berarti pecinta kebijaksanaan."
+      },
+      {
+        "id": "fi-md-13",
+        "text": "Etika terapan membahas ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "teori abstrak"
+          },
+          {
+            "id": "b",
+            "text": "penerapan prinsip moral dalam kasus nyata"
+          },
+          {
+            "id": "c",
+            "text": "hanya sejarah moral"
+          },
+          {
+            "id": "d",
+            "text": "hanya perasaan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Etika terapan menerapkan prinsip etika pada kasus konkret."
+      },
+      {
+        "id": "fi-md-14",
+        "text": "Metafisika seringkali membahas ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "angka dan statistik"
+          },
+          {
+            "id": "b",
+            "text": "hakikat realitas"
+          },
+          {
+            "id": "c",
+            "text": "cara memasak"
+          },
+          {
+            "id": "d",
+            "text": "teknik olahraga"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Metafisika = hakikat realitas, keberadaan, dan dunia."
+      },
+      {
+        "id": "fi-md-15",
+        "text": "Salah satu pertanyaan filsafat klasik adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "berapa 2+2"
+          },
+          {
+            "id": "b",
+            "text": "apa yang harus saya makan"
+          },
+          {
+            "id": "c",
+            "text": "siapakah saya"
+          },
+          {
+            "id": "d",
+            "text": "berapa harga tiket"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Pertanyaan tentang identitas diri adalah pertanyaan filsafat."
+      },
+      {
+        "id": "fi-md-16",
+        "text": "Kebebasan berpendapat dalam filsafat berarti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "boleh berkata apa saja tanpa konsekuensi"
+          },
+          {
+            "id": "b",
+            "text": "boleh berkata apa saja dengan tanggung jawab dan alasan"
+          },
+          {
+            "id": "c",
+            "text": "tidak perlu memikirkan orang lain"
+          },
+          {
+            "id": "d",
+            "text": "menyerang pendapat orang"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Kebebasan berpendapat disertai tanggung jawab dan argumen."
+      },
+      {
+        "id": "fi-md-17",
+        "text": "Skeptisisme dalam filsafat adalah sikap ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menerima semua hal"
+          },
+          {
+            "id": "b",
+            "text": "ragu dan menunda keputusan sampai ada alasan kuat"
+          },
+          {
+            "id": "c",
+            "text": "menolak segala hal"
+          },
+          {
+            "id": "d",
+            "text": "mengabaikan fakta"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Skeptis = hati-hati dalam menerima klaim."
+      },
+      {
+        "id": "fi-md-18",
+        "text": "Tokoh yang terkenal dengan ajaran 'Aku berpikir maka aku ada' adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Plato"
+          },
+          {
+            "id": "b",
+            "text": "Descartes"
+          },
+          {
+            "id": "c",
+            "text": "Nietzsche"
+          },
+          {
+            "id": "d",
+            "text": "Hume"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Cogito ergo sum dari Descartes."
+      },
+      {
+        "id": "fi-md-19",
+        "text": "Filsafat politik membahas ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "struktur negara, kekuasaan, dan keadilan"
+          },
+          {
+            "id": "b",
+            "text": "cara memasak"
+          },
+          {
+            "id": "c",
+            "text": "hukum fisika"
+          },
+          {
+            "id": "d",
+            "text": "rumus matematika"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Filsafat politik refleksi tentang negara, kekuasaan, keadilan."
+      },
+      {
+        "id": "fi-md-20",
+        "text": "Dialog filsafat biasanya berisi ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "cerita horor"
+          },
+          {
+            "id": "b",
+            "text": "obrolan tanpa arah"
+          },
+          {
+            "id": "c",
+            "text": "pertukaran argumen dan gagasan"
+          },
+          {
+            "id": "d",
+            "text": "iklan produk"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Dialog filsafat memuat tanya jawab dan argumen."
+      }
+    ],
+    "Lumayan Susah": [
+      {
+        "id": "fi-ls-1",
+        "text": "Epistemologi mempertanyakan hal-hal seperti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "apa itu keindahan?"
+          },
+          {
+            "id": "b",
+            "text": "apa yang bisa kita ketahui dan bagaimana kita mengetahuinya?"
+          },
+          {
+            "id": "c",
+            "text": "apa yang ada?"
+          },
+          {
+            "id": "d",
+            "text": "bagaimana seharusnya kita hidup?"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Epistemologi fokus pada sumber, batas, dan validitas pengetahuan."
+      },
+      {
+        "id": "fi-ls-2",
+        "text": "Argumen yang sahih (valid) adalah argumen yang ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "premisnya pasti benar"
+          },
+          {
+            "id": "b",
+            "text": "jika premis benar maka kesimpulan pasti benar"
+          },
+          {
+            "id": "c",
+            "text": "disukai banyak orang"
+          },
+          {
+            "id": "d",
+            "text": "pendek dan lucu"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Validitas berhubungan dengan bentuk logis, bukan kebenaran premis."
+      },
+      {
+        "id": "fi-ls-3",
+        "text": "Falasi (fallacy) adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "gagasan kreatif"
+          },
+          {
+            "id": "b",
+            "text": "kesalahan penalaran"
+          },
+          {
+            "id": "c",
+            "text": "pendapat pribadi"
+          },
+          {
+            "id": "d",
+            "text": "perasaan sedih"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Falasi = kekeliruan dalam berpikir/berargumen."
+      },
+      {
+        "id": "fi-ls-4",
+        "text": "Prinsip 'the greatest happiness for the greatest number' terkait dengan teori etika ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "deontologi"
+          },
+          {
+            "id": "b",
+            "text": "utilitarianisme"
+          },
+          {
+            "id": "c",
+            "text": "virtue ethics"
+          },
+          {
+            "id": "d",
+            "text": "egoisme"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Utilitarianisme melihat konsekuensi kebahagiaan terbesar."
+      },
+      {
+        "id": "fi-ls-5",
+        "text": "Deontologi menekankan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "akibat dari tindakan"
+          },
+          {
+            "id": "b",
+            "text": "tugas dan kewajiban moral"
+          },
+          {
+            "id": "c",
+            "text": "perasaan sesaat"
+          },
+          {
+            "id": "d",
+            "text": "tradisi saja"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Deontologi fokus pada kewajiban dan aturan moral."
+      },
+      {
+        "id": "fi-ls-6",
+        "text": "Virtue ethics menekankan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "aturan tertulis"
+          },
+          {
+            "id": "b",
+            "text": "akibat perbuatan"
+          },
+          {
+            "id": "c",
+            "text": "pembentukan karakter baik"
+          },
+          {
+            "id": "d",
+            "text": "kepatuhan buta"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Etika kebajikan fokus pada karakter dan kebiasaan baik."
+      },
+      {
+        "id": "fi-ls-7",
+        "text": "Dalam logika, 'premis' adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "hasil akhir argumen"
+          },
+          {
+            "id": "b",
+            "text": "pernyataan yang mendukung kesimpulan"
+          },
+          {
+            "id": "c",
+            "text": "pendapat tidak penting"
+          },
+          {
+            "id": "d",
+            "text": "contoh saja"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Premis menyediakan alasan untuk kesimpulan."
+      },
+      {
+        "id": "fi-ls-8",
+        "text": "Reductio ad absurdum adalah metode berpikir dengan cara ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menyerang pribadi"
+          },
+          {
+            "id": "b",
+            "text": "membawa argumen lawan ke konsekuensi yang mustahil"
+          },
+          {
+            "id": "c",
+            "text": "menghafal definisi"
+          },
+          {
+            "id": "d",
+            "text": "menertawakan lawan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Metode ini menunjukkan bahwa posisi lawan membawa ke kontradiksi."
+      },
+      {
+        "id": "fi-ls-9",
+        "text": "Eksistensialisme sering menyoroti tema ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "rumus fisika"
+          },
+          {
+            "id": "b",
+            "text": "makna hidup, kebebasan, dan tanggung jawab individu"
+          },
+          {
+            "id": "c",
+            "text": "struktur negara"
+          },
+          {
+            "id": "d",
+            "text": "keindahan alam"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Eksistensialisme fokus pada keberadaan individu dan kebebasan."
+      },
+      {
+        "id": "fi-ls-10",
+        "text": "Salah satu pertanyaan etika: 'Apa yang seharusnya saya lakukan?' termasuk contoh ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "pertanyaan metafisik"
+          },
+          {
+            "id": "b",
+            "text": "pertanyaan epistemologis"
+          },
+          {
+            "id": "c",
+            "text": "pertanyaan normatif"
+          },
+          {
+            "id": "d",
+            "text": "pertanyaan estetis"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Etika normatif menanyakan apa yang seharusnya kita lakukan."
+      },
+      {
+        "id": "fi-ls-11",
+        "text": "Thomas Aquinas dikenal sebagai filsuf yang banyak menggabungkan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "filsafat dan seni lukis"
+          },
+          {
+            "id": "b",
+            "text": "filsafat Yunani dan teologi Kristen"
+          },
+          {
+            "id": "c",
+            "text": "filsafat Timur dan musik"
+          },
+          {
+            "id": "d",
+            "text": "filsafat dan biologi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Aquinas mensintesis Aristoteles dengan teologi Kristen."
+      },
+      {
+        "id": "fi-ls-12",
+        "text": "'Tabula rasa' (meja kosong) dalam epistemologi sering dikaitkan dengan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Plato"
+          },
+          {
+            "id": "b",
+            "text": "Descartes"
+          },
+          {
+            "id": "c",
+            "text": "Locke"
+          },
+          {
+            "id": "d",
+            "text": "Kant"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "John Locke melihat pikiran sebagai tabula rasa saat lahir."
+      },
+      {
+        "id": "fi-ls-13",
+        "text": "Kata 'metafisika' secara harfiah berarti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "sesuatu yang indah"
+          },
+          {
+            "id": "b",
+            "text": "sesuatu yang sesudah fisika"
+          },
+          {
+            "id": "c",
+            "text": "sesuatu yang mudah"
+          },
+          {
+            "id": "d",
+            "text": "sesuatu yang kosong"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Secara historis berarti 'setelah fisika' pada susunan buku Aristoteles."
+      },
+      {
+        "id": "fi-ls-14",
+        "text": "Relativisme moral menyatakan bahwa ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "nilai moral selalu sama di mana pun"
+          },
+          {
+            "id": "b",
+            "text": "nilai moral tergantung budaya/individu"
+          },
+          {
+            "id": "c",
+            "text": "moral tidak penting"
+          },
+          {
+            "id": "d",
+            "text": "hanya hukum yang penting"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Relativisme melihat moral sebagai relatif."
+      },
+      {
+        "id": "fi-ls-15",
+        "text": "Filsafat bahasa mengkaji ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "struktur fisik otak"
+          },
+          {
+            "id": "b",
+            "text": "asal-usul bahasa dan makna"
+          },
+          {
+            "id": "c",
+            "text": "hukum alam"
+          },
+          {
+            "id": "d",
+            "text": "angka dan rumus"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Filsafat bahasa mempelajari makna, referensi, penggunaan bahasa."
+      },
+      {
+        "id": "fi-ls-16",
+        "text": "'Cogito ergo sum' menggunakan metode ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "introspeksi dan keraguan radikal"
+          },
+          {
+            "id": "b",
+            "text": "eksperimen laboratorium"
+          },
+          {
+            "id": "c",
+            "text": "pengamatan statistik"
+          },
+          {
+            "id": "d",
+            "text": "tradisi lisan"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Descartes menggunakan keraguan radikal dan refleksi diri."
+      },
+      {
+        "id": "fi-ls-17",
+        "text": "Kant terkenal dengan 'imperatif kategoris' yang kurang lebih berarti ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "bertindak sesuai kebiasaan"
+          },
+          {
+            "id": "b",
+            "text": "bertindak hanya menurut prinsip yang dapat diinginkan menjadi hukum umum"
+          },
+          {
+            "id": "c",
+            "text": "bertindak demi keuntungan pribadi"
+          },
+          {
+            "id": "d",
+            "text": "bertindak tanpa berpikir"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Imperatif kategoris menuntut prinsip yang dapat digeneralisasi."
+      },
+      {
+        "id": "fi-ls-18",
+        "text": "Salah satu tujuan belajar filsafat adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menjadi selalu menang debat"
+          },
+          {
+            "id": "b",
+            "text": "tidak pernah salah"
+          },
+          {
+            "id": "c",
+            "text": "mengasah cara berpikir kritis dan terbuka"
+          },
+          {
+            "id": "d",
+            "text": "tidak perlu mendengar orang"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Filsafat mengasah cara berpikir dan sikap terbuka."
+      },
+      {
+        "id": "fi-ls-19",
+        "text": "Skeptis radikal beranggapan bahwa ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "segala sesuatu pasti benar"
+          },
+          {
+            "id": "b",
+            "text": "tidak ada yang dapat diketahui dengan pasti"
+          },
+          {
+            "id": "c",
+            "text": "hanya ilmu alam yang benar"
+          },
+          {
+            "id": "d",
+            "text": "semua pendapat sama saja"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Skeptisisme radikal meragukan kemungkinan kepastian."
+      },
+      {
+        "id": "fi-ls-20",
+        "text": "Konsep 'the self' (diri) dibahas di banyak cabang filsafat, terutama ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "logika formal"
+          },
+          {
+            "id": "b",
+            "text": "filsafat pikiran dan eksistensialisme"
+          },
+          {
+            "id": "c",
+            "text": "filsafat matematika"
+          },
+          {
+            "id": "d",
+            "text": "filsafat hukum"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Filsafat pikiran & eksistensialisme banyak membahas diri."
+      }
+    ],
+    "Susah Banget": [
+      {
+        "id": "fi-sb-1",
+        "text": "Metode dialektika Hegel dapat digambarkan secara sederhana sebagai ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "teori bentuk ideal"
+          },
+          {
+            "id": "b",
+            "text": "sintesis dari tesis dan antitesis"
+          },
+          {
+            "id": "c",
+            "text": "kehendak untuk berkuasa"
+          },
+          {
+            "id": "d",
+            "text": "kembali ke alam"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Dialektika Hegel: tesis–antitesis–sintesis."
+      },
+      {
+        "id": "fi-sb-2",
+        "text": "Fenomenologi, seperti dikembangkan Husserl, berusaha ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menghapus sejarah"
+          },
+          {
+            "id": "b",
+            "text": "kembali ke 'hal-hal itu sendiri' melalui deskripsi pengalaman sadar"
+          },
+          {
+            "id": "c",
+            "text": "menolak semua pengalaman"
+          },
+          {
+            "id": "d",
+            "text": "hanya mempelajari alam"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Fenomenologi mendeskripsikan struktur kesadaran sebagaimana dialami."
+      },
+      {
+        "id": "fi-sb-3",
+        "text": "Nietzsche mengkritik moral tradisional sebagai ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "moral budak"
+          },
+          {
+            "id": "b",
+            "text": "moral sains"
+          },
+          {
+            "id": "c",
+            "text": "moral teknis"
+          },
+          {
+            "id": "d",
+            "text": "moral alamiah"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Nietzsche membedakan moral tuan dan moral budak."
+      },
+      {
+        "id": "fi-sb-4",
+        "text": "Filsafat analitik sering menekankan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "analisis bahasa dan argumen yang ketat"
+          },
+          {
+            "id": "b",
+            "text": "tentang mistik"
+          },
+          {
+            "id": "c",
+            "text": "tentang seni murni"
+          },
+          {
+            "id": "d",
+            "text": "tentang ramalan masa depan"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Filsafat analitik fokus pada kejelasan logis dan bahasa."
+      },
+      {
+        "id": "fi-sb-5",
+        "text": "'Being-in-the-world' (Dasein) adalah konsep yang terkenal dari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sartre"
+          },
+          {
+            "id": "b",
+            "text": "Heidegger"
+          },
+          {
+            "id": "c",
+            "text": "Camus"
+          },
+          {
+            "id": "d",
+            "text": "Kierkegaard"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Heidegger memakai istilah Dasein."
+      },
+      {
+        "id": "fi-sb-6",
+        "text": "Pragmatisme menilai kebenaran berdasarkan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tradisi"
+          },
+          {
+            "id": "b",
+            "text": "kepuasan emosional"
+          },
+          {
+            "id": "c",
+            "text": "manfaat praktis dan konsekuensi"
+          },
+          {
+            "id": "d",
+            "text": "populer atau tidak"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Pragmatisme: yang benar adalah yang 'bekerja' secara praktis."
+      },
+      {
+        "id": "fi-sb-7",
+        "text": "Dalam etika Kant, manusia harus diperlakukan sebagai tujuan, bukan semata sebagai ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kawan"
+          },
+          {
+            "id": "b",
+            "text": "barang"
+          },
+          {
+            "id": "c",
+            "text": "alat"
+          },
+          {
+            "id": "d",
+            "text": "teman"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Manusia tidak boleh diperlakukan hanya sebagai alat."
+      },
+      {
+        "id": "fi-sb-8",
+        "text": "Hume skeptis terhadap konsep sebab-akibat karena ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tidak ada dunia luar"
+          },
+          {
+            "id": "b",
+            "text": "kita hanya mengamati kebiasaan berurutan, bukan hubungan perlu"
+          },
+          {
+            "id": "c",
+            "text": "sebab-akibat hanya ilusi optik"
+          },
+          {
+            "id": "d",
+            "text": "sebab-akibat tidak penting"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Hume melihat sebab-akibat sebagai kebiasaan pikiran."
+      },
+      {
+        "id": "fi-sb-9",
+        "text": "Filsafat mind–body problem membahas relasi antara ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "jiwa dan tubuh"
+          },
+          {
+            "id": "b",
+            "text": "negara dan warga"
+          },
+          {
+            "id": "c",
+            "text": "guru dan murid"
+          },
+          {
+            "id": "d",
+            "text": "seni dan ilmu"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Mind–body problem: hubungan pikiran dan tubuh."
+      },
+      {
+        "id": "fi-sb-10",
+        "text": "Teori 'veil of ignorance' tentang keadilan dikemukakan oleh ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rawls"
+          },
+          {
+            "id": "b",
+            "text": "Mill"
+          },
+          {
+            "id": "c",
+            "text": "Bentham"
+          },
+          {
+            "id": "d",
+            "text": "Hobbes"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "John Rawls memperkenalkan 'veil of ignorance'."
+      },
+      {
+        "id": "fi-sb-11",
+        "text": "Menurut existentialisme Sartre, manusia ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tidak bebas"
+          },
+          {
+            "id": "b",
+            "text": "ditentukan sepenuhnya oleh Tuhan"
+          },
+          {
+            "id": "c",
+            "text": "dikondisikan semua oleh biologi"
+          },
+          {
+            "id": "d",
+            "text": "dikutuk untuk bebas dan bertanggung jawab"
+          }
+        ],
+        "answerId": "d",
+        "explanation": "Sartre: 'man is condemned to be free'."
+      },
+      {
+        "id": "fi-sb-12",
+        "text": "Determinisme keras (hard determinism) berpendapat bahwa ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "tidak ada hukum alam"
+          },
+          {
+            "id": "b",
+            "text": "semua kejadian telah ditentukan dan kebebasan sejati tidak ada"
+          },
+          {
+            "id": "c",
+            "text": "manusia selalu bebas"
+          },
+          {
+            "id": "d",
+            "text": "moral tidak relevan"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Hard determinism menolak kebebasan kehendak."
+      },
+      {
+        "id": "fi-sb-13",
+        "text": "Compatibilism mencoba ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "menolak moralitas"
+          },
+          {
+            "id": "b",
+            "text": "menyatakan sebab-akibat tidak ada"
+          },
+          {
+            "id": "c",
+            "text": "merekonsiliasi kebebasan dan determinisme"
+          },
+          {
+            "id": "d",
+            "text": "menghapus konsep tanggung jawab"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Compatibilism menggabungkan determinisme dengan kebebasan yang dipahami secara lain."
+      },
+      {
+        "id": "fi-sb-14",
+        "text": "Teori koherensi kebenaran menyatakan bahwa ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "kebenaran adalah yang sesuai fakta"
+          },
+          {
+            "id": "b",
+            "text": "kebenaran adalah yang bermanfaat"
+          },
+          {
+            "id": "c",
+            "text": "kebenaran adalah yang koheren dengan sistem keyakinan"
+          },
+          {
+            "id": "d",
+            "text": "kebenaran tidak ada"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Teori koherensi: kebenaran = koherensi dalam sistem keyakinan."
+      },
+      {
+        "id": "fi-sb-15",
+        "text": "Dalam logika simbolik, '∀x P(x)' dibaca sebagai ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "ada x"
+          },
+          {
+            "id": "b",
+            "text": "tidak ada x"
+          },
+          {
+            "id": "c",
+            "text": "untuk semua x, P(x)"
+          },
+          {
+            "id": "d",
+            "text": "untuk sebagian x, P(x)"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "∀ berarti 'untuk semua'."
+      },
+      {
+        "id": "fi-sb-16",
+        "text": "Paradox Russell muncul ketika kita mempertanyakan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "setiap bilangan genap"
+          },
+          {
+            "id": "b",
+            "text": "himpunan semua himpunan yang tidak memuat dirinya sendiri"
+          },
+          {
+            "id": "c",
+            "text": "semua bilangan prima"
+          },
+          {
+            "id": "d",
+            "text": "warna merah"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Paradoks Russell tentang himpunan yang memuat/memuat diri sendiri."
+      },
+      {
+        "id": "fi-sb-17",
+        "text": "'Language game' (permainan bahasa) adalah konsep penting dari ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wittgenstein"
+          },
+          {
+            "id": "b",
+            "text": "Kant"
+          },
+          {
+            "id": "c",
+            "text": "Plato"
+          },
+          {
+            "id": "d",
+            "text": "Hume"
+          }
+        ],
+        "answerId": "a",
+        "explanation": "Ludwig Wittgenstein menggunakan konsep permainan bahasa."
+      },
+      {
+        "id": "fi-sb-18",
+        "text": "Salah satu ciri berpikir filosofis adalah ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "cepat dan spontan"
+          },
+          {
+            "id": "b",
+            "text": "hanya mengandalkan perasaan"
+          },
+          {
+            "id": "c",
+            "text": "sistematis, kritis, dan reflektif"
+          },
+          {
+            "id": "d",
+            "text": "sekadar menghafal pendapat orang"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Berpikir filosofis menuntut sikap reflektif dan kritis."
+      },
+      {
+        "id": "fi-sb-19",
+        "text": "Metafora 'gua' Plato menggambarkan ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "struktur atom"
+          },
+          {
+            "id": "b",
+            "text": "proses belajar matematika"
+          },
+          {
+            "id": "c",
+            "text": "perjalanan jiwa dari kebodohan menuju pengetahuan sejati"
+          },
+          {
+            "id": "d",
+            "text": "sejarah perang"
+          }
+        ],
+        "answerId": "c",
+        "explanation": "Allegory of the cave menggambarkan pencerahan intelektual."
+      },
+      {
+        "id": "fi-sb-20",
+        "text": "Filsafat ilmu membahas ...",
+        "options": [
+          {
+            "id": "a",
+            "text": "cara mengelola uang"
+          },
+          {
+            "id": "b",
+            "text": "dasar, metode, dan batasan ilmu pengetahuan"
+          },
+          {
+            "id": "c",
+            "text": "cara menggambar"
+          },
+          {
+            "id": "d",
+            "text": "cara bernyanyi"
+          }
+        ],
+        "answerId": "b",
+        "explanation": "Filsafat ilmu merefleksikan dasar dan metode sains."
+      }
     ]
   }
 }
