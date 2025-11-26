@@ -7,42 +7,51 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="landing">
-    <!-- kiri: ilustrasi + logo teks -->
-    <div class="landing-left">
-      <div class="brand-text">
-        <div class="brand-title">QUIZZER</div>
-        <div class="brand-tagline">BELAJAR JADI LEBIH MENYENANGKAN</div>
-      </div>
+<div class="page">
 
-      <!-- gambar guru (boleh diganti <img> sendiri nanti) -->
-      <div class="teacher-illustration">
-        <!-- kalau punya gambar PNG sendiri, ganti div ini dengan:
-        <img src="guru.png" alt="Guru" />
-        -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-bubble">Q</div>
+      <div>
+        <div><b>Quizzer</b></div>
+        <div style="font-size:11px;color:#6b7280;">Belajar jadi lebih menyenangkan</div>
       </div>
     </div>
+    <nav class="header-nav">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guru.html">Guru</a>
+      <a href="bantuan.html">Bantuan</a>
+    </nav>
+  </header>
 
-    <!-- kanan: menu + konten utama -->
-    <div class="landing-right">
-      <!-- NAV BAR -->
-      <nav class="landing-nav">
-        <a href="index.html" class="nav-note active">BERANDA</a>
-        <a href="bantuan.html" class="nav-note">BANTUAN</a>
-        <a href="guru.html" class="nav-circle">GURU</a>
-      </nav>
+  <main class="site-main">
+    <section class="hero">
+      <h1>Selamat datang di Quizzer 🎉</h1>
+      <p style="margin-top:8px;font-size:13px;">
+        Quizzer adalah website pembelajaran interaktif berbasis kuis yang membantu
+        siswa belajar dengan lebih menyenangkan.
+      </p>
 
-      <!-- konten tengah -->
-      <main class="landing-main">
-        <div class="landing-icon">
-          📖❓
-        </div>
-        <h1 class="landing-title">Quizzer</h1>
-        <p class="landing-subtitle">Ayo mulai belajar sekarang!</p>
+      <div style="margin-top:14px;">
+        <a href="quiz.html" class="btn primary">Mulai Belajar Sekarang</a>
+      </div>
+    </section>
 
-        <a href="quiz.html" class="landing-button">Mulai</a>
-      </main>
-    </div>
-  </div>
+    <section class="card">
+      <h2>Tentang Website Ini</h2>
+      <p class="small" style="margin-top:6px;">
+        Website ini dibuat untuk membantu siswa memahami berbagai materi pelajaran dengan
+        cara yang lebih interaktif. Siswa bisa memilih mata pelajaran dan level kesulitan
+        sebelum mulai mengerjakan soal.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 — Quizzer
+  </footer>
+
+</div>
 </body>
 </html>
