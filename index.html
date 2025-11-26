@@ -11,15 +11,15 @@
 
     <div class="header">
       <div class="title">Quiz Kreativitas Siswa ✨</div>
-      <div class="subtitle">Mode Siswa — Jawab soal interaktif</div>
+      <div class="subtitle">Mode Siswa — Jawab soal interaktif dan kreatif</div>
     </div>
 
-    <!-- HOME -->
+    <!-- HALAMAN MENU / HOME -->
     <section id="home" class="card">
       <h2>Mulai Quiz</h2>
-      <p class="small">Pilih mata pelajaran dan level.</p>
+      <p class="small">Pilih mata pelajaran dan level, lalu mulai petualangan soal 🎯</p>
 
-      <div class="grid grid-2">
+      <div class="grid grid-2" style="margin-top:10px;">
         <div>
           <label>Mata Pelajaran</label>
           <select id="category"></select>
@@ -41,11 +41,13 @@
       </div>
     </section>
 
-    <!-- QUIZ -->
+    <!-- HALAMAN QUIZ -->
     <section id="quiz" class="card hidden">
       <div class="flex-between">
         <div class="quiz-meta" id="meta"></div>
-        <div class="quiz-score">Skor: <span id="score">0</span></div>
+        <div class="quiz-score">
+          Skor: <span id="score">0</span>
+        </div>
       </div>
 
       <div class="quiz-meta" id="progressText"></div>
@@ -68,19 +70,19 @@
       </div>
     </section>
 
-    <!-- RESULT -->
+    <!-- HALAMAN HASIL -->
     <section id="result" class="card hidden" style="text-align:center;">
       <h2>Hasil Quiz</h2>
-      <p id="resultText"></p>
+      <p id="resultText" style="margin-top:8px;"></p>
 
-      <div class="home-row" style="justify-content:center;">
+      <div class="home-row" style="justify-content:center; margin-top:14px;">
         <button id="btn-res-retry" class="btn btn-main">Ulangi Level</button>
         <button id="btn-res-home" class="btn btn-outline">Kembali ke Menu</button>
       </div>
     </section>
 
     <div class="footer">
-      © 2025 — Quiz Interaktif untuk Siswa
+      © 2025 — Quiz Interaktif untuk Siswa • Soal diambil dari <span class="code">questions.json</span>
     </div>
 
   </div>
