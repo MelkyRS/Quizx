@@ -13,7 +13,7 @@
         <div class="logo-bubble">Q</div>
         <div>
           <div class="site-title">Quiz Kreativitas</div>
-          <div class="site-subtitle">Latih logika & imajinasi siswa</div>
+          <div class="site-subtitle">Mode Siswa – Mengerjakan Soal</div>
         </div>
       </div>
       <nav class="header-nav">
@@ -30,8 +30,8 @@
         <section id="home" class="card">
           <h2>Pilih Quiz</h2>
           <p class="small" style="margin-top:4px;">
-            Pilih mata pelajaran dan level, lalu klik <strong>Mulai Quiz</strong>.
-            Kamu juga bisa mengacak kategori dengan tombol <strong>Acak Soal</strong>.
+            Pilih mata pelajaran dan tingkat kesulitan yang ingin dikerjakan.
+            Kamu bisa mengacak kategori dengan tombol <strong>Acak Soal</strong>.
           </p>
 
           <div class="grid-2" style="margin-top:12px;">
@@ -55,21 +55,21 @@
           </div>
 
           <p class="hint">
-            💡 Ketika siswa mengulang level yang sama, urutan soal diacak dan dimulai dari soal yang berbeda.
+            💡 Jika kamu mengulang level yang sama, urutan soal akan diacak dan dimulai dari soal yang berbeda.
           </p>
         </section>
 
         <aside class="card">
-          <h3>Info Singkat</h3>
+          <h3>Catatan untuk siswa</h3>
           <ul class="feature-list">
-            <li>📚 Matematika, IPA, Pemrograman, Filsafat.</li>
-            <li>⚖️ Tiga level kesulitan per mata pelajaran.</li>
-            <li>🎲 Soal diacak saat mengulang.</li>
+            <li>📌 Baca penjelasan jawaban setiap selesai menjawab.</li>
+            <li>🎯 Fokus pada pemahaman, bukan hanya hafalan.</li>
+            <li>🔁 Jangan takut mengulang level yang sama beberapa kali.</li>
           </ul>
         </aside>
       </div>
 
-      <!-- Bagian quiz berjalan -->
+      <!-- Quiz berjalan -->
       <section id="quiz" class="card hidden">
         <div class="quiz-header">
           <div class="quiz-meta" id="meta"></div>
@@ -98,11 +98,11 @@
         </div>
       </section>
 
-      <!-- Bagian hasil -->
+      <!-- Hasil -->
       <section id="result" class="card hidden">
         <h2>Hasil Quiz</h2>
-        <p id="resultText" class="result-text"></p>
-        <div class="btn-row center">
+        <p id="resultText" class="result-text small" style="margin-top:6px;"></p>
+        <div class="btn-row center" style="margin-top:10px;">
           <button id="btn-res-retry" class="btn primary">Ulangi Level</button>
           <button id="btn-res-home" class="btn ghost">Kembali ke Pilihan Quiz</button>
         </div>
@@ -110,11 +110,10 @@
     </main>
 
     <footer class="site-footer">
-      © 2025 — Quiz Kreativitas • Bank soal dari <span class="code">questions.json</span>
+      © 2025 — Quiz Kreativitas • Data soal dari <span class="code">questions.json</span>
     </footer>
   </div>
 
-  <!-- HANYA quiz.html yang pakai app.js -->
   <script src="app.js" defer></script>
 </body>
 </html>
