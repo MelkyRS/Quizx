@@ -1,0 +1,87 @@
+{
+  "Bahasa Indonesia": {
+    "Mudah": [
+      {
+        "id": "bi-md-1",
+        "text": "Sinonim dari kata 'besar' adalah...",
+        "options": [
+          {"id":"a","text":"kecil"},
+          {"id":"b","text":"agung"},
+          {"id":"c","text":"sempit"},
+          {"id":"d","text":"tipis"}
+        ],
+        "answerId": "b",
+        "explanation": "Besar dapat bersinonim dengan agung."
+      },
+      {
+        "id": "bi-md-2",
+        "text": "Antonim dari kata 'panas' adalah...",
+        "options": [
+          {"id":"a","text":"hangat"},
+          {"id":"b","text":"dingin"},
+          {"id":"c","text":"air"},
+          {"id":"d","text":"asap"}
+        ],
+        "answerId": "b",
+        "explanation": "Lawan kata panas adalah dingin."
+      },
+      {
+        "id": "bi-md-3",
+        "text": "Kalimat tanya diakhiri tanda...",
+        "options": [
+          {"id":"a","text":"."},
+          {"id":"b","text":","},
+          {"id":"c","text":"!"},
+          {"id":"d","text":"?"}
+        ],
+        "answerId": "d",
+        "explanation": "Kalimat tanya diakhiri tanda tanya."
+      },
+      {
+        "id": "bi-md-4",
+        "text": "Cerita rekaan disebut teks...",
+        "options": [
+          {"id":"a","text":"narasi"},
+          {"id":"b","text":"laporan"},
+          {"id":"c","text":"eksposisi"},
+          {"id":"d","text":"prosedur"}
+        ],
+        "answerId": "a",
+        "explanation": "Teks cerita disebut narasi."
+      },
+
+      { "id":"bi-md-5","text":"Sinonim 'indah'...","options":[{"id":"a","text":"buruk"},{"id":"b","text":"elok"},{"id":"c","text":"jelek"},{"id":"d","text":"kusam"}],"answerId":"b","explanation":"Indah = elok." },
+      { "id":"bi-md-6","text":"Lawan kata 'tinggi'...","options":[{"id":"a","text":"panjang"},{"id":"b","text":"rendah"},{"id":"c","text":"besar"},{"id":"d","text":"atas"}],"answerId":"b","explanation":"Tinggi lawannya rendah." },
+      { "id":"bi-md-7","text":"'Dia' termasuk kata...","options":[{"id":"a","text":"kata kerja"},{"id":"b","text":"kata sifat"},{"id":"c","text":"kata ganti"},{"id":"d","text":"kata depan"}],"answerId":"c","explanation":"'Dia' adalah kata ganti." },
+      { "id":"bi-md-8","text":"Teks petunjuk disebut...","options":[{"id":"a","text":"deskripsi"},{"id":"b","text":"prosedur"},{"id":"c","text":"narasi"},{"id":"d","text":"dongeng"}],"answerId":"b","explanation":"Petunjuk = teks prosedur." },
+      { "id":"bi-md-9","text":"'Meja' termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"benda"},{"id":"c","text":"sifat"},{"id":"d","text":"keterangan"}],"answerId":"b","explanation":"Meja adalah kata benda." },
+      { "id":"bi-md-10","text":"Kalimat perintah biasanya diakhiri...","options":[{"id":"a","text":"."},{"id":"b","text":"?"},{"id":"c","text":"!"},{"id":"d","text":","}],"answerId":"c","explanation":"Kalimat perintah biasanya '!'" },
+
+      { "id":"bi-md-11","text":"Cerita pendek disebut...","options":[{"id":"a","text":"novel"},{"id":"b","text":"cerpen"},{"id":"c","text":"puisi"},{"id":"d","text":"drama"}],"answerId":"b","explanation":"Cerita pendek = cerpen." },
+      { "id":"bi-md-12","text":"Lawan kata 'rajin'...","options":[{"id":"a","text":"malas"},{"id":"b","text":"cepat"},{"id":"c","text":"aktif"},{"id":"d","text":"sibuk"}],"answerId":"a","explanation":"Rajin lawannya malas." },
+      { "id":"bi-md-13","text":"Teks berita berisi...","options":[{"id":"a","text":"khayalan"},{"id":"b","text":"peristiwa"},{"id":"c","text":"pujian"},{"id":"d","text":"nasihat"}],"answerId":"b","explanation":"Berita berisi peristiwa." },
+      { "id":"bi-md-14","text":"'Cantik' termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"sifat"},{"id":"c","text":"benda"},{"id":"d","text":"ganti"}],"answerId":"b","explanation":"Cantik = kata sifat." },
+      { "id":"bi-md-15","text":"Pantun terdiri dari... baris","options":[{"id":"a","text":"2"},{"id":"b","text":"4"},{"id":"c","text":"6"},{"id":"d","text":"8"}],"answerId":"b","explanation":"Pantun terdiri dari 4 baris." },
+
+      { "id":"bi-md-16","text":"Lawan kata 'ramah'...","options":[{"id":"a","text":"baik"},{"id":"b","text":"galak"},{"id":"c","text":"senang"},{"id":"d","text":"halus"}],"answerId":"b","explanation":"Ramah lawannya galak." },
+      { "id":"bi-md-17","text":"Buku termasuk kata...","options":[{"id":"a","text":"kerja"},{"id":"b","text":"benda"},{"id":"c","text":"sifat"},{"id":"d","text":"bilangan"}],"answerId":"b","explanation":"Buku adalah kata benda." },
+      { "id":"bi-md-18","text":"Puisi lama disebut...","options":[{"id":"a","text":"novel"},{"id":"b","text":"cerpen"},{"id":"c","text":"pantun"},{"id":"d","text":"drama"}],"answerId":"c","explanation":"Pantun adalah puisi lama." },
+      { "id":"bi-md-19","text":"Huruf kapital dipakai di awal...","options":[{"id":"a","text":"kata sambung"},{"id":"b","text":"kalimat"},{"id":"c","text":"kata depan"},{"id":"d","text":"imbuhan"}],"answerId":"b","explanation":"Huruf kapital untuk awal kalimat." },
+      { "id":"bi-md-20","text":"Lawannya 'datang'...","options":[{"id":"a","text":"pergi"},{"id":"b","text":"masuk"},{"id":"c","text":"pulang"},{"id":"d","text":"jalan"}],"answerId":"a","explanation":"Datang lawannya pergi." }
+    ],
+
+    "Lumayan Susah": [
+      { "id":"bi-ls-1","text":"Ide pokok adalah...","options":[{"id":"a","text":"kalimat utama"},{"id":"b","text":"penjelasan"},{"id":"c","text":"contoh"},{"id":"d","text":"ilustrasi"}],"answerId":"a","explanation":"Ide pokok ada di kalimat utama." },
+
+      { "id":"bi-ls-2","text":"Majas perbandingan langsung disebut...","options":[{"id":"a","text":"simile"},{"id":"b","text":"metafora"},{"id":"c","text":"personifikasi"},{"id":"d","text":"hiperbola"}],"answerId":"b","explanation":"Perbandingan langsung adalah metafora." }
+
+      // ➜ LANJUTKAN hingga bi-ls-20
+    ],
+
+    "Susah Banget": [
+      { "id":"bi-sb-1","text":"Kalimat pasif ditandai dengan awalan...","options":[{"id":"a","text":"me-"},{"id":"b","text":"di-"},{"id":"c","text":"ber-"},{"id":"d","text":"ter-"}],"answerId":"b","explanation":"Kalimat pasif biasanya pakai 'di-'." }
+
+      // ➜ LANJUTKAN hingga bi-sb-20
+    ]
+  }
+}
